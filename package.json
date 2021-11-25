@@ -1,0 +1,75 @@
+{
+  "name": "shirkhan-markdown",
+  "displayName": "shirkhan-markdown",
+  "description": "shirkhan markdown converter",
+  "publisher": "iShirkhan",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.62.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:shirkhan-markdown.shirkhan"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "markdown.markdownItPlugins": true,
+    "markdown.previewStyles": [
+      "light-theme.css"
+    ],
+    "commands": [
+      {
+        "command": "shirkhan-markdown.shirkhan",
+        "title": "shirkhan active/deactive"
+      }
+    ],
+    "configuration": {
+      "title": "shirkhan-markdown",
+      "properties": {
+        "shirkhanMarkdown.activeConvert": {
+          "type": "boolean",
+          "default": true,
+          "description": "默认是自动转换状态，设置false默认不会启动，需要切换状态才能转换"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn esbuild-base  --minify",
+    "esbuild-base": "esbuild ./extension.js --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
+    "esbuild": "yarn esbuild-base  --sourcemap",
+    "esbuild-watch": "yarn esbuild-base  --sourcemap --watch",
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "node ./test/runTest.js",
+    "build": "vsce package --no-yarn"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.4",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.62.0",
+    "@vscode/test-electron": "^1.6.2",
+    "eslint": "^7.32.0",
+    "glob": "^7.1.7",
+    "mocha": "^9.1.1",
+    "typescript": "^4.4.3",
+    "vsce": "1.103.1"
+  },
+  "dependencies": {
+    "esbuild": "^0.13.15",
+    "markdown-it-for-inline": "^0.1.1",
+    "shirkhan-alphabet-converter": "^0.0.4"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/ishirkhan/vscode-markdown-previewer.git",
+    "email": "uybabbage@hotmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ishirkhan/vscode-markdown-previewer.git"
+  }
+}
