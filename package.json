@@ -3,7 +3,8 @@
   "displayName": "shirkhan-markdown",
   "description": "shirkhan markdown converter",
   "publisher": "iShirkhan",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "icon": "images/icon.jpg",
   "engines": {
     "vscode": "^1.62.0"
   },
@@ -17,7 +18,8 @@
   "contributes": {
     "markdown.markdownItPlugins": true,
     "markdown.previewStyles": [
-      "light-theme.css"
+      "light-theme.css",
+      "katex-block.css"
     ],
     "commands": [
       {
@@ -61,7 +63,8 @@
   "dependencies": {
     "esbuild": "^0.13.15",
     "markdown-it-for-inline": "^0.1.1",
-    "shirkhan-alphabet-converter": "^0.0.4"
+    "shirkhan-alphabet-converter": "^0.0.4",
+    "shirkhan-alphabet-markdownit-plugin": "^0.0.1"
   },
   "license": "SEE LICENSE IN LICENSE.txt",
   "bugs": {

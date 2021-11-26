@@ -1,0 +1,3 @@
+p.katex-block,p.katex-block *,p.katex-block > *{
+    direction: ltr;
+}

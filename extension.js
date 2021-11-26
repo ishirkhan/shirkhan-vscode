@@ -2,6 +2,9 @@ const vscode = require("vscode");
 
 const iterator = require("markdown-it-for-inline");
 const { khanText2u } = require("shirkhan-alphabet-converter");
+const {
+  shirkhanAlphabetPlugin,
+} = require("shirkhan-alphabet-markdownit-plugin");
 
 let activeToConvert = vscode.workspace
   .getConfiguration("shirkhanMarkdown")
@@ -32,17 +35,9 @@ function activate(context) {
 
   return {
     extendMarkdownIt(md) {
-      md.use(
-        iterator,
-        "shirkhan-alphabet-converter",
-        "text",
-        function (tokens, idx) {
-          if (activeToConvert) {
-            tokens[idx].content = khanText2u(tokens[idx].content);
-          }
-        }
-      );
-
+      if (activeToConvert) {
+        md.use(shirkhanAlphabetPlugin);
+      }
       return md;
     },
   };

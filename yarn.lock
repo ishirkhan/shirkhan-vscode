@@ -65,6 +65,24 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/linkify-it@*":
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/@types/linkify-it/-/linkify-it-3.0.2.tgz#fd2cd2edbaa7eaac7e7f3c1748b52a19143846c9"
+  integrity sha512-HZQYqbiFVWufzCwexrvh694SOim8z2d+xJl5UNamcvQFejLY/2YUtzXHYi3cHdI7PMlS8ejH2slRAOJQ32aNbA==
+
+"@types/markdown-it@^12.2.3":
+  version "12.2.3"
+  resolved "https://registry.npmjs.org/@types/markdown-it/-/markdown-it-12.2.3.tgz#0d6f6e5e413f8daaa26522904597be3d6cd93b51"
+  integrity sha512-GKMHFfv3458yYy+v/N8gjufHO6MSZKCOXpZc5GXIWWy8uldwfmPn98vp81gZ5f9SVw8YYBctgfJ22a2d7AOMeQ==
+  dependencies:
+    "@types/linkify-it" "*"
+    "@types/mdurl" "*"
+
+"@types/mdurl@*":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@types/mdurl/-/mdurl-1.0.2.tgz#e2ce9d83a613bacf284c7be7d491945e39e1f8e9"
+  integrity sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==
+
 "@types/minimatch@*":
   version "3.0.5"
   resolved "https://registry.npmmirror.com/@types/minimatch/download/@types/minimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
@@ -746,6 +764,11 @@ entities@~2.0.0:
   version "2.0.3"
   resolved "https://registry.nlark.com/entities/download/entities-2.0.3.tgz#5c487e5742ab93c15abb5da22759b8590ec03b7f"
   integrity sha1-XEh+V0Krk8Fau12iJ1m4WQ7AO38=
+
+entities@~2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/entities/-/entities-2.1.0.tgz#992d3129cf7df6870b96c57858c249a120f8b8b5"
+  integrity sha512-hCx1oky9PFrJ611mf0ifBLBRW8lUUVRlFolb5gWRfIELabBlbp9xZvrqZLZAs+NxFnbfQoeGd8wDkygjg7U85w==
 
 esbuild-android-arm64@0.13.15:
   version "0.13.15"
@@ -1432,6 +1455,13 @@ linkify-it@^2.0.0:
   dependencies:
     uc.micro "^1.0.1"
 
+linkify-it@^3.0.1:
+  version "3.0.3"
+  resolved "https://registry.npmjs.org/linkify-it/-/linkify-it-3.0.3.tgz#a98baf44ce45a550efb4d49c769d07524cc2fa2e"
+  integrity sha512-ynTsyrFSdE5oZ/O9GEf00kPngmOfVwazR5GKDq6EYfhlpFug3J2zybX56a2PRRpc9P+FuSoGNAwjlbDs9jJBPQ==
+  dependencies:
+    uc.micro "^1.0.1"
+
 listenercount@~1.0.1:
   version "1.0.1"
   resolved "https://registry.nlark.com/listenercount/download/listenercount-1.0.1.tgz#84c8a72ab59c4725321480c975e6508342e70937"
@@ -1494,6 +1524,17 @@ markdown-it@^10.0.0:
     argparse "^1.0.7"
     entities "~2.0.0"
     linkify-it "^2.0.0"
+    mdurl "^1.0.1"
+    uc.micro "^1.0.5"
+
+markdown-it@^12.2.0:
+  version "12.2.0"
+  resolved "https://registry.npmjs.org/markdown-it/-/markdown-it-12.2.0.tgz#091f720fd5db206f80de7a8d1f1a7035fd0d38db"
+  integrity sha512-Wjws+uCrVQRqOoJvze4HCqkKl1AsSh95iFAeQDwnyfxM09divCBSXlDR1uTvyUP3Grzpn4Ru8GeCxYPM8vkCQg==
+  dependencies:
+    argparse "^2.0.1"
+    entities "~2.1.0"
+    linkify-it "^3.0.1"
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
 
@@ -2013,6 +2054,26 @@ shirkhan-alphabet-converter@^0.0.4:
     retext "^8.1.0"
     shirkhan-alphabet-table "^0.0.x"
     unist-util-visit "^4.1.0"
+
+shirkhan-alphabet-converter@^0.0.x:
+  version "0.0.6"
+  resolved "https://registry.npmjs.org/shirkhan-alphabet-converter/-/shirkhan-alphabet-converter-0.0.6.tgz#75c3f9ada999283b0616e708333158893c5b811e"
+  integrity sha512-ehkYni/N0eTrhD5cVb294H73KvfBf6FY67wE/8CAkeDKA5BhVn7pFOu2MhBCyLMUm0BD8YGX6tSDEcsHue6OaQ==
+  dependencies:
+    babel-plugin-transform-class-properties "^6.24.1"
+    retext "^8.1.0"
+    shirkhan-alphabet-table "^0.0.x"
+    unist-util-visit "^4.1.0"
+
+shirkhan-alphabet-markdownit-plugin@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/shirkhan-alphabet-markdownit-plugin/-/shirkhan-alphabet-markdownit-plugin-0.0.1.tgz#d81800650d603aa03937447569cb43d13836d2ef"
+  integrity sha512-kT5zuP+CNIXEAaQ7Y7jbju8C8y2p9elcWtv9OhxfbiKq/Q3o+zA+vzDAl+eCZVvnHdNoXskIDTRdefMP8ldzLQ==
+  dependencies:
+    "@types/markdown-it" "^12.2.3"
+    markdown-it "^12.2.0"
+    markdown-it-for-inline "^0.1.1"
+    shirkhan-alphabet-converter "^0.0.x"
 
 shirkhan-alphabet-table@^0.0.x:
   version "0.0.4"
