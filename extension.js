@@ -37,8 +37,11 @@ function shirkhanAlphabetPlugin2(md) {
   );
 
   // 对整个容器加一个class，使得样式只针对我们母语
-  md.renderer.rules.paragraph_open = md.renderer.rules.heading_open =
-    injectContainerClassName;
+  md.renderer.rules.paragraph_open =
+    md.renderer.rules.heading_open =
+    md.renderer.rules.ordered_list_open =
+    md.renderer.rules.bullet_list_open =
+      injectContainerClassName;
 
   return md;
 }
@@ -59,7 +62,6 @@ function activate(context) {
       vscode.window.showInformationMessage(
         "shirkhan-alphabet 转换状态变成为:" + msg + " from shirkhan-markdown!"
       );
-      console.log("activate ~ activeToConvert", activeToConvert);
     }
   );
 
@@ -67,10 +69,7 @@ function activate(context) {
 
   return {
     extendMarkdownIt(md) {
-      console.log(activeToConvert);
-      if (activeToConvert) {
-        md.use(shirkhanAlphabetPlugin2);
-      }
+      md.use(shirkhanAlphabetPlugin2);
       return md;
     },
   };

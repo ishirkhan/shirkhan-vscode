@@ -1,6 +1,6 @@
 # shirkhan markdown 预览器
 
-## 使用方式 s
+## 使用方式
 
 安装插件后打开任何 markdown 文件并选择 preview 就能看到效果。
 
@@ -13,3 +13,6 @@
 2. 如何覆盖插件的样式？
    - 配置里搜索 markdown styles 通过添加 item 的方式添加你的 css 文件可以达到覆盖的效果
 3. markdown 编写过程中部分内容不想它转换怎么办？ - 通过 "|content|" 包裹内容来达到这种目的，如 shirkhan |bu yerdikimezmun ozgermaydu| deydu
+
+asdfasdf
+asdfasdfasdf
