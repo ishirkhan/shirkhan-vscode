@@ -62,11 +62,10 @@ td,
 ul,
 li,
 ol {
-    direction: rtl;
     font-family: "LearnFans";
 }
 
-.outline-item {
+.shirkhan{
     direction: rtl;
 }
 
