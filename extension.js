@@ -1,6 +1,6 @@
 const vscode = require("vscode");
 
-const { khanText2u } = require("shirkhan-alphabet-converter");
+const { khanText2ug } = require("shirkhan-alphabet");
 
 // 插件默认是否转换markdown内容
 let activeToConvert = vscode.workspace
@@ -13,7 +13,7 @@ function shirkhanAlphabetPlugin2(md) {
     "shirkhan-after-normalize",
     function (state) {
       if (activeToConvert) {
-        state.src = khanText2u(state.src);
+        state.src = khanText2ug(state.src);
       }
     }
   );

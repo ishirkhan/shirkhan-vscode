@@ -3,7 +3,7 @@
   "displayName": "shirkhan-markdown",
   "description": "shirkhan markdown converter",
   "publisher": "iShirkhan",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.62.0"
@@ -62,8 +62,7 @@
   },
   "dependencies": {
     "esbuild": "^0.13.15",
-    "markdown-it-container": "^3.0.0",
-    "shirkhan-alphabet-converter": "^0.0.x"
+    "shirkhan-alphabet": "^0.0.x"
   },
   "license": "SEE LICENSE IN LICENSE.txt",
   "bugs": {
