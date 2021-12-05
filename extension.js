@@ -7,24 +7,6 @@ let activeToConvert = vscode.workspace
   .getConfiguration("shirkhanMarkdown")
   .get("activeConvert");
 
-/**
- * 给所有独立的行插入className -> shirkhan
- * @param {*} tokens
- * @param {*} idx
- * @param {*} options
- * @param {*} env
- * @param {*} slf
- * @returns
- */
-function injectContainerClassName(tokens, idx, options, env, slf) {
-  if (tokens[idx].map && tokens[idx].level === 0) {
-    if (activeToConvert) {
-      tokens[idx].attrJoin("class", "shirkhan");
-    }
-  }
-  return slf.renderToken(tokens, idx, options, env, slf);
-}
-
 function shirkhanAlphabetPlugin2(md) {
   md.core.ruler.after(
     "normalize",
@@ -37,12 +19,11 @@ function shirkhanAlphabetPlugin2(md) {
   );
 
   // 对整个容器加一个class，使得样式只针对我们母语
-  md.renderer.rules.paragraph_open =
-    md.renderer.rules.heading_open =
-    md.renderer.rules.ordered_list_open =
-    md.renderer.rules.bullet_list_open =
-      injectContainerClassName;
-
+  md.renderer.backuprender = md.renderer.render;
+  md.renderer.render = function (tokens, options, env) {
+    const result = md.renderer.backuprender(tokens, options, env);
+    return `<div class="shirkhan-markdown-body">${result}</div>`;
+  };
   return md;
 }
 /**
