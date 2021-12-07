@@ -9,13 +9,16 @@ let activeToConvert = vscode.workspace
   .get("activeConvert");
 
 function shirkhanAlphabetPlugin(md) {
+  // 插件是否激活
+  if (!activeToConvert) return md;
+
   // 支持表情
   md.use(emoji);
 
   const defaultRender = md.renderer.rules.text;
   md.renderer.rules.text = function (tokens, idx, options, env, slf) {
     let result = defaultRender(tokens, idx, options, env, slf);
-    console.log("shirkhanAlphabetPlugin ~ result", result);
+
     // 链接不做转移
     if (idx > 0 && tokens[idx - 1].type === "link_open") {
       return result;
