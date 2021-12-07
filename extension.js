@@ -9,26 +9,25 @@ let activeToConvert = vscode.workspace
   .get("activeConvert");
 
 function shirkhanAlphabetPlugin(md) {
-  // md.core.ruler.after(
-  //   "normalize",
-  //   "shirkhan-after-normalize",
-  //   function (state) {
-  //     if (activeToConvert) {
-  //       state.src = khanText2ug(state.src);
-  //     }
-  //   }
-  // );
-
   // 支持表情
   md.use(emoji);
 
   const defaultRender = md.renderer.rules.text;
   md.renderer.rules.text = function (tokens, idx, options, env, slf) {
-    const result = defaultRender(tokens, idx, options, env, slf);
+    let result = defaultRender(tokens, idx, options, env, slf);
+    console.log("shirkhanAlphabetPlugin ~ result", result);
     // 链接不做转移
     if (idx > 0 && tokens[idx - 1].type === "link_open") {
       return result;
     }
+
+    // 对标点符号进行转换
+    result = result.replace(/\,/gim, "،");
+    result = result.replace(/\;/gim, "؛");
+
+    // 对 escapeed html 标签做转移
+    result = result.replace(/(\&.*)\؛/gim, "/$1;/");
+
     return khanText2ug(result);
   };
 
