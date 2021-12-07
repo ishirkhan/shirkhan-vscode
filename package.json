@@ -3,7 +3,7 @@
   "displayName": "shirkhan-markdown",
   "description": "shirkhan markdown converter",
   "publisher": "iShirkhan",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.62.0"
