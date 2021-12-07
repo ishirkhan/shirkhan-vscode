@@ -1330,6 +1330,11 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+markdown-it-emoji@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/markdown-it-emoji/download/markdown-it-emoji-2.0.0.tgz#3164ad4c009efd946e98274f7562ad611089a231"
+  integrity sha1-MWStTACe/ZRumCdPdWKtYRCJojE=
+
 markdown-it@^10.0.0:
   version "10.0.0"
   resolved "https://registry.nlark.com/markdown-it/download/markdown-it-10.0.0.tgz#abfc64f141b1722d663402044e43927f1f50a8dc"
@@ -1858,10 +1863,10 @@ shirkhan-alphabet-table@^0.0.x:
   resolved "https://registry.npmmirror.com/shirkhan-alphabet-table/download/shirkhan-alphabet-table-0.0.8.tgz#bdd47e88b07715d69cfe2177ff0c55a495e4a397"
   integrity sha512-WrhhvjcCN+atbOPwoqb7FvFVsHjgEtLjTWK2vG92Dn8pad+8q6AUEMIpCy6fN+dmXpqnkS+JacTnO+s0oLm77w==
 
-shirkhan-alphabet@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.npmmirror.com/shirkhan-alphabet/download/shirkhan-alphabet-0.0.12.tgz#543d373aa0feaf00076db0da017c807e79f64854"
-  integrity sha512-cMW0q+EDY7cwJ+n2a/SDUg9tKP5GAJiUH7tRzPaG5sah+JWDM6ri9yTa6Bsx8fzxOB/mod/30pWQEtZyfojISg==
+shirkhan-alphabet@^0.0.x:
+  version "0.0.13"
+  resolved "https://registry.npmmirror.com/shirkhan-alphabet/download/shirkhan-alphabet-0.0.13.tgz#c10a802e8a234df18ee3666766b2353a423df82e"
+  integrity sha512-0mposSlSrPlfNdHWF7OBpW5nm5cqmWnW7eG/wbOAnITIy/++XPVwxFIh16razLm+gh+Mu97tiwG6/ppAOgO7ug==
   dependencies:
     shirkhan-alphabet-converter "^0.0.x"
     shirkhan-alphabet-syllable "^0.0.x"

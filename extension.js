@@ -1,22 +1,36 @@
 const vscode = require("vscode");
 
 const { khanText2ug } = require("shirkhan-alphabet");
+const emoji = require("markdown-it-emoji");
 
 // 插件默认是否转换markdown内容
 let activeToConvert = vscode.workspace
   .getConfiguration("shirkhanMarkdown")
   .get("activeConvert");
 
-function shirkhanAlphabetPlugin2(md) {
-  md.core.ruler.after(
-    "normalize",
-    "shirkhan-after-normalize",
-    function (state) {
-      if (activeToConvert) {
-        state.src = khanText2ug(state.src);
-      }
+function shirkhanAlphabetPlugin(md) {
+  // md.core.ruler.after(
+  //   "normalize",
+  //   "shirkhan-after-normalize",
+  //   function (state) {
+  //     if (activeToConvert) {
+  //       state.src = khanText2ug(state.src);
+  //     }
+  //   }
+  // );
+
+  // 支持表情
+  md.use(emoji);
+
+  const defaultRender = md.renderer.rules.text;
+  md.renderer.rules.text = function (tokens, idx, options, env, slf) {
+    const result = defaultRender(tokens, idx, options, env, slf);
+    // 链接不做转移
+    if (idx > 0 && tokens[idx - 1].type === "link_open") {
+      return result;
     }
-  );
+    return khanText2ug(result);
+  };
 
   // 对整个容器加一个class，使得样式只针对我们母语
   md.renderer.backuprender = md.renderer.render;
@@ -50,7 +64,7 @@ function activate(context) {
 
   return {
     extendMarkdownIt(md) {
-      md.use(shirkhanAlphabetPlugin2);
+      md.use(shirkhanAlphabetPlugin);
       return md;
     },
   };
