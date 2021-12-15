@@ -12,7 +12,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:shirkhan-markdown.changeConvertState"
+    "onCommand:shirkhan-markdown.changeConvertState",
+    "onCommand:shirkhan-markdown.changeMarkdownToUg"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -25,6 +26,10 @@
       {
         "command": "shirkhan-markdown.changeConvertState",
         "title": "shirkhan-markdown 切换转换功能 >> 激活 || 禁用"
+      },
+      {
+        "command": "shirkhan-markdown.changeMarkdownToUg",
+        "title": "shirkhan-markdown 当前 markdown 文件转成ug的markdown"
       }
     ],
     "configuration": {
@@ -63,6 +68,7 @@
   "dependencies": {
     "esbuild": "^0.13.15",
     "markdown-it-emoji": "^2.0.0",
+    "remark-shirkhan": "^1.0.0",
     "shirkhan-alphabet": "^0.0.x"
   },
   "license": "SEE LICENSE IN LICENSE.txt",
