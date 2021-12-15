@@ -3,7 +3,7 @@
   "displayName": "shirkhan-markdown",
   "description": "shirkhan markdown converter",
   "publisher": "iShirkhan",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.62.0"
@@ -12,7 +12,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:shirkhan-markdown.shirkhan"
+    "onCommand:shirkhan-markdown.changeConvertState"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -23,8 +23,8 @@
     ],
     "commands": [
       {
-        "command": "shirkhan-markdown.shirkhan",
-        "title": "shirkhan active/deactive"
+        "command": "shirkhan-markdown.changeConvertState",
+        "title": "shirkhan-markdown 切换转换功能 >> 激活 || 禁用"
       }
     ],
     "configuration": {
@@ -40,7 +40,7 @@
   },
   "scripts": {
     "vscode:prepublish": "yarn esbuild-base  --minify",
-    "esbuild-base": "esbuild ./extension.js --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
+    "esbuild-base": "esbuild ./src/main.js --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
     "esbuild": "yarn esbuild-base  --sourcemap",
     "esbuild-watch": "yarn esbuild-base  --sourcemap --watch",
     "lint": "eslint .",

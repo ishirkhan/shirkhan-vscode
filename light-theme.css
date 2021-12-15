@@ -34,16 +34,16 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-del,
-mark,
+.shirkhan-markdown-body h1,
+.shirkhan-markdown-body h2,
+.shirkhan-markdown-body h3,
+.shirkhan-markdown-body h4,
+.shirkhan-markdown-body h5,
+.shirkhan-markdown-body h6,
+.shirkhan-markdown-body p,
+.shirkhan-markdown-body a,
+.shirkhan-markdown-body del,
+.shirkhan-markdown-body mark,
 .shirkhan-markdown-body p,
 .shirkhan-markdown-body a,
 .shirkhan-markdown-body del,
@@ -54,14 +54,12 @@ mark,
 .shirkhan-markdown-body table,
 .shirkhan-markdown-body tr,
 .shirkhan-markdown-body td,
-table,
-tr,
-td {
+.shirkhan-markdown-body table {
   direction: rtl;
   font-family: "LearnFans";
 }
 
-.outline-item {
+.shirkhan-markdown-body .outline-item {
   direction: rtl;
 }
 
