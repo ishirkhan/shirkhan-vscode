@@ -4,12 +4,12 @@ import { registerCommand } from "./util/registerCommand";
 import { showInfoMessage } from "./util/message";
 import { shirkhanAlphabetPlugin } from "./markdownItPlugin";
 import emoji from "markdown-it-emoji";
-
-import { remarkKhan } from "remark-shirkhan";
-import { khanText2ug } from "shirkhan-alphabet";
+import {
+  khanMarkdownToUgMarkdown,
+  ugMarkdownToKhanMarkdown,
+} from "./converter";
 
 let vscode = require("vscode");
-let path = require("path");
 let fs = require("fs");
 
 /**
@@ -34,16 +34,31 @@ function markdownToUg(context) {
       .toString();
 
     // 转换markdown成母语markdown
-    const ugMarkdown = remarkKhan()
-      .data("khanConverter", (node) => khanText2ug(node.value))
-      .processSync(markdown)
-      .toString();
-
+    const newMarkdown = khanMarkdownToUgMarkdown(markdown);
     // 新打开一个标签显示转换后的母语markdown
     vscode.workspace
       .openTextDocument({
-        content: ugMarkdown,
+        content: newMarkdown,
         fileName: "shirkhan-markdown-ug.md",
+        language: "Markdown",
+      })
+      .then((doc) => {
+        vscode.window.showTextDocument(doc);
+      });
+  });
+
+  registerCommand(context, "shirkhan-markdown.changeMarkdownToKhan", () => {
+    const markdown = fs
+      .readFileSync(vscode.window.activeTextEditor.document.fileName)
+      .toString();
+
+    // 转换markdown成母语markdown
+    const newMarkdown = ugMarkdownToKhanMarkdown(markdown);
+    // 新打开一个标签显示转换后的母语markdown
+    vscode.workspace
+      .openTextDocument({
+        content: newMarkdown,
+        fileName: "shirkhan-markdown-khan.md",
         language: "Markdown",
       })
       .then((doc) => {
