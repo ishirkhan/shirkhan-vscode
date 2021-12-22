@@ -1,4 +1,4 @@
-import { khanText2ug } from "shirkhan-alphabet";
+import { khanTextToUgText } from "../util/converter";
 /**
  *
  * @param {*} md
@@ -24,7 +24,7 @@ export function shirkhanAlphabetPlugin(md, isActiveConvert) {
     // 对 escapeed html 标签做转移
     result = result.replace(/(\&.*)\؛/gim, "/$1;/");
 
-    return khanText2ug(result);
+    return khanTextToUgText(result);
   };
 
   // 对整个容器加一个class，使得样式只针对我们母语

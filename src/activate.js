@@ -2,15 +2,9 @@ import { getActiveConvert } from "./config";
 import { getConvertState, setConvertState } from "./storage";
 import { registerCommand } from "./util/registerCommand";
 import { showInfoMessage } from "./util/message";
-import { shirkhanAlphabetPlugin } from "./markdownItPlugin";
+import { shirkhanAlphabetPlugin } from "./plugins/markdownItPlugin";
 import emoji from "markdown-it-emoji";
-import {
-  khanMarkdownToUgMarkdown,
-  ugMarkdownToKhanMarkdown,
-} from "./converter";
-
-let vscode = require("vscode");
-let fs = require("fs");
+import { markdownConverCommands } from "./commands";
 
 /**
  * @param {import("vscode").ExtensionContext} context
@@ -23,47 +17,6 @@ function updateConvertState(context) {
     const message = !currentStage ? "开启" : "关闭";
     showInfoMessage(`转换功能已${message}`);
     setConvertState(context, !currentStage);
-  });
-}
-
-// 基于当前打开的markdow文件 生成一个母语版的markdown文件
-function markdownToUg(context) {
-  registerCommand(context, "shirkhan-markdown.changeMarkdownToUg", () => {
-    const markdown = fs
-      .readFileSync(vscode.window.activeTextEditor.document.fileName)
-      .toString();
-
-    // 转换markdown成母语markdown
-    const newMarkdown = khanMarkdownToUgMarkdown(markdown);
-    // 新打开一个标签显示转换后的母语markdown
-    vscode.workspace
-      .openTextDocument({
-        content: newMarkdown,
-        fileName: "shirkhan-markdown-ug.md",
-        language: "Markdown",
-      })
-      .then((doc) => {
-        vscode.window.showTextDocument(doc);
-      });
-  });
-
-  registerCommand(context, "shirkhan-markdown.changeMarkdownToKhan", () => {
-    const markdown = fs
-      .readFileSync(vscode.window.activeTextEditor.document.fileName)
-      .toString();
-
-    // 转换markdown成母语markdown
-    const newMarkdown = ugMarkdownToKhanMarkdown(markdown);
-    // 新打开一个标签显示转换后的母语markdown
-    vscode.workspace
-      .openTextDocument({
-        content: newMarkdown,
-        fileName: "shirkhan-markdown-khan.md",
-        language: "Markdown",
-      })
-      .then((doc) => {
-        vscode.window.showTextDocument(doc);
-      });
   });
 }
 
@@ -82,7 +35,7 @@ export function activate(context) {
   updateConvertState(context);
 
   // 提供通过命令行生成母语markdown 的功能
-  markdownToUg(context);
+  markdownConverCommands(context);
 
   return {
     extendMarkdownIt(md) {
