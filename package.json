@@ -79,11 +79,11 @@
   },
   "license": "SEE LICENSE IN LICENSE.txt",
   "bugs": {
-    "url": "https://github.com/ishirkhan/vscode-markdown-previewer.git",
+    "url": "https://github.com/ishirkhan/shirkhan-vscode.git",
     "email": "uybabbage@hotmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ishirkhan/vscode-markdown-previewer.git"
+    "url": "https://github.com/ishirkhan/shirkhan-vscode.git"
   }
 }
