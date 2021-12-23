@@ -30,7 +30,6 @@ export function ugTextToKhanText(text) {
 export function khanMarkdownToUgMarkdown(markdownText) {
   return remarkKhan()
     .data("khanConverter", (node) => {
-      console.log("我这里是内容节点", node);
       if (node.value) {
         try {
           return khanTextToUgText(node.value.toLowerCase());

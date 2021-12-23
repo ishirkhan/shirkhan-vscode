@@ -77,7 +77,7 @@
   resolved "https://registry.npmmirror.com/@types/katex/download/@types/katex-0.11.1.tgz?cache=0&sync_timestamp=1637280981570&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fkatex%2Fdownload%2F%40types%2Fkatex-0.11.1.tgz#34de04477dcf79e2ef6c8d23b41a3d81f9ebeaf5"
   integrity sha1-NN4ER33PeeLvbI0jtBo9gfnr6vU=
 
-"@types/mdast@^3.0.0":
+"@types/mdast@^3.0.0", "@types/mdast@^3.0.3":
   version "3.0.10"
   resolved "https://registry.npmmirror.com/@types/mdast/download/@types/mdast-3.0.10.tgz?cache=0&sync_timestamp=1637267171178&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fmdast%2Fdownload%2F%40types%2Fmdast-3.0.10.tgz#4724244a82a4598884cbbe9bcfd73dff927ee8af"
   integrity sha1-RyQkSoKkWYiEy76bz9c9/5J+6K8=
@@ -381,10 +381,10 @@ camelcase@^6.0.0:
   resolved "https://registry.npmmirror.com/camelcase/download/camelcase-6.2.1.tgz?cache=0&sync_timestamp=1636945205805&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fcamelcase%2Fdownload%2Fcamelcase-6.2.1.tgz#250fd350cfd555d0d2160b1d51510eaf8326e86e"
   integrity sha512-tVI4q5jjFV5CavAU8DXfza/TJcZutVKo/5Foskmsqcm0MsL91moHvwiGNnqaa2o6PF/7yT5ikDRcVcl8Rj6LCA==
 
-ccount@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.npmmirror.com/ccount/download/ccount-1.1.0.tgz#246687debb6014735131be8abab2d93898f8d043"
-  integrity sha1-JGaH3rtgFHNRMb6KurLZOJj40EM=
+ccount@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/ccount/-/ccount-2.0.1.tgz#17a3bf82302e0870d6da43a01311a8bc02a3ecf5"
+  integrity sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==
 
 chainsaw@~0.1.0:
   version "0.1.0"
@@ -410,25 +410,10 @@ chalk@^4.0.0, chalk@^4.1.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-character-entities-legacy@^1.0.0:
-  version "1.1.4"
-  resolved "https://registry.npmmirror.com/character-entities-legacy/download/character-entities-legacy-1.1.4.tgz#94bc1845dce70a5bb9d2ecc748725661293d8fc1"
-  integrity sha1-lLwYRdznClu50uzHSHJWYSk9j8E=
-
-character-entities@^1.0.0:
-  version "1.2.4"
-  resolved "https://registry.npmmirror.com/character-entities/download/character-entities-1.2.4.tgz?cache=0&sync_timestamp=1635868846406&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fcharacter-entities%2Fdownload%2Fcharacter-entities-1.2.4.tgz#e12c3939b7eaf4e5b15e7ad4c5e28e1d48c5b16b"
-  integrity sha1-4Sw5Obfq9OWxXnrUxeKOHUjFsWs=
-
 character-entities@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmmirror.com/character-entities/download/character-entities-2.0.1.tgz?cache=0&sync_timestamp=1635868846406&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fcharacter-entities%2Fdownload%2Fcharacter-entities-2.0.1.tgz#98724833e1e27990dee0bd0f2b8a859c3476aac7"
   integrity sha1-mHJIM+HieZDe4L0PK4qFnDR2qsc=
-
-character-reference-invalid@^1.0.0:
-  version "1.1.4"
-  resolved "https://registry.npmmirror.com/character-reference-invalid/download/character-reference-invalid-1.1.4.tgz?cache=0&sync_timestamp=1636446259053&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fcharacter-reference-invalid%2Fdownload%2Fcharacter-reference-invalid-1.1.4.tgz#083329cda0eae272ab3dbbf37e9a382c13af1560"
-  integrity sha1-CDMpzaDq4nKrPbvzfpo4LBOvFWA=
 
 cheerio-select@^1.5.0:
   version "1.5.0"
@@ -708,113 +693,113 @@ entities@~2.0.0:
   resolved "https://registry.nlark.com/entities/download/entities-2.0.3.tgz#5c487e5742ab93c15abb5da22759b8590ec03b7f"
   integrity sha1-XEh+V0Krk8Fau12iJ1m4WQ7AO38=
 
-esbuild-android-arm64@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-android-arm64/download/esbuild-android-arm64-0.13.15.tgz#3fc3ff0bab76fe35dd237476b5d2b32bb20a3d44"
-  integrity sha512-m602nft/XXeO8YQPUDVoHfjyRVPdPgjyyXOxZ44MK/agewFFkPa8tUo6lAzSWh5Ui5PB4KR9UIFTSBKh/RrCmg==
+esbuild-android-arm64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-android-arm64/-/esbuild-android-arm64-0.14.7.tgz#8c78cbb617f9f216abfb5a84cca453b51421a1b6"
+  integrity sha512-9/Q1NC4JErvsXzJKti0NHt+vzKjZOgPIjX/e6kkuCzgfT/GcO3FVBcGIv4HeJG7oMznE6KyKhvLrFgt7CdU2/w==
 
-esbuild-darwin-64@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-darwin-64/download/esbuild-darwin-64-0.13.15.tgz#8e9169c16baf444eacec60d09b24d11b255a8e72"
-  integrity sha512-ihOQRGs2yyp7t5bArCwnvn2Atr6X4axqPpEdCFPVp7iUj4cVSdisgvEKdNR7yH3JDjW6aQDw40iQFoTqejqxvQ==
+esbuild-darwin-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-darwin-64/-/esbuild-darwin-64-0.14.7.tgz#7424bdb64c104556d36b7429af79ab51415ab8f4"
+  integrity sha512-Z9X+3TT/Xj+JiZTVlwHj2P+8GoiSmUnGVz0YZTSt8WTbW3UKw5Pw2ucuJ8VzbD2FPy0jbIKJkko/6CMTQchShQ==
 
-esbuild-darwin-arm64@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-darwin-arm64/download/esbuild-darwin-arm64-0.13.15.tgz#1b07f893b632114f805e188ddfca41b2b778229a"
-  integrity sha512-i1FZssTVxUqNlJ6cBTj5YQj4imWy3m49RZRnHhLpefFIh0To05ow9DTrXROTE1urGTQCloFUXTX8QfGJy1P8dQ==
+esbuild-darwin-arm64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.7.tgz#6a243dc0132aeb11c1991f968a6a9e393f43c6bc"
+  integrity sha512-68e7COhmwIiLXBEyxUxZSSU0akgv8t3e50e2QOtKdBUE0F6KIRISzFntLe2rYlNqSsjGWsIO6CCc9tQxijjSkw==
 
-esbuild-freebsd-64@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-freebsd-64/download/esbuild-freebsd-64-0.13.15.tgz#0b8b7eca1690c8ec94c75680c38c07269c1f4a85"
-  integrity sha512-G3dLBXUI6lC6Z09/x+WtXBXbOYQZ0E8TDBqvn7aMaOCzryJs8LyVXKY4CPnHFXZAbSwkCbqiPuSQ1+HhrNk7EA==
+esbuild-freebsd-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-freebsd-64/-/esbuild-freebsd-64-0.14.7.tgz#e7281e50522e724c4da502504dcd75be0db46c94"
+  integrity sha512-76zy5jAjPiXX/S3UvRgG85Bb0wy0zv/J2lel3KtHi4V7GUTBfhNUPt0E5bpSXJ6yMT7iThhnA5rOn+IJiUcslQ==
 
-esbuild-freebsd-arm64@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-freebsd-arm64/download/esbuild-freebsd-arm64-0.13.15.tgz#2e1a6c696bfdcd20a99578b76350b41db1934e52"
-  integrity sha512-KJx0fzEDf1uhNOZQStV4ujg30WlnwqUASaGSFPhznLM/bbheu9HhqZ6mJJZM32lkyfGJikw0jg7v3S0oAvtvQQ==
+esbuild-freebsd-arm64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-freebsd-arm64/-/esbuild-freebsd-arm64-0.14.7.tgz#31e513098efd181d76a3ba3ea285836d37f018a3"
+  integrity sha512-lSlYNLiqyzd7qCN5CEOmLxn7MhnGHPcu5KuUYOG1i+t5A6q7LgBmfYC9ZHJBoYyow3u4CNu79AWHbvVLpE/VQQ==
 
-esbuild-linux-32@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-linux-32/download/esbuild-linux-32-0.13.15.tgz#6fd39f36fc66dd45b6b5f515728c7bbebc342a69"
-  integrity sha512-ZvTBPk0YWCLMCXiFmD5EUtB30zIPvC5Itxz0mdTu/xZBbbHJftQgLWY49wEPSn2T/TxahYCRDWun5smRa0Tu+g==
+esbuild-linux-32@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-linux-32/-/esbuild-linux-32-0.14.7.tgz#82cf96accbf55d3007c3338dc3b3144efa9ae108"
+  integrity sha512-Vk28u409wVOXqTaT6ek0TnfQG4Ty1aWWfiysIaIRERkNLhzLhUf4i+qJBN8mMuGTYOkE40F0Wkbp6m+IidOp2A==
 
-esbuild-linux-64@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-linux-64/download/esbuild-linux-64-0.13.15.tgz#9cb8e4bcd7574e67946e4ee5f1f1e12386bb6dd3"
-  integrity sha512-eCKzkNSLywNeQTRBxJRQ0jxRCl2YWdMB3+PkWFo2BBQYC5mISLIVIjThNtn6HUNqua1pnvgP5xX0nHbZbPj5oA==
+esbuild-linux-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.14.7.tgz#67bdfe23a6ca918a0bb8e9558a3ee0fdf98c0bc0"
+  integrity sha512-+Lvz6x+8OkRk3K2RtZwO+0a92jy9si9cUea5Zoru4yJ/6EQm9ENX5seZE0X9DTwk1dxJbjmLsJsd3IoowyzgVg==
 
-esbuild-linux-arm64@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-linux-arm64/download/esbuild-linux-arm64-0.13.15.tgz#3891aa3704ec579a1b92d2a586122e5b6a2bfba1"
-  integrity sha512-bYpuUlN6qYU9slzr/ltyLTR9YTBS7qUDymO8SV7kjeNext61OdmqFAzuVZom+OLW1HPHseBfJ/JfdSlx8oTUoA==
+esbuild-linux-arm64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-linux-arm64/-/esbuild-linux-arm64-0.14.7.tgz#f79c69ff0c176559c418de8e59aa3cf388fff992"
+  integrity sha512-kJd5beWSqteSAW086qzCEsH6uwpi7QRIpzYWHzEYwKKu9DiG1TwIBegQJmLpPsLp4v5RAFjea0JAmAtpGtRpqg==
 
-esbuild-linux-arm@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-linux-arm/download/esbuild-linux-arm-0.13.15.tgz#8a00e99e6a0c6c9a6b7f334841364d8a2b4aecfe"
-  integrity sha512-wUHttDi/ol0tD8ZgUMDH8Ef7IbDX+/UsWJOXaAyTdkT7Yy9ZBqPg8bgB/Dn3CZ9SBpNieozrPRHm0BGww7W/jA==
+esbuild-linux-arm@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-linux-arm/-/esbuild-linux-arm-0.14.7.tgz#3d665b35e1c27dbe1c9deb8bf956d7d1f191a21b"
+  integrity sha512-OzpXEBogbYdcBqE4uKynuSn5YSetCvK03Qv1HcOY1VN6HmReuatjJ21dCH+YPHSpMEF0afVCnNfffvsGEkxGJQ==
 
-esbuild-linux-mips64le@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-linux-mips64le/download/esbuild-linux-mips64le-0.13.15.tgz#36b07cc47c3d21e48db3bb1f4d9ef8f46aead4f7"
-  integrity sha512-KlVjIG828uFPyJkO/8gKwy9RbXhCEUeFsCGOJBepUlpa7G8/SeZgncUEz/tOOUJTcWMTmFMtdd3GElGyAtbSWg==
+esbuild-linux-mips64le@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-linux-mips64le/-/esbuild-linux-mips64le-0.14.7.tgz#226114a0cc6649ba0ffd3428118a8f622872f16d"
+  integrity sha512-mFWpnDhZJmj/h7pxqn1GGDsKwRfqtV7fx6kTF5pr4PfXe8pIaTERpwcKkoCwZUkWAOmUEjMIUAvFM72A6hMZnA==
 
-esbuild-linux-ppc64le@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-linux-ppc64le/download/esbuild-linux-ppc64le-0.13.15.tgz#f7e6bba40b9a11eb9dcae5b01550ea04670edad2"
-  integrity sha512-h6gYF+OsaqEuBjeesTBtUPw0bmiDu7eAeuc2OEH9S6mV9/jPhPdhOWzdeshb0BskRZxPhxPOjqZ+/OqLcxQwEQ==
+esbuild-linux-ppc64le@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-linux-ppc64le/-/esbuild-linux-ppc64le-0.14.7.tgz#5c67ae56517f2644d567b2ca5ecb97f9520cfc49"
+  integrity sha512-wM7f4M0bsQXfDL4JbbYD0wsr8cC8KaQ3RPWc/fV27KdErPW7YsqshZZSjDV0kbhzwpNNdhLItfbaRT8OE8OaKA==
 
-esbuild-netbsd-64@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-netbsd-64/download/esbuild-netbsd-64-0.13.15.tgz#a2fedc549c2b629d580a732d840712b08d440038"
-  integrity sha512-3+yE9emwoevLMyvu+iR3rsa+Xwhie7ZEHMGDQ6dkqP/ndFzRHkobHUKTe+NCApSqG5ce2z4rFu+NX/UHnxlh3w==
+esbuild-netbsd-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-netbsd-64/-/esbuild-netbsd-64-0.14.7.tgz#69dc0469ea089013956d8c6aa71c9e7fc25fc567"
+  integrity sha512-J/afS7woKyzGgAL5FlgvMyqgt5wQ597lgsT+xc2yJ9/7BIyezeXutXqfh05vszy2k3kSvhLesugsxIA71WsqBw==
 
-esbuild-openbsd-64@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-openbsd-64/download/esbuild-openbsd-64-0.13.15.tgz#b22c0e5806d3a1fbf0325872037f885306b05cd7"
-  integrity sha512-wTfvtwYJYAFL1fSs8yHIdf5GEE4NkbtbXtjLWjM3Cw8mmQKqsg8kTiqJ9NJQe5NX/5Qlo7Xd9r1yKMMkHllp5g==
+esbuild-openbsd-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-openbsd-64/-/esbuild-openbsd-64-0.14.7.tgz#3a9d04ecf820708e2e5b7d26fa7332e3f19f6b6c"
+  integrity sha512-7CcxgdlCD+zAPyveKoznbgr3i0Wnh0L8BDGRCjE/5UGkm5P/NQko51tuIDaYof8zbmXjjl0OIt9lSo4W7I8mrw==
 
-esbuild-sunos-64@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-sunos-64/download/esbuild-sunos-64-0.13.15.tgz#d0b6454a88375ee8d3964daeff55c85c91c7cef4"
-  integrity sha512-lbivT9Bx3t1iWWrSnGyBP9ODriEvWDRiweAs69vI+miJoeKwHWOComSRukttbuzjZ8r1q0mQJ8Z7yUsDJ3hKdw==
+esbuild-sunos-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-sunos-64/-/esbuild-sunos-64-0.14.7.tgz#7c33a682f0fd9565cae7df165d0e8736b7b62623"
+  integrity sha512-GKCafP2j/KUljVC3nesw1wLFSZktb2FGCmoT1+730zIF5O6hNroo0bSEofm6ZK5mNPnLiSaiLyRB9YFgtkd5Xg==
 
-esbuild-windows-32@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-windows-32/download/esbuild-windows-32-0.13.15.tgz#c96d0b9bbb52f3303322582ef8e4847c5ad375a7"
-  integrity sha512-fDMEf2g3SsJ599MBr50cY5ve5lP1wyVwTe6aLJsM01KtxyKkB4UT+fc5MXQFn3RLrAIAZOG+tHC+yXObpSn7Nw==
+esbuild-windows-32@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-windows-32/-/esbuild-windows-32-0.14.7.tgz#24ec706a5f25b4499048f56146bcff0ed3839dce"
+  integrity sha512-5I1GeL/gZoUUdTPA0ws54bpYdtyeA2t6MNISalsHpY269zK8Jia/AXB3ta/KcDHv2SvNwabpImeIPXC/k0YW6A==
 
-esbuild-windows-64@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-windows-64/download/esbuild-windows-64-0.13.15.tgz#1f79cb9b1e1bb02fb25cd414cb90d4ea2892c294"
-  integrity sha512-9aMsPRGDWCd3bGjUIKG/ZOJPKsiztlxl/Q3C1XDswO6eNX/Jtwu4M+jb6YDH9hRSUflQWX0XKAfWzgy5Wk54JQ==
+esbuild-windows-64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.14.7.tgz#dd6d5b5bace93cd7a9174d31fbd727ba21885abf"
+  integrity sha512-CIGKCFpQOSlYsLMbxt8JjxxvVw9MlF1Rz2ABLVfFyHUF5OeqHD5fPhGrCVNaVrhO8Xrm+yFmtjcZudUGr5/WYQ==
 
-esbuild-windows-arm64@0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild-windows-arm64/download/esbuild-windows-arm64-0.13.15.tgz#482173070810df22a752c686509c370c3be3b3c3"
-  integrity sha512-zzvyCVVpbwQQATaf3IG8mu1IwGEiDxKkYUdA4FpoCHi1KtPa13jeScYDjlW0Qh+ebWzpKfR2ZwvqAQkSWNcKjA==
+esbuild-windows-arm64@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild-windows-arm64/-/esbuild-windows-arm64-0.14.7.tgz#ecfd9ac289606f26760c4f737caaeeadfff3cfe3"
+  integrity sha512-eOs1eSivOqN7cFiRIukEruWhaCf75V0N8P0zP7dh44LIhLl8y6/z++vv9qQVbkBm5/D7M7LfCfCTmt1f1wHOCw==
 
-esbuild@^0.13.15:
-  version "0.13.15"
-  resolved "https://registry.npmmirror.com/esbuild/download/esbuild-0.13.15.tgz#db56a88166ee373f87dbb2d8798ff449e0450cdf"
-  integrity sha512-raCxt02HBKv8RJxE8vkTSCXGIyKHdEdGfUmiYb8wnabnaEmHzyW7DCHb5tEN0xU8ryqg5xw54mcwnYkC4x3AIw==
+esbuild@^0.x:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.14.7.tgz#e85cead55b0e1001abf1b2ce4a11c1d4d709d13c"
+  integrity sha512-+u/msd6iu+HvfysUPkZ9VHm83LImmSNnecYPfFI01pQ7TTcsFR+V0BkybZX7mPtIaI7LCrse6YRj+v3eraJSgw==
   optionalDependencies:
-    esbuild-android-arm64 "0.13.15"
-    esbuild-darwin-64 "0.13.15"
-    esbuild-darwin-arm64 "0.13.15"
-    esbuild-freebsd-64 "0.13.15"
-    esbuild-freebsd-arm64 "0.13.15"
-    esbuild-linux-32 "0.13.15"
-    esbuild-linux-64 "0.13.15"
-    esbuild-linux-arm "0.13.15"
-    esbuild-linux-arm64 "0.13.15"
-    esbuild-linux-mips64le "0.13.15"
-    esbuild-linux-ppc64le "0.13.15"
-    esbuild-netbsd-64 "0.13.15"
-    esbuild-openbsd-64 "0.13.15"
-    esbuild-sunos-64 "0.13.15"
-    esbuild-windows-32 "0.13.15"
-    esbuild-windows-64 "0.13.15"
-    esbuild-windows-arm64 "0.13.15"
+    esbuild-android-arm64 "0.14.7"
+    esbuild-darwin-64 "0.14.7"
+    esbuild-darwin-arm64 "0.14.7"
+    esbuild-freebsd-64 "0.14.7"
+    esbuild-freebsd-arm64 "0.14.7"
+    esbuild-linux-32 "0.14.7"
+    esbuild-linux-64 "0.14.7"
+    esbuild-linux-arm "0.14.7"
+    esbuild-linux-arm64 "0.14.7"
+    esbuild-linux-mips64le "0.14.7"
+    esbuild-linux-ppc64le "0.14.7"
+    esbuild-netbsd-64 "0.14.7"
+    esbuild-openbsd-64 "0.14.7"
+    esbuild-sunos-64 "0.14.7"
+    esbuild-windows-32 "0.14.7"
+    esbuild-windows-64 "0.14.7"
+    esbuild-windows-arm64 "0.14.7"
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -830,6 +815,11 @@ escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.nlark.com/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
+
+escape-string-regexp@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-5.0.0.tgz#4683126b500b61762f2dbebace1806e8be31b1c8"
+  integrity sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==
 
 eslint-scope@^5.1.1:
   version "5.1.1"
@@ -1240,19 +1230,6 @@ ini@~1.3.0:
   resolved "https://registry.nlark.com/ini/download/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
   integrity sha1-op2kJbSIBvNHZ6Tvzjlyaa8oQyw=
 
-is-alphabetical@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.npmmirror.com/is-alphabetical/download/is-alphabetical-1.0.4.tgz#9e7d6b94916be22153745d184c298cbf986a686d"
-  integrity sha1-nn1rlJFr4iFTdF0YTCmMv5hqaG0=
-
-is-alphanumerical@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.npmmirror.com/is-alphanumerical/download/is-alphanumerical-1.0.4.tgz?cache=0&sync_timestamp=1636009291782&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fis-alphanumerical%2Fdownload%2Fis-alphanumerical-1.0.4.tgz#7eb9a2431f855f6b1ef1a78e326df515696c4dbf"
-  integrity sha1-frmiQx+FX2se8aeOMm31FWlsTb8=
-  dependencies:
-    is-alphabetical "^1.0.0"
-    is-decimal "^1.0.0"
-
 is-binary-path@~2.1.0:
   version "2.1.0"
   resolved "https://registry.nlark.com/is-binary-path/download/is-binary-path-2.1.0.tgz#ea1f7f3b80f064236e83470f86c09c254fb45b09"
@@ -1264,11 +1241,6 @@ is-buffer@^2.0.0:
   version "2.0.5"
   resolved "https://registry.npm.taobao.org/is-buffer/download/is-buffer-2.0.5.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-buffer%2Fdownload%2Fis-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
   integrity sha1-68JS5ADSL/jXf6CYiIIaJKZYwZE=
-
-is-decimal@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.npmmirror.com/is-decimal/download/is-decimal-1.0.4.tgz?cache=0&sync_timestamp=1636008960795&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fis-decimal%2Fdownload%2Fis-decimal-1.0.4.tgz#65a3a5958a1c5b63a706e1b333d7cd9f630d3fa5"
-  integrity sha1-ZaOllYocW2OnBuGzM9fNn2MNP6U=
 
 is-extglob@^2.1.1:
   version "2.1.1"
@@ -1298,11 +1270,6 @@ is-glob@^4.0.0, is-glob@^4.0.1, is-glob@~4.0.1:
   integrity sha1-ZPYeQsu7LuwgcanawLKLoeZdUIQ=
   dependencies:
     is-extglob "^2.1.1"
-
-is-hexadecimal@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.npmmirror.com/is-hexadecimal/download/is-hexadecimal-1.0.4.tgz#cc35c97588da4bd49a8eedd6bc4082d44dcb23a7"
-  integrity sha1-zDXJdYjaS9Saju3WvECC1E3LI6c=
 
 is-number@^7.0.0:
   version "7.0.0"
@@ -1444,11 +1411,6 @@ log-symbols@4.1.0:
     chalk "^4.1.0"
     is-unicode-supported "^0.1.0"
 
-longest-streak@^2.0.0:
-  version "2.0.4"
-  resolved "https://registry.npmmirror.com/longest-streak/download/longest-streak-2.0.4.tgz?cache=0&sync_timestamp=1636446222992&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Flongest-streak%2Fdownload%2Flongest-streak-2.0.4.tgz#b8599957da5b5dab64dee3fe316fa774597d90e4"
-  integrity sha1-uFmZV9pbXatk3uP+MW+ndFl9kOQ=
-
 longest-streak@^3.0.0:
   version "3.0.1"
   resolved "https://registry.npmmirror.com/longest-streak/download/longest-streak-3.0.1.tgz?cache=0&sync_timestamp=1636446222992&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Flongest-streak%2Fdownload%2Flongest-streak-3.0.1.tgz#c97315b7afa0e7d9525db9a5a2953651432bdc5d"
@@ -1477,21 +1439,19 @@ markdown-it@^10.0.0:
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
 
-markdown-table@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmmirror.com/markdown-table/download/markdown-table-2.0.0.tgz#194a90ced26d31fe753d8b9434430214c011865b"
-  integrity sha1-GUqQztJtMf51PYuUNEMCFMARhls=
-  dependencies:
-    repeat-string "^1.0.0"
+markdown-table@^3.0.0:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/markdown-table/-/markdown-table-3.0.2.tgz#9b59eb2c1b22fe71954a65ff512887065a7bb57c"
+  integrity sha512-y8j3a5/DkJCmS5x4dMCQL+OR0+2EAq3DOtio1COSHsmW2BGXnNCK3v12hJt1LrUz5iZH5g0LmuYOjDdI+czghA==
 
-mdast-util-find-and-replace@^1.1.0:
-  version "1.1.1"
-  resolved "https://registry.nlark.com/mdast-util-find-and-replace/download/mdast-util-find-and-replace-1.1.1.tgz#b7db1e873f96f66588c321f1363069abf607d1b5"
-  integrity sha1-t9sehz+W9mWIwyHxNjBpq/YH0bU=
+mdast-util-find-and-replace@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/mdast-util-find-and-replace/-/mdast-util-find-and-replace-2.1.0.tgz#69728acd250749f8aac6e150e07d1fd15619e829"
+  integrity sha512-1w1jbqAd13oU78QPBf5223+xB+37ecNtQ1JElq2feWols5oEYAl+SgNDnOZipe7NfLemoEt362yUS15/wip4mw==
   dependencies:
-    escape-string-regexp "^4.0.0"
-    unist-util-is "^4.0.0"
-    unist-util-visit-parents "^3.0.0"
+    escape-string-regexp "^5.0.0"
+    unist-util-is "^5.0.0"
+    unist-util-visit-parents "^4.0.0"
 
 mdast-util-from-markdown@^1.0.0:
   version "1.2.0"
@@ -1511,47 +1471,60 @@ mdast-util-from-markdown@^1.0.0:
     unist-util-stringify-position "^3.0.0"
     uvu "^0.5.0"
 
-mdast-util-gfm-autolink-literal@^0.1.0:
-  version "0.1.3"
-  resolved "https://registry.npmmirror.com/mdast-util-gfm-autolink-literal/download/mdast-util-gfm-autolink-literal-0.1.3.tgz?cache=0&sync_timestamp=1632476966459&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fmdast-util-gfm-autolink-literal%2Fdownload%2Fmdast-util-gfm-autolink-literal-0.1.3.tgz#9c4ff399c5ddd2ece40bd3b13e5447d84e385fb7"
-  integrity sha1-nE/zmcXd0uzkC9OxPlRH2E44X7c=
+mdast-util-gfm-autolink-literal@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/mdast-util-gfm-autolink-literal/-/mdast-util-gfm-autolink-literal-1.0.2.tgz#4032dcbaddaef7d4f2f3768ed830475bb22d3970"
+  integrity sha512-FzopkOd4xTTBeGXhXSBU0OCDDh5lUj2rd+HQqG92Ld+jL4lpUfgX2AT2OHAVP9aEeDKp7G92fuooSZcYJA3cRg==
   dependencies:
-    ccount "^1.0.0"
-    mdast-util-find-and-replace "^1.1.0"
-    micromark "^2.11.3"
+    "@types/mdast" "^3.0.0"
+    ccount "^2.0.0"
+    mdast-util-find-and-replace "^2.0.0"
+    micromark-util-character "^1.0.0"
 
-mdast-util-gfm-strikethrough@^0.2.0:
-  version "0.2.3"
-  resolved "https://registry.nlark.com/mdast-util-gfm-strikethrough/download/mdast-util-gfm-strikethrough-0.2.3.tgz#45eea337b7fff0755a291844fbea79996c322890"
-  integrity sha1-Re6jN7f/8HVaKRhE++p5mWwyKJA=
+mdast-util-gfm-footnote@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/mdast-util-gfm-footnote/-/mdast-util-gfm-footnote-1.0.0.tgz#355c1e8dc9e17e871d1b3fa5da8824923fc756e0"
+  integrity sha512-qeg9YoS2YYP6OBmMyUFxKXb6BLwAsbGidIxgwDAXHIMYZQhIwe52L9BSJs+zP29Jp5nSERPkmG3tSwAN23/ZbQ==
   dependencies:
-    mdast-util-to-markdown "^0.6.0"
+    "@types/mdast" "^3.0.0"
+    mdast-util-to-markdown "^1.0.0"
+    micromark-util-normalize-identifier "^1.0.0"
+    unist-util-visit "^4.0.0"
 
-mdast-util-gfm-table@^0.1.0:
-  version "0.1.6"
-  resolved "https://registry.npmmirror.com/mdast-util-gfm-table/download/mdast-util-gfm-table-0.1.6.tgz#af05aeadc8e5ee004eeddfb324b2ad8c029b6ecf"
-  integrity sha1-rwWurcjl7gBO7d+zJLKtjAKbbs8=
+mdast-util-gfm-strikethrough@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/mdast-util-gfm-strikethrough/-/mdast-util-gfm-strikethrough-1.0.0.tgz#6cc72ef5d9539f4cee76af3f15dd0daa9e3af40f"
+  integrity sha512-gM9ipBUdRxYa6Yq1Hd8Otg6jEn/dRxFZ1F9ZX4QHosHOexLGqNZO2dh0A+YFbUEd10RcKjnjb4jOfJJzoXXUew==
   dependencies:
-    markdown-table "^2.0.0"
-    mdast-util-to-markdown "~0.6.0"
+    "@types/mdast" "^3.0.3"
+    mdast-util-to-markdown "^1.0.0"
 
-mdast-util-gfm-task-list-item@^0.1.0:
-  version "0.1.6"
-  resolved "https://registry.nlark.com/mdast-util-gfm-task-list-item/download/mdast-util-gfm-task-list-item-0.1.6.tgz#70c885e6b9f543ddd7e6b41f9703ee55b084af10"
-  integrity sha1-cMiF5rn1Q93X5rQflwPuVbCErxA=
+mdast-util-gfm-table@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/mdast-util-gfm-table/-/mdast-util-gfm-table-1.0.2.tgz#c727c20d5ac0d7d4b238d50b48e2924f0b77cc76"
+  integrity sha512-pPekvCTChFBF8uCq8bVyQwar8NBU/TaXIy44jj/UzmjMgPBHIa1B1ge8a0JVgzhqgXQAMvGT+PgiKlicdLGfDQ==
   dependencies:
-    mdast-util-to-markdown "~0.6.0"
+    markdown-table "^3.0.0"
+    mdast-util-to-markdown "^1.0.0"
 
-mdast-util-gfm@^0.1.0:
-  version "0.1.2"
-  resolved "https://registry.npmmirror.com/mdast-util-gfm/download/mdast-util-gfm-0.1.2.tgz?cache=0&sync_timestamp=1633254327039&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fmdast-util-gfm%2Fdownload%2Fmdast-util-gfm-0.1.2.tgz#8ecddafe57d266540f6881f5c57ff19725bd351c"
-  integrity sha1-js3a/lfSZlQPaIH1xX/xlyW9NRw=
+mdast-util-gfm-task-list-item@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/mdast-util-gfm-task-list-item/-/mdast-util-gfm-task-list-item-1.0.0.tgz#a0aa2a00c893f9f006d13ba096cbc64608559c7f"
+  integrity sha512-dwkzOTjQe8JCCHVE3Cb0pLHTYLudf7t9WCAnb20jI8/dW+VHjgWhjtIUVA3oigNkssgjEwX+i+3XesUdCnXGyA==
   dependencies:
-    mdast-util-gfm-autolink-literal "^0.1.0"
-    mdast-util-gfm-strikethrough "^0.2.0"
-    mdast-util-gfm-table "^0.1.0"
-    mdast-util-gfm-task-list-item "^0.1.0"
-    mdast-util-to-markdown "^0.6.1"
+    "@types/mdast" "^3.0.3"
+    mdast-util-to-markdown "^1.0.0"
+
+mdast-util-gfm@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/mdast-util-gfm/-/mdast-util-gfm-2.0.0.tgz#2545856bc18a66d5cc63fbef0b097a020a8e9e3d"
+  integrity sha512-wMwejlTN3EQADPFuvxe8lmGsay3+f6gSJKdAHR6KBJzpcxvsjJSILB9K6u6G7eQLC7iOTyVIHYGui9uBc9r1Tg==
+  dependencies:
+    mdast-util-gfm-autolink-literal "^1.0.0"
+    mdast-util-gfm-footnote "^1.0.0"
+    mdast-util-gfm-strikethrough "^1.0.0"
+    mdast-util-gfm-table "^1.0.0"
+    mdast-util-gfm-task-list-item "^1.0.0"
 
 mdast-util-math@^2.0.0:
   version "2.0.0"
@@ -1561,18 +1534,6 @@ mdast-util-math@^2.0.0:
     "@types/mdast" "^3.0.0"
     longest-streak "^3.0.0"
     mdast-util-to-markdown "^1.0.0"
-
-mdast-util-to-markdown@^0.6.0, mdast-util-to-markdown@^0.6.1, mdast-util-to-markdown@~0.6.0:
-  version "0.6.5"
-  resolved "https://registry.npmmirror.com/mdast-util-to-markdown/download/mdast-util-to-markdown-0.6.5.tgz#b33f67ca820d69e6cc527a93d4039249b504bebe"
-  integrity sha1-sz9nyoINaebMUnqT1AOSSbUEvr4=
-  dependencies:
-    "@types/unist" "^2.0.0"
-    longest-streak "^2.0.0"
-    mdast-util-to-string "^2.0.0"
-    parse-entities "^2.0.0"
-    repeat-string "^1.0.0"
-    zwitch "^1.0.0"
 
 mdast-util-to-markdown@^1.0.0:
   version "1.2.6"
@@ -1587,11 +1548,6 @@ mdast-util-to-markdown@^1.0.0:
     unist-util-visit "^4.0.0"
     zwitch "^2.0.0"
 
-mdast-util-to-string@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.nlark.com/mdast-util-to-string/download/mdast-util-to-string-2.0.0.tgz?cache=0&sync_timestamp=1619426190900&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fmdast-util-to-string%2Fdownload%2Fmdast-util-to-string-2.0.0.tgz#b8cfe6a713e1091cb5b728fc48885a4767f8b97b"
-  integrity sha1-uM/mpxPhCRy1tyj8SIhaR2f4uXs=
-
 mdast-util-to-string@^3.0.0, mdast-util-to-string@^3.1.0:
   version "3.1.0"
   resolved "https://registry.nlark.com/mdast-util-to-string/download/mdast-util-to-string-3.1.0.tgz?cache=0&sync_timestamp=1619426190900&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fmdast-util-to-string%2Fdownload%2Fmdast-util-to-string-3.1.0.tgz#56c506d065fbf769515235e577b5a261552d56e9"
@@ -1602,7 +1558,7 @@ mdurl@^1.0.1:
   resolved "https://registry.nlark.com/mdurl/download/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
   integrity sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=
 
-micromark-core-commonmark@^1.0.1:
+micromark-core-commonmark@^1.0.0, micromark-core-commonmark@^1.0.1:
   version "1.0.6"
   resolved "https://registry.npmmirror.com/micromark-core-commonmark/download/micromark-core-commonmark-1.0.6.tgz#edff4c72e5993d93724a3c206970f5a15b0585ad"
   integrity sha512-K+PkJTxqjFfSNkfAhp4GB+cZPfQd6dxtTXnf+RjZOV7T4EEXnvgzOcnp+eSTmpGk9d1S9sL6/lqrgSNn/s0HZA==
@@ -1624,50 +1580,84 @@ micromark-core-commonmark@^1.0.1:
     micromark-util-types "^1.0.1"
     uvu "^0.5.0"
 
-micromark-extension-gfm-autolink-literal@~0.5.0:
-  version "0.5.7"
-  resolved "https://registry.npmmirror.com/micromark-extension-gfm-autolink-literal/download/micromark-extension-gfm-autolink-literal-0.5.7.tgz#53866c1f0c7ef940ae7ca1f72c6faef8fed9f204"
-  integrity sha1-U4ZsHwx++UCufKH3LG+u+P7Z8gQ=
+micromark-extension-gfm-autolink-literal@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/micromark-extension-gfm-autolink-literal/-/micromark-extension-gfm-autolink-literal-1.0.3.tgz#dc589f9c37eaff31a175bab49f12290edcf96058"
+  integrity sha512-i3dmvU0htawfWED8aHMMAzAVp/F0Z+0bPh3YrbTPPL1v4YAlCZpy5rBO5p0LPYiZo0zFVkoYh7vDU7yQSiCMjg==
   dependencies:
-    micromark "~2.11.3"
+    micromark-util-character "^1.0.0"
+    micromark-util-sanitize-uri "^1.0.0"
+    micromark-util-symbol "^1.0.0"
+    micromark-util-types "^1.0.0"
+    uvu "^0.5.0"
 
-micromark-extension-gfm-strikethrough@~0.6.5:
-  version "0.6.5"
-  resolved "https://registry.npmmirror.com/micromark-extension-gfm-strikethrough/download/micromark-extension-gfm-strikethrough-0.6.5.tgz#96cb83356ff87bf31670eefb7ad7bba73e6514d1"
-  integrity sha1-lsuDNW/4e/MWcO77ete7pz5lFNE=
+micromark-extension-gfm-footnote@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/micromark-extension-gfm-footnote/-/micromark-extension-gfm-footnote-1.0.3.tgz#5280b29667e4ecb8687f369829aa3322caca7d11"
+  integrity sha512-bn62pC5y39rIo2g1RqZk1NhF7T7cJLuJlbevunQz41U0iPVCdVOFASe5/L1kke+DFKSgfCRhv24+o42cZ1+ADw==
   dependencies:
-    micromark "~2.11.0"
+    micromark-core-commonmark "^1.0.0"
+    micromark-factory-space "^1.0.0"
+    micromark-util-character "^1.0.0"
+    micromark-util-normalize-identifier "^1.0.0"
+    micromark-util-sanitize-uri "^1.0.0"
+    micromark-util-symbol "^1.0.0"
+    uvu "^0.5.0"
 
-micromark-extension-gfm-table@~0.4.0:
-  version "0.4.3"
-  resolved "https://registry.npmmirror.com/micromark-extension-gfm-table/download/micromark-extension-gfm-table-0.4.3.tgz#4d49f1ce0ca84996c853880b9446698947f1802b"
-  integrity sha1-TUnxzgyoSZbIU4gLlEZpiUfxgCs=
+micromark-extension-gfm-strikethrough@^1.0.0:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/micromark-extension-gfm-strikethrough/-/micromark-extension-gfm-strikethrough-1.0.4.tgz#162232c284ffbedd8c74e59c1525bda217295e18"
+  integrity sha512-/vjHU/lalmjZCT5xt7CcHVJGq8sYRm80z24qAKXzaHzem/xsDYb2yLL+NNVbYvmpLx3O7SYPuGL5pzusL9CLIQ==
   dependencies:
-    micromark "~2.11.0"
+    micromark-util-chunked "^1.0.0"
+    micromark-util-classify-character "^1.0.0"
+    micromark-util-resolve-all "^1.0.0"
+    micromark-util-symbol "^1.0.0"
+    micromark-util-types "^1.0.0"
+    uvu "^0.5.0"
 
-micromark-extension-gfm-tagfilter@~0.3.0:
-  version "0.3.0"
-  resolved "https://registry.npmmirror.com/micromark-extension-gfm-tagfilter/download/micromark-extension-gfm-tagfilter-0.3.0.tgz#d9f26a65adee984c9ccdd7e182220493562841ad"
-  integrity sha1-2fJqZa3umEyczdfhgiIEk1YoQa0=
-
-micromark-extension-gfm-task-list-item@~0.3.0:
-  version "0.3.3"
-  resolved "https://registry.npmmirror.com/micromark-extension-gfm-task-list-item/download/micromark-extension-gfm-task-list-item-0.3.3.tgz#d90c755f2533ed55a718129cee11257f136283b8"
-  integrity sha1-2Qx1XyUz7VWnGBKc7hElfxNig7g=
+micromark-extension-gfm-table@^1.0.0:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/micromark-extension-gfm-table/-/micromark-extension-gfm-table-1.0.5.tgz#7b708b728f8dc4d95d486b9e7a2262f9cddbcbb4"
+  integrity sha512-xAZ8J1X9W9K3JTJTUL7G6wSKhp2ZYHrFk5qJgY/4B33scJzE2kpfRL6oiw/veJTbt7jiM/1rngLlOKPWr1G+vg==
   dependencies:
-    micromark "~2.11.0"
+    micromark-factory-space "^1.0.0"
+    micromark-util-character "^1.0.0"
+    micromark-util-symbol "^1.0.0"
+    micromark-util-types "^1.0.0"
+    uvu "^0.5.0"
 
-micromark-extension-gfm@^0.3.0:
-  version "0.3.3"
-  resolved "https://registry.npmmirror.com/micromark-extension-gfm/download/micromark-extension-gfm-0.3.3.tgz#36d1a4c089ca8bdfd978c9bd2bf1a0cb24e2acfe"
-  integrity sha1-NtGkwInKi9/ZeMm9K/GgyyTirP4=
+micromark-extension-gfm-tagfilter@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/micromark-extension-gfm-tagfilter/-/micromark-extension-gfm-tagfilter-1.0.1.tgz#fb2e303f7daf616db428bb6a26e18fda14a90a4d"
+  integrity sha512-Ty6psLAcAjboRa/UKUbbUcwjVAv5plxmpUTy2XC/3nJFL37eHej8jrHrRzkqcpipJliuBH30DTs7+3wqNcQUVA==
   dependencies:
-    micromark "~2.11.0"
-    micromark-extension-gfm-autolink-literal "~0.5.0"
-    micromark-extension-gfm-strikethrough "~0.6.5"
-    micromark-extension-gfm-table "~0.4.0"
-    micromark-extension-gfm-tagfilter "~0.3.0"
-    micromark-extension-gfm-task-list-item "~0.3.0"
+    micromark-util-types "^1.0.0"
+
+micromark-extension-gfm-task-list-item@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/micromark-extension-gfm-task-list-item/-/micromark-extension-gfm-task-list-item-1.0.3.tgz#7683641df5d4a09795f353574d7f7f66e47b7fc4"
+  integrity sha512-PpysK2S1Q/5VXi72IIapbi/jliaiOFzv7THH4amwXeYXLq3l1uo8/2Be0Ac1rEwK20MQEsGH2ltAZLNY2KI/0Q==
+  dependencies:
+    micromark-factory-space "^1.0.0"
+    micromark-util-character "^1.0.0"
+    micromark-util-symbol "^1.0.0"
+    micromark-util-types "^1.0.0"
+    uvu "^0.5.0"
+
+micromark-extension-gfm@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/micromark-extension-gfm/-/micromark-extension-gfm-2.0.1.tgz#40f3209216127a96297c54c67f5edc7ef2d1a2a2"
+  integrity sha512-p2sGjajLa0iYiGQdT0oelahRYtMWvLjy8J9LOCxzIQsllMCGLbsLW+Nc+N4vi02jcRJvedVJ68cjelKIO6bpDA==
+  dependencies:
+    micromark-extension-gfm-autolink-literal "^1.0.0"
+    micromark-extension-gfm-footnote "^1.0.0"
+    micromark-extension-gfm-strikethrough "^1.0.0"
+    micromark-extension-gfm-table "^1.0.0"
+    micromark-extension-gfm-tagfilter "^1.0.0"
+    micromark-extension-gfm-task-list-item "^1.0.0"
+    micromark-util-combine-extensions "^1.0.0"
+    micromark-util-types "^1.0.0"
 
 micromark-extension-math@^2.0.0:
   version "2.0.2"
@@ -1831,14 +1821,6 @@ micromark-util-types@^1.0.0, micromark-util-types@^1.0.1:
   version "1.0.2"
   resolved "https://registry.npmmirror.com/micromark-util-types/download/micromark-util-types-1.0.2.tgz?cache=0&sync_timestamp=1637340716922&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fmicromark-util-types%2Fdownload%2Fmicromark-util-types-1.0.2.tgz#f4220fdb319205812f99c40f8c87a9be83eded20"
   integrity sha512-DCfg/T8fcrhrRKTPjRrw/5LLvdGV7BHySf/1LOZx7TzWZdYRjogNtyNq885z3nNallwr3QUKARjqvHqX1/7t+w==
-
-micromark@^2.11.3, micromark@~2.11.0, micromark@~2.11.3:
-  version "2.11.4"
-  resolved "https://registry.npmmirror.com/micromark/download/micromark-2.11.4.tgz#d13436138eea826383e822449c9a5c50ee44665a"
-  integrity sha1-0TQ2E47qgmOD6CJEnJpcUO5EZlo=
-  dependencies:
-    debug "^4.0.0"
-    parse-entities "^2.0.0"
 
 micromark@^3.0.0:
   version "3.0.10"
@@ -2081,18 +2063,6 @@ parent-module@^1.0.0:
   dependencies:
     callsites "^3.0.0"
 
-parse-entities@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmmirror.com/parse-entities/download/parse-entities-2.0.0.tgz#53c6eb5b9314a1f4ec99fa0fdf7ce01ecda0cbe8"
-  integrity sha1-U8brW5MUofTsmfoP33zgHs2gy+g=
-  dependencies:
-    character-entities "^1.0.0"
-    character-entities-legacy "^1.0.0"
-    character-reference-invalid "^1.0.0"
-    is-alphanumerical "^1.0.0"
-    is-decimal "^1.0.0"
-    is-hexadecimal "^1.0.0"
-
 parse-latin@^5.0.0:
   version "5.0.0"
   resolved "https://registry.nlark.com/parse-latin/download/parse-latin-5.0.0.tgz#a1963445f59fb9cfa3cb1ddf5f839bfeb0ee4b42"
@@ -2258,13 +2228,15 @@ regexpp@^3.1.0:
   resolved "https://registry.nlark.com/regexpp/download/regexpp-3.2.0.tgz#0425a2768d8f23bad70ca4b90461fa2f1213e1b2"
   integrity sha1-BCWido2PI7rXDKS5BGH6LxIT4bI=
 
-remark-gfm@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmmirror.com/remark-gfm/download/remark-gfm-1.0.0.tgz#9213643001be3f277da6256464d56fd28c3b3c0d"
-  integrity sha1-khNkMAG+Pyd9piVkZNVv0ow7PA0=
+remark-gfm@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/remark-gfm/-/remark-gfm-3.0.1.tgz#0b180f095e3036545e9dddac0e8df3fa5cfee54f"
+  integrity sha512-lEFDoi2PICJyNrACFOfDD3JlLkuSbOa5Wd8EPt06HUdptv8Gn0bxYTdbU/XXQ3swAPkEaGxxPN9cbnMHvVu1Ig==
   dependencies:
-    mdast-util-gfm "^0.1.0"
-    micromark-extension-gfm "^0.3.0"
+    "@types/mdast" "^3.0.0"
+    mdast-util-gfm "^2.0.0"
+    micromark-extension-gfm "^2.0.0"
+    unified "^10.0.0"
 
 remark-math@^5.1.1:
   version "5.1.1"
@@ -2303,11 +2275,6 @@ remark@^14.0.2:
     remark-parse "^10.0.0"
     remark-stringify "^10.0.0"
     unified "^10.0.0"
-
-repeat-string@^1.0.0:
-  version "1.6.1"
-  resolved "https://registry.npm.taobao.org/repeat-string/download/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
-  integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
 
 require-directory@^2.1.1:
   version "2.1.1"
@@ -2407,12 +2374,12 @@ shirkhan-alphabet-table@^0.0.9:
   integrity sha512-6nWhc7z4NUWL8M9iueAbVGQ1bVx8uW1CqCu/YKKOcVo6H0xRLs5h4M803aeo5f7szC1tHxNEcHHL6ZvDl89zXg==
 
 shirkhan-remark@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmmirror.com/shirkhan-remark/download/shirkhan-remark-1.0.0.tgz#5ebd4c7490a6b53f4f6e18fad37ba0abfcdf4302"
-  integrity sha512-AQxusgYtus4N16YT4wUp9FvnlLKFu6iQqEGRHK1jrFGK2bd3lRnU8PMgmbpqlS0qoKfMnmQdjJVQfnHTEn8ChA==
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/shirkhan-remark/-/shirkhan-remark-1.0.1.tgz#3f85ad882c0694f0117127048c18616db192115c"
+  integrity sha512-H12jSb4HDeNGT0RPc8AMm1hEVVSU7tzeug6xbpSVQg4CwQlRU8NrQjNjeOBzNqj1rV7WPko03YzQU2uIWUEKFg==
   dependencies:
     remark "^14.0.2"
-    remark-gfm "1.0.0"
+    remark-gfm "^3.0.1"
     remark-math "^5.1.1"
     remark-parse "^10.0.1"
     remark-stringify "^10.0.2"
@@ -2420,14 +2387,15 @@ shirkhan-remark@^1.0.0:
     unified "^10.1.1"
     unist-util-visit "^4.1.0"
 
-shirkhan-retext@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.npmmirror.com/shirkhan-retext/download/shirkhan-retext-1.0.2.tgz#bc6b173e125faf0416bf039357885bec5ea9dabf"
-  integrity sha512-f5S6+/CE7s6cpS6mjcFMl+f5HL3S9auTdYoAxb55ewqY3szsG9yI00xcy8pWn6MWJOpR2ndeTDpM6s2eWSvqRg==
+shirkhan-retext@^1.0.0:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/shirkhan-retext/-/shirkhan-retext-1.0.4.tgz#8c886fe150b6406f2c16d8178f3cb583ed7c1bc1"
+  integrity sha512-oOd70OzTF1a8+y3RI+d8Jbhm17ZUlpXZQ6hobe0FFcm7wWpzs5C4TehbkwGnr12OzORMqNc975WZKPftx1dpgQ==
   dependencies:
     nlcst-to-string "^3.1.0"
     parse-latin "^5.0.0"
     shirkhan-alphabet-table "^0.0.9"
+    typescript "4.4.4"
     unified "^10.1.1"
     unist-util-modify-children "^3.0.0"
     unist-util-visit "^4.1.0"
@@ -2699,11 +2667,6 @@ unified@^10.0.0, unified@^10.1.1:
     trough "^2.0.0"
     vfile "^5.0.0"
 
-unist-util-is@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.nlark.com/unist-util-is/download/unist-util-is-4.1.0.tgz?cache=0&sync_timestamp=1626875119743&other_urls=https%3A%2F%2Fregistry.nlark.com%2Funist-util-is%2Fdownload%2Funist-util-is-4.1.0.tgz#976e5f462a7a5de73d94b706bac1b90671b57797"
-  integrity sha1-l25fRip6Xec9lLcGusG5BnG1d5c=
-
 unist-util-is@^5.0.0:
   version "5.1.1"
   resolved "https://registry.nlark.com/unist-util-is/download/unist-util-is-5.1.1.tgz?cache=0&sync_timestamp=1626875119743&other_urls=https%3A%2F%2Fregistry.nlark.com%2Funist-util-is%2Fdownload%2Funist-util-is-5.1.1.tgz#e8aece0b102fa9bc097b0fef8f870c496d4a6236"
@@ -2736,13 +2699,13 @@ unist-util-visit-children@^1.0.0:
   resolved "https://registry.nlark.com/unist-util-visit-children/download/unist-util-visit-children-1.1.4.tgz#e8a087e58a33a2815f76ea1901c15dec2cb4b432"
   integrity sha1-6KCH5YozooFfduoZAcFd7Cy0tDI=
 
-unist-util-visit-parents@^3.0.0:
-  version "3.1.1"
-  resolved "https://registry.nlark.com/unist-util-visit-parents/download/unist-util-visit-parents-3.1.1.tgz#65a6ce698f78a6b0f56aa0e88f13801886cdaef6"
-  integrity sha1-ZabOaY94prD1aqDojxOAGIbNrvY=
+unist-util-visit-parents@^4.0.0:
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/unist-util-visit-parents/-/unist-util-visit-parents-4.1.1.tgz#e83559a4ad7e6048a46b1bdb22614f2f3f4724f2"
+  integrity sha512-1xAFJXAKpnnJl8G7K5KgU7FY55y3GcLIXqkzUj5QF/QVP7biUm0K0O2oqVkYsdjzJKifYeWn9+o6piAK2hGSHw==
   dependencies:
     "@types/unist" "^2.0.0"
-    unist-util-is "^4.0.0"
+    unist-util-is "^5.0.0"
 
 unist-util-visit-parents@^5.0.0:
   version "5.1.0"
@@ -2970,11 +2933,6 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.nlark.com/yocto-queue/download/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha1-ApTrPe4FAo0x7hpfosVWpqrxChs=
-
-zwitch@^1.0.0:
-  version "1.0.5"
-  resolved "https://registry.npm.taobao.org/zwitch/download/zwitch-1.0.5.tgz#d11d7381ffed16b742f6af7b3f223d5cd9fe9920"
-  integrity sha1-0R1zgf/tFrdC9q97PyI9XNn+mSA=
 
 zwitch@^2.0.0:
   version "2.0.2"
