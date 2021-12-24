@@ -3,7 +3,7 @@
   "displayName": "shirkhan-markdown",
   "description": "shirkhan markdown converter",
   "publisher": "iShirkhan",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.62.0"
@@ -73,8 +73,8 @@
   "dependencies": {
     "esbuild": "^0.x",
     "markdown-it-emoji": "^2.0.0",
-    "shirkhan-remark": "^1.0.0",
-    "shirkhan-retext": "^1.0.0",
+    "shirkhan-remark": "^1.x",
+    "shirkhan-retext": "^1.x",
     "unified": "^10.0.0"
   },
   "license": "SEE LICENSE IN LICENSE.txt",

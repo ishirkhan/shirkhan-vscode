@@ -2,23 +2,25 @@
 
 ## 插件用途
 
+本插件是 [shirkhan-alphabet](https://gitee.com/silvaq/shirkhan-alphabet) 规范的一个实现，用来使用 [shirkhan-alphabet](https://gitee.com/silvaq/shirkhan-alphabet) 编写 markdown
+
 本插件目前提供了以下功能：
 
-1. 使用 shirkhan-alphabet-table 字母表指定的字母来编写的 markdown 内容预览区实时转换 ug 查看
+1. [shirkhan-alphabet](https://gitee.com/silvaq/shirkhan-alphabet) 规范下编写的 markdown 支持实时预览母语转换后的效果
 2. ug - khan 写的 markdown 互换
 
 ## 使用方式
 
 - 安装插件后打开任何 markdown 文件并选择 preview 就能看到效果。
-- 实时预览 markdown 转换功能临时激活或关闭 命令行区域输入 shirkhan-markdown toggle convert on/off，切换后文档稍微发生改变就能看到效果
-- 打开 khan-markdown,在 vscode 命令行区域输入 shirkhan-markdown khan-markdown ->> ug-markdown 命令来转换文档
-- 打开 ugmarkdown,在 vscode 命令行区域输入 shirkhan-markdown ug-markdown ->> khan-markdown 命令来转换文档
+- 实时预览 markdown 转换功能临时激活或关闭 命令行区域输入 `shirkhan-markdown` toggle convert on/off，切换后文档稍微发生改变就能看到效果
+- 打开 khan-markdown,在 vscode 命令行区域输入 `shirkhan-markdown` khan-markdown ->> ug-markdown 命令来转换文档
+- 打开 ugmarkdown,在 vscode 命令行区域输入 `shirkhan-markdown` ug-markdown ->> khan-markdown 命令来转换文档
 
 ## shirkhan alphabet
 
 > 此字母表由 shirkhan 本人构思创造，仅代表 shirkhan 的喜好，不喜勿愤！
 
-![shirkhan-alphabet-table](./images/shirkhan-alphabet-table.jpg)
+![shirkhan-alphabet-table](https://shirkhan-alphabet.oss-cn-beijing.aliyuncs.com/shirkhan-alphabet/shirkhan-alphabet-table.jpg)
 
 ### 注意
 
@@ -28,13 +30,15 @@
 - 内容转换过程中出现拉丁字母，但是不是 shirkhan 内容时可以使用 “/” 符号包裹内容标识不是 shirkhan 内容。 比如: shirkhan /very awesome/ deydu 中的“very awesome” 被识别为非 shirkhan 内容并将不进行转换
 - shirkhan 字母表中 h 字符不能单独出现，只能用来组字符。x 不在需要使用，目前用来转换母语的内容中补充 Hemze 的位置
 
+更多信息请看[shirkhan-alphabet](https://gitee.com/silvaq/shirkhan-alphabet)！
+
 ## FAQ
 
 1. 如何停止或者激活此插件？
 
-   - 默认情况下编写 markdown 点击预览时插件会实时转换显示，可以在配置里搜索 shirkhan-markdown 出现的配置项来控制这一行为。
-   - 通过命令行区域输入 shirkhan 选择出来的 shirkhan-markdown toggle convert on/off 命令来切换状态
-   - 部分情况下去插件管理中心查找 shirkhan-markdown 插件，并且插件页面中选择 disable 来关闭插件
+   - 默认情况下编写 markdown 点击预览时插件会实时转换显示，可以在配置里搜索 `shirkhan-markdown` 出现的配置项来控制这一行为。
+   - 通过命令行区域输入 shirkhan 选择出来的 `shirkhan-markdown` toggle convert on/off 命令来切换状态
+   - 部分情况下去插件管理中心查找 `shirkhan-markdown` 插件，并且插件页面中选择 disable 来关闭插件
 
 2. 如何覆盖插件的样式？
 

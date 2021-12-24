@@ -2373,9 +2373,9 @@ shirkhan-alphabet-table@^0.0.9:
   resolved "https://registry.npmmirror.com/shirkhan-alphabet-table/download/shirkhan-alphabet-table-0.0.9.tgz#7287edbc71daa4f39c525a789d56a879f500ad94"
   integrity sha512-6nWhc7z4NUWL8M9iueAbVGQ1bVx8uW1CqCu/YKKOcVo6H0xRLs5h4M803aeo5f7szC1tHxNEcHHL6ZvDl89zXg==
 
-shirkhan-remark@^1.0.0:
+shirkhan-remark@^1.x:
   version "1.0.1"
-  resolved "https://registry.npmjs.org/shirkhan-remark/-/shirkhan-remark-1.0.1.tgz#3f85ad882c0694f0117127048c18616db192115c"
+  resolved "https://registry.npmmirror.com/shirkhan-remark/download/shirkhan-remark-1.0.1.tgz#3f85ad882c0694f0117127048c18616db192115c"
   integrity sha512-H12jSb4HDeNGT0RPc8AMm1hEVVSU7tzeug6xbpSVQg4CwQlRU8NrQjNjeOBzNqj1rV7WPko03YzQU2uIWUEKFg==
   dependencies:
     remark "^14.0.2"
@@ -2387,10 +2387,10 @@ shirkhan-remark@^1.0.0:
     unified "^10.1.1"
     unist-util-visit "^4.1.0"
 
-shirkhan-retext@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/shirkhan-retext/-/shirkhan-retext-1.0.4.tgz#8c886fe150b6406f2c16d8178f3cb583ed7c1bc1"
-  integrity sha512-oOd70OzTF1a8+y3RI+d8Jbhm17ZUlpXZQ6hobe0FFcm7wWpzs5C4TehbkwGnr12OzORMqNc975WZKPftx1dpgQ==
+shirkhan-retext@^1.x:
+  version "1.0.5"
+  resolved "https://registry.npmmirror.com/shirkhan-retext/download/shirkhan-retext-1.0.5.tgz#5c82a791a4eaaa19e3320048080053ad8c1b1772"
+  integrity sha512-S/ZfqS6heHKMj/lJoQsxbVdHJADPbojLl1ky8tmHXn/V1u4K7npLEnt9LSCvW8YllS6SAbyZQCTxg/UBnqo8jw==
   dependencies:
     nlcst-to-string "^3.1.0"
     parse-latin "^5.0.0"
