@@ -34,7 +34,7 @@ let myKhanToUgConvertStatusBarItem = vscode.window.createStatusBarItem(
   2
 );
 myKhanToUgConvertStatusBarItem.command = "shirkhan-markdown.changeMarkdownToUg";
-myKhanToUgConvertStatusBarItem.text = "Shirkhan => ug";
+myKhanToUgConvertStatusBarItem.text = "Shirkhan => Ug";
 myKhanToUgConvertStatusBarItem.tooltip = "khan markdown convert to ug markdown";
 
 /**
@@ -49,7 +49,7 @@ let myUgToKhanConvertStatusBarItem = vscode.window.createStatusBarItem(
 );
 myUgToKhanConvertStatusBarItem.command =
   "shirkhan-markdown.changeMarkdownToKhan";
-myUgToKhanConvertStatusBarItem.text = "ug => Shirkhan";
+myUgToKhanConvertStatusBarItem.text = "Ug => Shirkhan";
 myUgToKhanConvertStatusBarItem.tooltip = "ug markdown convert to khan markdown";
 
 /**
