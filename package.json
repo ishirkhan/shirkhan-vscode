@@ -3,7 +3,7 @@
   "displayName": "shirkhan-markdown",
   "description": "shirkhan markdown converter",
   "publisher": "iShirkhan",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.62.0"
@@ -12,8 +12,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:shirkhan-markdown.changeConvertState",
-    "onCommand:shirkhan-markdown.changeMarkdownToUg"
+    "onLanguage:markdown"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -25,15 +24,18 @@
     "commands": [
       {
         "command": "shirkhan-markdown.changeConvertState",
-        "title": "shirkhan-markdown-preview convert to ug  (ON || OFF)"
+        "title": "shirkhan-markdown-preview convert to ug  (ON || OFF)",
+        "when": "editorLangId == markdown"
       },
       {
         "command": "shirkhan-markdown.changeMarkdownToUg",
-        "title": "shirkhan-markdown  khan-markdown ->> ug-markdown"
+        "title": "shirkhan-markdown  khan-markdown ->> ug-markdown",
+        "when": "editorLangId == markdown"
       },
       {
         "command": "shirkhan-markdown.changeMarkdownToKhan",
-        "title": "shirkhan-markdown ug-markdown ->> khan-markdown"
+        "title": "shirkhan-markdown ug-markdown ->> khan-markdown",
+        "when": "editorLangId == markdown"
       }
     ],
     "configuration": {

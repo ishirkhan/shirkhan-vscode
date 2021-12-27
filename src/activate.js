@@ -6,15 +6,63 @@ import { shirkhanAlphabetPlugin } from "./plugins/markdownItPlugin";
 import emoji from "markdown-it-emoji";
 import { markdownConverCommands } from "./commands";
 
+import vscode from "vscode";
+
+let changeStatusCommandId = "shirkhan-markdown.changeConvertState";
+/**
+ * 切换转换状态的 StatusBarItem
+ * @type {vscode.StatusBarItem}
+ */
+let myConverStateStatusBarItem = vscode.window.createStatusBarItem(
+  "convertStatus",
+  vscode.StatusBarAlignment.Right,
+  100,
+  1
+);
+myConverStateStatusBarItem.command = changeStatusCommandId;
+myConverStateStatusBarItem.text = "Shirkhan";
+myConverStateStatusBarItem.tooltip = "toggle khan convert to ug status";
+
+/**
+ * khan markdown转ug markdown 的 StatusBarItem
+ * @type {vscode.StatusBarItem}
+ */
+let myKhanToUgConvertStatusBarItem = vscode.window.createStatusBarItem(
+  "khantoug",
+  vscode.StatusBarAlignment.Right,
+  100,
+  2
+);
+myKhanToUgConvertStatusBarItem.command = "shirkhan-markdown.changeMarkdownToUg";
+myKhanToUgConvertStatusBarItem.text = "Shirkhan => ug";
+myKhanToUgConvertStatusBarItem.tooltip = "khan markdown convert to ug markdown";
+
+/**
+ * ug khan markdown 的 StatusBarItem
+ * @type {vscode.StatusBarItem}
+ */
+let myUgToKhanConvertStatusBarItem = vscode.window.createStatusBarItem(
+  "ugtokhan",
+  vscode.StatusBarAlignment.Right,
+  100,
+  3
+);
+myUgToKhanConvertStatusBarItem.command =
+  "shirkhan-markdown.changeMarkdownToKhan";
+myUgToKhanConvertStatusBarItem.text = "ug => Shirkhan";
+myUgToKhanConvertStatusBarItem.tooltip = "ug markdown convert to khan markdown";
+
 /**
  * @param {import("vscode").ExtensionContext} context
  * @returns
  */
 function updateConvertState(context) {
   // 绑定命令行指令
-  registerCommand(context, "shirkhan-markdown.changeConvertState", () => {
+  registerCommand(context, changeStatusCommandId, () => {
     const currentStage = getConvertState(context);
     const message = !currentStage ? "开启" : "关闭";
+    const barText = !currentStage ? "On" : "Off";
+    myConverStateStatusBarItem.text = "Shirkhan " + barText;
     showInfoMessage(`转换功能已${message}`);
     setConvertState(context, !currentStage);
   });
@@ -27,6 +75,7 @@ function updateConvertState(context) {
  * @returns
  */
 export function activate(context) {
+  console.log("shirkhan-markdown 插件唤醒 【activate】");
   // 初始化切换状态
   const convertState = getActiveConvert(context);
   setConvertState(context, convertState);
@@ -36,6 +85,13 @@ export function activate(context) {
 
   // 提供通过命令行生成母语markdown 的功能
   markdownConverCommands(context);
+
+  const message = convertState ? "On" : "Off";
+  myConverStateStatusBarItem.text = "Shirkhan " + message;
+
+  myConverStateStatusBarItem.show();
+  myKhanToUgConvertStatusBarItem.show();
+  myUgToKhanConvertStatusBarItem.show();
 
   return {
     extendMarkdownIt(md) {
@@ -49,4 +105,11 @@ export function activate(context) {
       return md;
     },
   };
+}
+
+export function deactivate() {
+  myConverStateStatusBarItem.hide();
+  myKhanToUgConvertStatusBarItem.hide();
+  myUgToKhanConvertStatusBarItem.hide();
+  console.log("shirkhan-markdown 插件已释放 【deactivate】");
 }
