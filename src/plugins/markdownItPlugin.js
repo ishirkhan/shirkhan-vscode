@@ -17,14 +17,10 @@ export function shirkhanAlphabetPlugin(md, isActiveConvert) {
       return result;
     }
 
-    // 对标点符号进行转换
-    result = result.replace(/\,/gim, "،");
-    result = result.replace(/\;/gim, "؛");
-
-    // 对 escapeed html 标签做转移
-    result = result.replace(/(\&.*)\؛/gim, "/$1;/");
-
-    return khanTextToUgText(result);
+    // 处理escape后进行转码
+    result = md.utils.unescapeAll(result);
+    result = khanTextToUgText(result);
+    return md.utils.escapeHtml(result);
   };
 
   // 对整个容器加一个class，使得样式只针对我们母语
