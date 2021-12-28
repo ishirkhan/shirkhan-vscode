@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v0.1.0...v1.0.0) (2021-12-28)
+
+
+### Features
+
+* gitignore update ([11aecba](https://github.com/ishirkhan/shirkhan-vscode/commit/11aecbaecc61d3ce411e0cc8e30b56cb4101ab3a))
+* status bar 文案调整 ([1547298](https://github.com/ishirkhan/shirkhan-vscode/commit/15472983e0e9fd861087e10db7132e4fbf80306f))
+* 依赖更新,主要实现了ngh特殊规则,out目录从版本控制中移除 ([6834ec7](https://github.com/ishirkhan/shirkhan-vscode/commit/6834ec73d7c8944efb43a7f700b026cb5144c43a))
+* 图片删除,争取插件体积变小,新增发布脚本 ([5656a02](https://github.com/ishirkhan/shirkhan-vscode/commit/5656a025cdd76dedc25bbb7855c41920da2e62bc))
+
 ## 0.1.0 (2021-12-27)
 
 
