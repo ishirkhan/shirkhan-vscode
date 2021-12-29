@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.0.0...v1.0.1) (2021-12-29)
+
+
+### Features
+
+* update 发布更新脚本,更新依赖 ([db6b9b6](https://github.com/ishirkhan/shirkhan-vscode/commit/db6b9b699a41dbd6c419134c5387915d9be2ea4c))
+
+
+### Bug Fixes
+
+* 修复ug转shirkhan 的时候hemze前面出现符号时没有被去掉问题 ([6b8aa15](https://github.com/ishirkhan/shirkhan-vscode/commit/6b8aa15e2596fc0197d683efe6d0280993e75962))
+
 ## [1.0.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v0.1.0...v1.0.0) (2021-12-28)
 
 
