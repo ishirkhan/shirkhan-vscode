@@ -1,28 +1,20 @@
-import { unified } from "unified";
 import {
-  shirkhanParser,
-  shirkhanCompiler,
-  toKhanPlugin,
-  khanToUgPlugin,
-  ugToKhanPlugin,
+  shirkhanToUgProcessor,
+  ugToShirkhanProcessor,
+  shirkhanStringify,
 } from "shirkhan-retext";
 
 import { remarkKhan } from "shirkhan-remark";
 
 export function khanTextToUgText(text) {
-  return unified()
-    .use(shirkhanParser)
-    .use(toKhanPlugin)
-    .use(khanToUgPlugin)
-    .use(shirkhanCompiler)
+  return shirkhanToUgProcessor()
+    .use(shirkhanStringify)
     .processSync(text)
     .toString();
 }
 export function ugTextToKhanText(text) {
-  return unified()
-    .use(shirkhanParser)
-    .use(ugToKhanPlugin)
-    .use(shirkhanCompiler)
+  return ugToShirkhanProcessor()
+    .use(shirkhanStringify)
     .processSync(text)
     .toString();
 }
