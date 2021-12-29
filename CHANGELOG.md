@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.0.1...v1.0.2) (2021-12-29)
+
+
+### Bug Fixes
+
+* 修复h和非双字符的字符一起出现转移错误问题,修复ug转khan是ademh 被转成adem/h,少一个/问题 ([85a5a4b](https://github.com/ishirkhan/shirkhan-vscode/commit/85a5a4bbe89eba0e1dc5b936460e704ee8a5a91a))
+
 ### [1.0.1](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.0.0...v1.0.1) (2021-12-29)
 
 
