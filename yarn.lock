@@ -1501,7 +1501,7 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
 
 extend@^3.0.0:
   version "3.0.2"
-  resolved "https://registry.nlark.com/extend/download/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
+  resolved "https://registry.npm.taobao.org/extend/download/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
   integrity sha1-+LETa0Bx+9jrFAr/hYsQGewpFfo=
 
 external-editor@^3.0.3:
@@ -2030,7 +2030,7 @@ is-binary-path@~2.1.0:
 
 is-buffer@^2.0.0:
   version "2.0.5"
-  resolved "https://registry.nlark.com/is-buffer/download/is-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
+  resolved "https://registry.npm.taobao.org/is-buffer/download/is-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
   integrity sha1-68JS5ADSL/jXf6CYiIIaJKZYwZE=
 
 is-core-module@^2.2.0, is-core-module@^2.5.0:
@@ -2096,7 +2096,7 @@ is-plain-obj@^2.1.0:
 
 is-plain-obj@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.nlark.com/is-plain-obj/download/is-plain-obj-4.0.0.tgz#06c0999fd7574edf5a906ba5644ad0feb3a84d22"
+  resolved "https://registry.npm.taobao.org/is-plain-obj/download/is-plain-obj-4.0.0.tgz?cache=0&sync_timestamp=1618600535482&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-plain-obj%2Fdownload%2Fis-plain-obj-4.0.0.tgz#06c0999fd7574edf5a906ba5644ad0feb3a84d22"
   integrity sha1-BsCZn9dXTt9akGulZErQ/rOoTSI=
 
 is-text-path@^1.0.1:
@@ -2940,12 +2940,12 @@ neo-async@^2.6.0:
 
 nlcst-to-string@^2.0.0:
   version "2.0.4"
-  resolved "https://registry.npmmirror.com/nlcst-to-string/download/nlcst-to-string-2.0.4.tgz#9315dfab80882bbfd86ddf1b706f53622dc400cc"
+  resolved "https://registry.nlark.com/nlcst-to-string/download/nlcst-to-string-2.0.4.tgz#9315dfab80882bbfd86ddf1b706f53622dc400cc"
   integrity sha1-kxXfq4CIK7/Ybd8bcG9TYi3EAMw=
 
 nlcst-to-string@^3.1.0:
   version "3.1.0"
-  resolved "https://registry.npmmirror.com/nlcst-to-string/download/nlcst-to-string-3.1.0.tgz#359519a16f086114538fcbb454e86967c471f823"
+  resolved "https://registry.nlark.com/nlcst-to-string/download/nlcst-to-string-3.1.0.tgz#359519a16f086114538fcbb454e86967c471f823"
   integrity sha1-NZUZoW8IYRRTj8u0VOhpZ8Rx+CM=
   dependencies:
     "@types/nlcst" "^1.0.0"
@@ -3659,9 +3659,9 @@ shirkhan-retext@^1.0.6:
     unist-util-visit "^4.1.0"
 
 shirkhan-retext@^1.x:
-  version "1.2.0"
-  resolved "https://registry.npmmirror.com/shirkhan-retext/download/shirkhan-retext-1.2.0.tgz#7f937311512920b14eda135bd9feb4b3b834b62e"
-  integrity sha512-aqcgNByGXf+w26GQ964Au8KNz/IAoTGif5ATBwBZG1B5CKwugK5G8GKXjFbQqnP37MgwKNSFUmCmniaBP/E1Jw==
+  version "1.3.0"
+  resolved "https://registry.npmmirror.com/shirkhan-retext/download/shirkhan-retext-1.3.0.tgz#c9b74b910148cd0e9594d05410d616bc67975b61"
+  integrity sha512-tpHtDJh/TAV7ovOFA2sR7hxJe9IdkOERzxtbRJQqvRC34plZGm+j7iOi+CWL6bJbaxkSnUvrYp13bCUftBY2SQ==
   dependencies:
     nlcst-to-string "^3.1.0"
     parse-latin "^5.0.0"
@@ -4150,14 +4150,14 @@ unist-util-is@^5.0.0:
 
 unist-util-modify-children@^2.0.0:
   version "2.0.0"
-  resolved "https://registry.nlark.com/unist-util-modify-children/download/unist-util-modify-children-2.0.0.tgz#9c9c30d4e32502aabb3fde10d7872a17c86801e2"
+  resolved "https://registry.npm.taobao.org/unist-util-modify-children/download/unist-util-modify-children-2.0.0.tgz#9c9c30d4e32502aabb3fde10d7872a17c86801e2"
   integrity sha1-nJww1OMlAqq7P94Q14cqF8hoAeI=
   dependencies:
     array-iterate "^1.0.0"
 
 unist-util-modify-children@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.nlark.com/unist-util-modify-children/download/unist-util-modify-children-3.0.0.tgz#fe2cc1b26f841100b79bf1a9a04bcae6c78c4c42"
+  resolved "https://registry.npm.taobao.org/unist-util-modify-children/download/unist-util-modify-children-3.0.0.tgz#fe2cc1b26f841100b79bf1a9a04bcae6c78c4c42"
   integrity sha1-/izBsm+EEQC3m/GpoEvK5seMTEI=
   dependencies:
     "@types/unist" "^2.0.0"
