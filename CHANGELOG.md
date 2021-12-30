@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.1.0...v1.2.0) (2021-12-30)
+
+
+### Features
+
+* 新增鼠标右键菜单项功能,先有功能都可以通过二级菜单选择触发 ([ee61ff0](https://github.com/ishirkhan/shirkhan-vscode/commit/ee61ff02115141deb2c161500a5f65c30ccd9a42))
+
 ## [1.1.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.0.2...v1.1.0) (2021-12-30)
 
 
