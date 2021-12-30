@@ -1,4 +1,4 @@
-import { khanTextToUgText } from "../util/converter";
+import { khanTextToUgText } from "../util";
 /**
  *
  * @param {*} md

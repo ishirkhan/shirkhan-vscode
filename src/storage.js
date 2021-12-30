@@ -1,4 +1,4 @@
-import { setGlobalStorageKey, getGlobalStorageKey } from "./util/storage";
+import { setGlobalStorageKey, getGlobalStorageKey } from "./util";
 /**
  *
  * @param {import("vscode").ExtensionContext} context
