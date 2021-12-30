@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.0.2...v1.1.0) (2021-12-30)
+
+
+### Features
+
+* 目录结构,逻辑代码大调整,新增只在markdown文件的时候才运行命令的约束 ([0e8a890](https://github.com/ishirkhan/shirkhan-vscode/commit/0e8a890fc90926bf111400ee219caf44b244d32f))
+
 ### [1.0.2](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.0.1...v1.0.2) (2021-12-29)
 
 
