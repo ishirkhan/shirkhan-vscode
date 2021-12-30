@@ -21,7 +21,42 @@
       "css/light-theme.css",
       "css/katex-block.css"
     ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "resourceLangId == markdown",
+          "submenu": "shirkhan",
+          "group": "navigation"
+        }
+      ],
+      "shirkhan": [
+        {
+          "command": "shirkhan-markdown.changeConvertState",
+          "group": "navigation@1"
+        },
+        {
+          "command": "shirkhan-markdown.changeMarkdownToUg",
+          "group": "navigation@2"
+        },
+        {
+          "command": "shirkhan-markdown.changeMarkdownToKhan",
+          "group": "navigation@3"
+        }
+      ]
+    },
+    "submenus": [
+      {
+        "id": "shirkhan",
+        "label": "shirkhan"
+      }
+    ],
     "commands": [
+      {
+        "command": "shirkhan-markdown.shirkhanMenuCommand",
+        "title": "shirkhan",
+        "category": "Markdown",
+        "when": "editorLangId == markdown"
+      },
       {
         "command": "shirkhan-markdown.changeConvertState",
         "title": "shirkhan-markdown-preview convert to ug  (ON || OFF)",
