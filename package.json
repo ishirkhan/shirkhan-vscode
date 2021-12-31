@@ -65,7 +65,7 @@
       },
       {
         "command": "shirkhan-markdown.changeMarkdownToUg",
-        "title": "shirkhan markdown 转换成 uyghur markdown",
+        "title": "shirkhan markdown 转换成 uyghurche markdown",
         "when": "editorLangId == markdown",
         "category": "Markdown"
       },

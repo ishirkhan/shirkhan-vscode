@@ -6,3 +6,4 @@ export * from "./storage";
 export * from "./window";
 export * from "./workspace";
 export * from "./file";
+export * from "./log";

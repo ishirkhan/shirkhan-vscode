@@ -1,5 +1,4 @@
-import { activate } from "./activate";
-import { deactivate } from "./deactivate";
+import { activate, deactivate } from "./activate";
 
 module.exports = {
   activate,
