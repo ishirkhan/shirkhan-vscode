@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.2.0...v1.3.0) (2021-12-31)
+
+
+### Features
+
+* 命令文案优化,提示优化,执行命令时获取活跃窗口中的markdown窗口逻辑优化 ([c795ae7](https://github.com/ishirkhan/shirkhan-vscode/commit/c795ae781c5bb453b0e4af64a437d36e1d4e71d1))
+* 当没有markdown文件的窗口时statusBarItems自动隐藏,争取状态栏干净,打开markdown文件时自动显示 ([a7aba71](https://github.com/ishirkhan/shirkhan-vscode/commit/a7aba71c5114f778a0d872f1903d0b8089926a43))
+
 ## [1.2.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.1.0...v1.2.0) (2021-12-30)
 
 
