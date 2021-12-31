@@ -59,19 +59,19 @@
       },
       {
         "command": "shirkhan-markdown.changeConvertState",
-        "title": "shirkhan-markdown-preview convert to ug  (ON || OFF)",
+        "title": "shirkhan 预览区 uyghurche 显示 [On/Off]",
         "category": "Markdown",
         "when": "editorLangId == markdown"
       },
       {
         "command": "shirkhan-markdown.changeMarkdownToUg",
-        "title": "shirkhan-markdown  khan-markdown ->> ug-markdown",
+        "title": "shirkhan markdown 转换成 uyghur markdown",
         "when": "editorLangId == markdown",
         "category": "Markdown"
       },
       {
         "command": "shirkhan-markdown.changeMarkdownToKhan",
-        "title": "shirkhan-markdown ug-markdown ->> khan-markdown",
+        "title": "shirkhan uyghurche markdown 转换成 shirkhan markdown",
         "when": "editorLangId == markdown",
         "category": "Markdown"
       }
@@ -108,7 +108,7 @@
     "@types/glob": "^7.1.4",
     "@types/mocha": "^9.0.0",
     "@types/node": "14.x",
-    "@types/vscode": "^1.62.0",
+    "@types/vscode": "^1.63.1",
     "@vscode/test-electron": "^1.6.2",
     "eslint": "^7.32.0",
     "glob": "^7.1.7",

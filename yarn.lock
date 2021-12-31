@@ -228,10 +228,10 @@
   resolved "https://registry.npmmirror.com/@types/unist/download/@types/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
   integrity sha1-JQp7FsO5H2cqJFUuxkZ47rHToI0=
 
-"@types/vscode@^1.62.0":
-  version "1.62.0"
-  resolved "https://registry.npmmirror.com/@types/vscode/download/@types/vscode-1.62.0.tgz#b4d6d192d5aeb75e91d0adef689c3ecef9879da7"
-  integrity sha1-tNbRktWut16R0K3vaJw+zvmHnac=
+"@types/vscode@^1.63.1":
+  version "1.63.1"
+  resolved "https://registry.npmmirror.com/@types/vscode/download/@types/vscode-1.63.1.tgz#b40f9f18055e2c9498ae543d18c59fbd6ef2e8a3"
+  integrity sha512-Z+ZqjRcnGfHP86dvx/BtSwWyZPKQ/LBdmAVImY82TphyjOw2KgTKcp7Nx92oNwCTsHzlshwexAG/WiY2JuUm3g==
 
 "@ungap/promise-all-settled@1.1.2":
   version "1.1.2"

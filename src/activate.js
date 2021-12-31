@@ -17,20 +17,23 @@ import {
   hideStatusBarItems,
 } from "./statusBar";
 
+const logger = vscode.window.createOutputChannel("shirkhan");
+
 /**
  * @param {import("vscode").ExtensionContext} context
  * @returns
  */
 function handleStatusChangeCommand(context) {
-  if (!isMarkdownFileOpened()) {
-    vscode.window.showErrorMessage("打开markdown文件才能做此操作！");
-    return;
-  }
+  const a = vscode.window.activeTextEditor || "no activeTextEditor";
+  logger.appendLine(a);
+  logger.appendLine("-------------");
+  logger.append(vscode.window.visibleTextEditors);
+
   const currentStage = getConvertState(context);
   const message = !currentStage ? "开启" : "关闭";
   const barText = !currentStage ? "On" : "Off";
   convertStatusStatusBarItem.text = "Shirkhan " + barText;
-  vscode.window.setStatusBarMessage(`转换功能已${message}`);
+  vscode.window.showInformationMessage(`转换功能已${message}`);
   setConvertState(context, !currentStage);
 }
 
@@ -53,6 +56,8 @@ export function activate(context) {
   );
   registerChangeMarkdownToKhanCommand(context);
   registerChangeMarkdownToUgCommand(context);
+
+  // 监听窗口变更事件控制statusBar
 
   // 显示状态栏items
   const message = convertState ? "On" : "Off";

@@ -5,7 +5,7 @@ import {
   khanMarkdownToUgMarkdown,
   ugMarkdownToKhanMarkdown,
   isMarkdownFileOpened,
-  getCurrentActiveWindowDocument,
+  getActiveMarkdownTextEditor,
   getFileContent,
   openNewTempTab,
 } from "../util";
@@ -26,33 +26,33 @@ export const CHANGE_MARKDOWN_TO_KHAN__COMMAND_ID =
 export function registerChangeMarkdownToUgCommand(context) {
   return registerCommand(context, CHANGE_MARKDOWN_TO_UG_COMMAND_ID, () => {
     if (!isMarkdownFileOpened()) {
-      vscode.window.showErrorMessage(
-        "打开markdown文件并选中markdown窗口才能做此操作！"
-      );
+      vscode.window.showErrorMessage("没有可见的 markdown 文件窗口");
       return;
     }
-    const markdown = getFileContent(getCurrentActiveWindowDocument().fileName);
+    const markdown = getFileContent(
+      getActiveMarkdownTextEditor().document.fileName
+    );
     // 转换markdown成母语markdown
     const newMarkdown = khanMarkdownToUgMarkdown(markdown);
     // 新打开一个标签显示转换后的母语markdown
-    openNewTempTab(newMarkdown, "shirkhan-markdown-ug.md", "text");
+    openNewTempTab(newMarkdown, "shirkhan-markdown-ug.md", "markdown");
   });
 }
 
 export function registerChangeMarkdownToKhanCommand(context) {
   registerCommand(context, CHANGE_MARKDOWN_TO_KHAN__COMMAND_ID, () => {
     if (!isMarkdownFileOpened()) {
-      vscode.window.showErrorMessage(
-        "打开markdown文件并选中markdown窗口才能做此操作！"
-      );
+      vscode.window.showErrorMessage("没有可见的 markdown 文件窗口");
       return;
     }
 
-    const markdown = getFileContent(getCurrentActiveWindowDocument().fileName);
+    const markdown = getFileContent(
+      getActiveMarkdownTextEditor().document.fileName
+    );
     // 转换markdown成母语markdown
     const newMarkdown = ugMarkdownToKhanMarkdown(markdown);
     // 新打开一个标签显示转换后的母语markdown
-    openNewTempTab(newMarkdown, "shirkhan-markdown-khan.md", "text");
+    openNewTempTab(newMarkdown, "shirkhan-markdown-khan.md", "markdown");
   });
 }
 
