@@ -3,7 +3,7 @@ import emoji from "markdown-it-emoji";
 
 import { getActiveConvert } from "./config";
 import { getConvertState, setConvertState } from "./storage";
-import { shirkhanAlphabetPlugin } from "./plugins/markdownItPlugin";
+import { khan2ugPlugin, addContainerClass } from "./plugins/markdown-it";
 
 import {
   registerChangeMarkdownToKhanCommand,
@@ -53,6 +53,7 @@ function handleConvertStatusChangeCommand(context) {
   convertStatusStatusBarItem.text = "Shirkhan " + barText;
   vscode.window.showInformationMessage(`转换功能已${message}`);
 
+  markdownInstance.options["shirkhanConvertUg"] = !currentStage;
   setConvertState(context, !currentStage);
 }
 
@@ -65,17 +66,19 @@ function handleTextEditorChangeEvent() {
   }
 }
 
-function extendMarkdownIt(md, context) {
+function extendMarkdownIt(md) {
   // 支持表情
   md.use(emoji);
-  md.use(shirkhanAlphabetPlugin, () => {
-    // 通过回调实时获取转换状态
-    return getConvertState(context);
-  });
+
+  // md.options["khan2ug"] = true;
+  md.use(khan2ugPlugin);
+  md.options["shirkhanContainerClassName"] = "shirkhan-markdown-body";
+  md.use(addContainerClass);
   return md;
 }
 /** ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
+let markdownInstance = undefined;
 /**
  * @param {import("vscode").ExtensionContext} context
  * @returns
@@ -90,7 +93,9 @@ export function activate(context) {
 
   return {
     extendMarkdownIt: function (md) {
-      return extendMarkdownIt(md, context);
+      markdownInstance = md;
+      md.options["shirkhanConvertUg"] = getConvertState(context);
+      return extendMarkdownIt(md);
     },
   };
 }
