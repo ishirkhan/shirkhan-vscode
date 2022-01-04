@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.2](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.4.1...v1.4.2) (2022-01-04)
+
+
+### Bug Fixes
+
+* 修复黑色主题代码块direction错误问题.样式分成common,light,dark三块提升主题复用性和扩展性 ([57000c2](https://github.com/ishirkhan/shirkhan-vscode/commit/57000c2e9b7fd3076a0fb335124172aa8aa13c29))
+
 ### [1.4.1](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.4.0...v1.4.1) (2022-01-04)
 
 
