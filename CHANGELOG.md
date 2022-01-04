@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.3.1...v1.4.0) (2022-01-04)
+
+
+### Features
+
+* markdown-it 插件提取,markdown插件设计成可以通过全局配置控制使得和vscode解耦 ([e3cd3b0](https://github.com/ishirkhan/shirkhan-vscode/commit/e3cd3b09cc302b0beccc67747e3c40f001baf8e1))
+* 新增shirkhan-uz的支持,菜单,状态栏,命令行准支持触发 ([aeef837](https://github.com/ishirkhan/shirkhan-vscode/commit/aeef837c6dc5927afaf70820b5a025794fc7afb9))
+
 ### [1.3.1](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.3.0...v1.3.1) (2021-12-31)
 
 
