@@ -1,4 +1,4 @@
-import vscode from "vscode";
+import vscode, { ColorThemeKind } from "vscode";
 
 export function isMarkdownFileOpened() {
   const editor = getActiveMarkdownTextEditor();
@@ -30,4 +30,26 @@ export function getActiveMarkdownTextEditor() {
 }
 export function getCurrentActiveWindowDocument() {
   return vscode.window.activeTextEditor?.document;
+}
+
+export function getCurrentActiveColorTheme() {
+  const theme = vscode.window.activeColorTheme;
+
+  let newThemeKind = "light";
+  switch (theme.kind) {
+    case ColorThemeKind.Dark:
+      newThemeKind = "dark";
+      break;
+    case ColorThemeKind.Light:
+      newThemeKind = "light";
+      break;
+    case ColorThemeKind.HighContrast:
+      newThemeKind = "dark";
+      break;
+    default:
+      newThemeKind = "light";
+      break;
+  }
+
+  return newThemeKind;
 }

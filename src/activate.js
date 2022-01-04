@@ -17,7 +17,10 @@ import {
   showStatusBarItems,
   hideStatusBarItems,
 } from "./statusBar";
-import { getActiveMarkdownTextEditor } from "./util";
+import {
+  getActiveMarkdownTextEditor,
+  getCurrentActiveColorTheme,
+} from "./util";
 /**
  * 初始化配置信息
  * @param {import("vscode").ExtensionContext} context
@@ -68,13 +71,22 @@ function handleTextEditorChangeEvent() {
   }
 }
 
+function handleActiveColorThemeChangeEvent() {
+  updateShirkhanMarkdownTheme();
+}
+
+// 更新markdown 预览区的container class name
+function updateShirkhanMarkdownTheme() {
+  const curretnThemeKind = getCurrentActiveColorTheme();
+  markdownInstance.options[
+    "shirkhanContainerClassName"
+  ] = `shirkhan-markdown-body-${curretnThemeKind}-theme`;
+}
 function extendMarkdownIt(md) {
+  updateShirkhanMarkdownTheme();
   // 支持表情
   md.use(emoji);
-
-  // md.options["khan2ug"] = true;
   md.use(khan2ugPlugin);
-  md.options["shirkhanContainerClassName"] = "shirkhan-markdown-body";
   md.use(addContainerClass);
   return md;
 }
@@ -92,6 +104,7 @@ export function activate(context) {
   showStatusBarItems();
 
   vscode.window.onDidChangeActiveTextEditor(handleTextEditorChangeEvent);
+  vscode.window.onDidChangeActiveColorTheme(handleActiveColorThemeChangeEvent);
 
   return {
     extendMarkdownIt: function (md) {

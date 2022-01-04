@@ -19,6 +19,7 @@
     "markdown.markdownItPlugins": true,
     "markdown.previewStyles": [
       "css/light-theme.css",
+      "css/dark-theme.css",
       "css/katex-block.css"
     ],
     "menus": {
