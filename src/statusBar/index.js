@@ -1,6 +1,7 @@
 import {
   CHANGE_MARKDOWN_TO_KHAN__COMMAND_ID,
   CHANGE_MARKDOWN_TO_UG_COMMAND_ID,
+  CHANGE_MARKDOWN_TO_UZ_COMMAND_ID,
   CHANGE_CONVERT_STATUS_COMMAND_ID,
 } from "../commands";
 
@@ -26,15 +27,23 @@ export const khanToUgStatusBarItem = createStatusBarItem({
   tooltip: "khan markdown convert to ug markdown",
   commandId: CHANGE_MARKDOWN_TO_UG_COMMAND_ID,
 });
+export const khanToUzStatusBarItem = createStatusBarItem({
+  id: "khantouz",
+  text: "Shirkhan => Uz",
+  tooltip: "khan markdown convert to khan-uz markdown",
+  commandId: CHANGE_MARKDOWN_TO_UZ_COMMAND_ID,
+});
 
 export function showStatusBarItems() {
   convertStatusStatusBarItem.show();
   khanToUgStatusBarItem.show();
+  khanToUzStatusBarItem.show();
   ugToKhanStatusBarItem.show();
 }
 
 export function hideStatusBarItems() {
   convertStatusStatusBarItem.hide();
   khanToUgStatusBarItem.hide();
+  khanToUzStatusBarItem.hide();
   ugToKhanStatusBarItem.hide();
 }

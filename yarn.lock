@@ -430,7 +430,7 @@ azure-devops-node-api@^11.0.1:
 
 bail@^2.0.0:
   version "2.0.2"
-  resolved "https://registry.npmmirror.com/bail/download/bail-2.0.2.tgz?cache=0&sync_timestamp=1636274898174&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fbail%2Fdownload%2Fbail-2.0.2.tgz#d26f5cd8fe5d6f832a31517b9f7c356040ba6d5d"
+  resolved "https://registry.npmmirror.com/bail/download/bail-2.0.2.tgz?cache=0&sync_timestamp=1636274637966&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fbail%2Fdownload%2Fbail-2.0.2.tgz#d26f5cd8fe5d6f832a31517b9f7c356040ba6d5d"
   integrity sha1-0m9c2P5db4MqMVF7n3w1YEC6bV0=
 
 balanced-match@^1.0.0:
@@ -2030,7 +2030,7 @@ is-binary-path@~2.1.0:
 
 is-buffer@^2.0.0:
   version "2.0.5"
-  resolved "https://registry.npm.taobao.org/is-buffer/download/is-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
+  resolved "https://registry.nlark.com/is-buffer/download/is-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
   integrity sha1-68JS5ADSL/jXf6CYiIIaJKZYwZE=
 
 is-core-module@^2.2.0, is-core-module@^2.5.0:
@@ -2096,7 +2096,7 @@ is-plain-obj@^2.1.0:
 
 is-plain-obj@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.npm.taobao.org/is-plain-obj/download/is-plain-obj-4.0.0.tgz?cache=0&sync_timestamp=1618600535482&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-plain-obj%2Fdownload%2Fis-plain-obj-4.0.0.tgz#06c0999fd7574edf5a906ba5644ad0feb3a84d22"
+  resolved "https://registry.nlark.com/is-plain-obj/download/is-plain-obj-4.0.0.tgz#06c0999fd7574edf5a906ba5644ad0feb3a84d22"
   integrity sha1-BsCZn9dXTt9akGulZErQ/rOoTSI=
 
 is-text-path@^1.0.1:
@@ -3621,9 +3621,9 @@ shebang-regex@^3.0.0:
   integrity sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=
 
 shirkhan-alphabet-table@^1.x:
-  version "1.1.0"
-  resolved "https://registry.npmmirror.com/shirkhan-alphabet-table/download/shirkhan-alphabet-table-1.1.0.tgz#bf74ecd4597691bd7717fc6c5d81cec851f51509"
-  integrity sha512-TpuHExQ2MBpgSacr/4tb5qUSbshrJ2GNkaujbBH8mbMwpmrs9daL4yLaSNAF4HV6xYlwESf8cjTRP9d70vbhIg==
+  version "1.3.1"
+  resolved "https://registry.npmmirror.com/shirkhan-alphabet-table/download/shirkhan-alphabet-table-1.3.1.tgz#93b85f5759eb839b31690c169a8157e7dc62f209"
+  integrity sha512-RkqpRGp1QEFhg71/kD1DFGI8v/gbA4BfxrWzf9zMbeBJk2mvrG03FnbhD/sbMNGHpPjBwJZj31NuhyMuAFvuHw==
 
 shirkhan-alphabet@^1.x:
   version "1.0.0"
@@ -3659,9 +3659,9 @@ shirkhan-retext@^1.0.6:
     unist-util-visit "^4.1.0"
 
 shirkhan-retext@^1.x:
-  version "1.3.0"
-  resolved "https://registry.npmmirror.com/shirkhan-retext/download/shirkhan-retext-1.3.0.tgz#c9b74b910148cd0e9594d05410d616bc67975b61"
-  integrity sha512-tpHtDJh/TAV7ovOFA2sR7hxJe9IdkOERzxtbRJQqvRC34plZGm+j7iOi+CWL6bJbaxkSnUvrYp13bCUftBY2SQ==
+  version "1.4.0"
+  resolved "https://registry.npmmirror.com/shirkhan-retext/download/shirkhan-retext-1.4.0.tgz#4ca2fb6fd0a9d25c199d0b7d521be5f6bc381aea"
+  integrity sha512-gzEFptV0bjJSI1nqYEf1AttueX9yMpq4j2Ca65z+KU8YRQbuePMbjYDeENofb7anXBU96+w3PbJav1IpxytJdQ==
   dependencies:
     nlcst-to-string "^3.1.0"
     parse-latin "^5.0.0"
@@ -4021,7 +4021,7 @@ trim-newlines@^3.0.0:
 
 trough@^2.0.0:
   version "2.0.2"
-  resolved "https://registry.nlark.com/trough/download/trough-2.0.2.tgz?cache=0&sync_timestamp=1625400622069&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftrough%2Fdownload%2Ftrough-2.0.2.tgz#94a3aa9d5ce379fc561f6244905b3f36b7458d96"
+  resolved "https://registry.nlark.com/trough/download/trough-2.0.2.tgz?cache=0&sync_timestamp=1625401006146&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftrough%2Fdownload%2Ftrough-2.0.2.tgz#94a3aa9d5ce379fc561f6244905b3f36b7458d96"
   integrity sha1-lKOqnVzjefxWH2JEkFs/NrdFjZY=
 
 ts-node@^10.4.0:
@@ -4145,19 +4145,19 @@ unified@^10.0.0, unified@^10.1.1:
 
 unist-util-is@^5.0.0:
   version "5.1.1"
-  resolved "https://registry.nlark.com/unist-util-is/download/unist-util-is-5.1.1.tgz?cache=0&sync_timestamp=1626874922677&other_urls=https%3A%2F%2Fregistry.nlark.com%2Funist-util-is%2Fdownload%2Funist-util-is-5.1.1.tgz#e8aece0b102fa9bc097b0fef8f870c496d4a6236"
+  resolved "https://registry.nlark.com/unist-util-is/download/unist-util-is-5.1.1.tgz?cache=0&sync_timestamp=1626874870978&other_urls=https%3A%2F%2Fregistry.nlark.com%2Funist-util-is%2Fdownload%2Funist-util-is-5.1.1.tgz#e8aece0b102fa9bc097b0fef8f870c496d4a6236"
   integrity sha1-6K7OCxAvqbwJew/vj4cMSW1KYjY=
 
 unist-util-modify-children@^2.0.0:
   version "2.0.0"
-  resolved "https://registry.npm.taobao.org/unist-util-modify-children/download/unist-util-modify-children-2.0.0.tgz#9c9c30d4e32502aabb3fde10d7872a17c86801e2"
+  resolved "https://registry.nlark.com/unist-util-modify-children/download/unist-util-modify-children-2.0.0.tgz#9c9c30d4e32502aabb3fde10d7872a17c86801e2"
   integrity sha1-nJww1OMlAqq7P94Q14cqF8hoAeI=
   dependencies:
     array-iterate "^1.0.0"
 
 unist-util-modify-children@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.npm.taobao.org/unist-util-modify-children/download/unist-util-modify-children-3.0.0.tgz#fe2cc1b26f841100b79bf1a9a04bcae6c78c4c42"
+  resolved "https://registry.nlark.com/unist-util-modify-children/download/unist-util-modify-children-3.0.0.tgz#fe2cc1b26f841100b79bf1a9a04bcae6c78c4c42"
   integrity sha1-/izBsm+EEQC3m/GpoEvK5seMTEI=
   dependencies:
     "@types/unist" "^2.0.0"
@@ -4185,7 +4185,7 @@ unist-util-visit-parents@^4.0.0:
 
 unist-util-visit-parents@^5.0.0:
   version "5.1.0"
-  resolved "https://registry.nlark.com/unist-util-visit-parents/download/unist-util-visit-parents-5.1.0.tgz?cache=0&sync_timestamp=1632208991791&other_urls=https%3A%2F%2Fregistry.nlark.com%2Funist-util-visit-parents%2Fdownload%2Funist-util-visit-parents-5.1.0.tgz#44bbc5d25f2411e7dfc5cecff12de43296aa8521"
+  resolved "https://registry.nlark.com/unist-util-visit-parents/download/unist-util-visit-parents-5.1.0.tgz#44bbc5d25f2411e7dfc5cecff12de43296aa8521"
   integrity sha1-RLvF0l8kEeffxc7P8S3kMpaqhSE=
   dependencies:
     "@types/unist" "^2.0.0"
@@ -4271,9 +4271,9 @@ vfile-message@^3.0.0:
     unist-util-stringify-position "^3.0.0"
 
 vfile@^5.0.0:
-  version "5.2.0"
-  resolved "https://registry.npmmirror.com/vfile/download/vfile-5.2.0.tgz#a32a646ff9251c274dbe8675644a39031025b369"
-  integrity sha1-oypkb/klHCdNvoZ1ZEo5AxAls2k=
+  version "5.2.1"
+  resolved "https://registry.npmmirror.com/vfile/download/vfile-5.2.1.tgz#9278072d576e320917204a3291eec0b346c4ed5d"
+  integrity sha512-vXW5XKbELM6mLj88kmkJ+gjFGZ/2gTmpdqPDjs3y+qbvI5i7md7rba/+pbYEawa7t22W7ynywPV6lUUAS1WiYg==
   dependencies:
     "@types/unist" "^2.0.0"
     is-buffer "^2.0.0"

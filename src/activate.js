@@ -8,6 +8,7 @@ import { khan2ugPlugin, addContainerClass } from "./plugins/markdown-it";
 import {
   registerChangeMarkdownToKhanCommand,
   registerChangeMarkdownToUgCommand,
+  registerChangeMarkdownToShirkhanUzCommand,
   registerChangeConvertStatusCommand,
 } from "./commands";
 
@@ -41,6 +42,7 @@ function bindCommands(context) {
   );
   registerChangeMarkdownToKhanCommand(context);
   registerChangeMarkdownToUgCommand(context);
+  registerChangeMarkdownToShirkhanUzCommand(context);
 }
 /**
  * @param {import("vscode").ExtensionContext} context

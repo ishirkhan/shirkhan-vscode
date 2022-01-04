@@ -35,12 +35,16 @@
           "group": "navigation@1"
         },
         {
-          "command": "shirkhan-markdown.changeMarkdownToUg",
+          "command": "shirkhan-markdown.changeMarkdownToUz",
           "group": "navigation@2"
         },
         {
-          "command": "shirkhan-markdown.changeMarkdownToKhan",
+          "command": "shirkhan-markdown.changeMarkdownToUg",
           "group": "navigation@3"
+        },
+        {
+          "command": "shirkhan-markdown.changeMarkdownToKhan",
+          "group": "navigation@4"
         }
       ]
     },
@@ -59,19 +63,25 @@
       },
       {
         "command": "shirkhan-markdown.changeConvertState",
-        "title": "shirkhan 预览区 uyghurche 显示 [On/Off]",
+        "title": "预览区 shirkhan => ug [On/Off]",
         "category": "Markdown",
         "when": "editorLangId == markdown"
       },
       {
+        "command": "shirkhan-markdown.changeMarkdownToUz",
+        "title": "shirkhan => shirkhan-uz",
+        "when": "editorLangId == markdown",
+        "category": "Markdown"
+      },
+      {
         "command": "shirkhan-markdown.changeMarkdownToUg",
-        "title": "shirkhan markdown 转换成 uyghurche markdown",
+        "title": "shirkhan => ug",
         "when": "editorLangId == markdown",
         "category": "Markdown"
       },
       {
         "command": "shirkhan-markdown.changeMarkdownToKhan",
-        "title": "shirkhan uyghurche markdown 转换成 shirkhan markdown",
+        "title": "ug => shirkhan",
         "when": "editorLangId == markdown",
         "category": "Markdown"
       }
@@ -82,7 +92,7 @@
         "shirkhanMarkdown.activeConvert": {
           "type": "boolean",
           "default": true,
-          "description": "默认是自动转换状态，设置false默认不会启动，需要切换状态才能转换"
+          "description": "预览 markdown时，默认把当前的 markdown 当做 shirkhan 来转 ug 显示，关闭此配置项可以停止这种行为"
         }
       }
     }

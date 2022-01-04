@@ -1,4 +1,5 @@
 import {
+  shirkhanToShirkhanUzProcessor,
   shirkhanToUgProcessor,
   ugToShirkhanProcessor,
   shirkhanStringify,
@@ -12,10 +13,34 @@ export function khanTextToUgText(text) {
     .processSync(text)
     .toString();
 }
+
+export function khanTextToShirkhanUzText(text) {
+  return shirkhanToShirkhanUzProcessor()
+    .use(shirkhanStringify)
+    .processSync(text)
+    .toString();
+}
+
 export function ugTextToKhanText(text) {
   return ugToShirkhanProcessor()
     .use(shirkhanStringify)
     .processSync(text)
+    .toString();
+}
+
+export function khanMarkdownToShirkhanUzMarkdown(markdownText) {
+  return remarkKhan()
+    .data("khanConverter", (node) => {
+      if (node.value) {
+        try {
+          return khanTextToShirkhanUzText(node.value.toLowerCase());
+        } catch (error) {
+          console.log("error", error);
+        }
+      }
+      return node.value;
+    })
+    .processSync(markdownText)
     .toString();
 }
 
