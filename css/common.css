@@ -14,6 +14,11 @@
 html {
   font-size: 14px;
 }
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
 
 .shirkhan-markdown-body {
   max-width: 960px;

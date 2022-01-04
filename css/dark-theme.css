@@ -1,13 +1,13 @@
 .shirkhan-dark-theme {
-  background-color: #121212;
-  color: #eeeeee;
+  background-color: #2e3440;
+  color: #d8dee9;
 }
 .shirkhan-dark-theme p {
   color: #cccccc;
 }
 
 .shirkhan-dark-theme h2 {
-  border-bottom: 2px solid hsl(0, 0%, 20%);
+  border-bottom: 1px solid #67696d;
 }
 
 .shirkhan-dark-theme h6 {
