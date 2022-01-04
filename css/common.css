@@ -1,0 +1,328 @@
+@font-face {
+  font-family: "LearnFans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/UKIJEkran.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-sans-serif: "LearnFans", "Ubuntu", "Source Sans Pro", sans-serif !important;
+}
+
+html {
+  font-size: 14px;
+}
+
+.shirkhan-markdown-body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 30px 100px;
+  font-family: var(--font-sans-serif);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6rem;
+  letter-spacing: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.shirkhan-markdown-body h1,
+.shirkhan-markdown-body h2,
+.shirkhan-markdown-body h3,
+.shirkhan-markdown-body h4,
+.shirkhan-markdown-body h5,
+.shirkhan-markdown-body h6,
+.shirkhan-markdown-body p,
+.shirkhan-markdown-body a,
+.shirkhan-markdown-body del,
+.shirkhan-markdown-body mark,
+.shirkhan-markdown-body ul,
+.shirkhan-markdown-body li,
+.shirkhan-markdown-body ol,
+.shirkhan-markdown-body table,
+.shirkhan-markdown-body tr,
+.shirkhan-markdown-body td,
+.shirkhan-markdown-body table {
+  direction: rtl;
+  font-family: "LearnFans";
+}
+
+.shirkhan-markdown-body p {
+  line-height: 1.6rem;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.shirkhan-markdown-body ol li {
+  padding-left: 0.5rem;
+}
+
+.shirkhan-markdown-body > ul:first-child,
+.shirkhan-markdown-body > ol:first-child {
+  margin-top: 30px;
+}
+
+.shirkhan-markdown-body a {
+  color: #2d7bf4;
+  padding: 0px 2px;
+  text-decoration: none;
+}
+
+.shirkhan-markdown-body h1,
+.shirkhan-markdown-body h2,
+.shirkhan-markdown-body h3,
+.shirkhan-markdown-body h4,
+.shirkhan-markdown-body h5,
+.shirkhan-markdown-body h6 {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  line-height: 1.4;
+  cursor: text;
+}
+
+.shirkhan-markdown-body :hover a.anchor,
+.shirkhan-markdown-body h2:hover a.anchor,
+.shirkhan-markdown-body h3:hover a.anchor,
+.shirkhan-markdown-body h4:hover a.anchor,
+.shirkhan-markdown-body h5:hover a.anchor,
+.shirkhan-markdown-body h6:hover a.anchor {
+  text-decoration: none;
+}
+
+.shirkhan-markdown-body h1 tt,
+.shirkhan-markdown-body h1 code {
+  font-size: inherit;
+}
+
+.shirkhan-markdown-body h2 tt,
+.shirkhan-markdown-body h2 code {
+  font-size: inherit;
+}
+
+.shirkhan-markdown-body h3 tt,
+.shirkhan-markdown-body h3 code {
+  font-size: inherit;
+}
+
+.shirkhan-markdown-body h4 tt,
+.shirkhan-markdown-body h4 code {
+  font-size: inherit;
+}
+
+.shirkhan-markdown-body h5 tt,
+.shirkhan-markdown-body h5 code {
+  font-size: inherit;
+}
+
+.shirkhan-markdown-body h6 tt,
+.shirkhan-markdown-body h6 code {
+  font-size: inherit;
+}
+
+.shirkhan-markdown-body h1 {
+  padding-bottom: 0.4rem;
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+
+.shirkhan-markdown-body h2 a,
+.shirkhan-markdown-body h3 a {
+  color: #34495e;
+}
+
+.shirkhan-markdown-body img {
+  border: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin: 10px auto;
+}
+
+.shirkhan-markdown-body h2 {
+  font-size: 1.75rem;
+  line-height: 1.225;
+  margin: 35px 0 15px;
+  padding-bottom: 0.5em;
+}
+
+.shirkhan-markdown-body h3 {
+  font-size: 1.4rem;
+  line-height: 1.43;
+  margin: 20px 0px 7px 0px;
+}
+
+.shirkhan-markdown-body h4 {
+  font-size: 1.2rem;
+}
+
+.shirkhan-markdown-body h5 {
+  font-size: 1rem;
+}
+.shirkhan-markdown-body h6 {
+  font-size: 1rem;
+}
+
+.shirkhan-markdown-body p,
+.shirkhan-markdown-body blockquote,
+.shirkhan-markdown-body ul,
+.shirkhan-markdown-body ol,
+.shirkhan-markdown-body dl,
+.shirkhan-markdown-body table {
+  margin: 0.8em 0;
+}
+
+.shirkhan-markdown-body li > ol,
+.shirkhan-markdown-body li > ul {
+  margin: 0 0;
+}
+
+.shirkhan-markdown-body hr {
+  height: 2px;
+  padding: 0;
+  margin: 16px 0;
+  border: 0 none;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+.shirkhan-markdown-body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.shirkhan-markdown-body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.shirkhan-markdown-body > h1:first-child + h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.shirkhan-markdown-body > h3:first-child,
+.shirkhan-markdown-body > h4:first-child,
+.shirkhan-markdown-body > h5:first-child,
+.shirkhan-markdown-body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.shirkhan-markdown-body a:first-child h1,
+.shirkhan-markdown-body a:first-child h2,
+.shirkhan-markdown-body a:first-child h3,
+.shirkhan-markdown-body a:first-child h4,
+.shirkhan-markdown-body a:first-child h5,
+.shirkhan-markdown-body a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.shirkhan-markdown-body h1 p,
+.shirkhan-markdown-body h2 p,
+.shirkhan-markdown-body h3 p,
+.shirkhan-markdown-body h4 p,
+.shirkhan-markdown-body h5 p,
+.shirkhan-markdown-body h6 p {
+  margin-top: 0;
+}
+
+.shirkhan-markdown-body li p.first {
+  display: inline-block;
+}
+
+.shirkhan-markdown-body ul,
+.shirkhan-markdown-body ol {
+  padding-left: 30px;
+}
+
+.shirkhan-markdown-body ul:first-child,
+.shirkhan-markdown-body ol:first-child {
+  margin-top: 0;
+}
+
+.shirkhan-markdown-body ul:last-child,
+.shirkhan-markdown-body ol:last-child {
+  margin-bottom: 0;
+}
+
+.shirkhan-markdown-body blockquote {
+  border-right: 4px solid #2d7bf4;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+.shirkhan-markdown-body table {
+  width: 100%;
+  padding: 0;
+  word-break: initial;
+  text-align: center;
+}
+
+.shirkhan-markdown-body table tr {
+  border: 1px solid #dfe2e5;
+  margin: 0;
+  padding: 0;
+}
+
+.shirkhan-markdown-body table tr th {
+  font-weight: normal;
+  border: 1px solid #dfe2e5;
+  border-bottom: 0;
+  margin: 0;
+  padding: 6px 13px;
+}
+.shirkhan-markdown-body table tr td {
+  text-align: right;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+.shirkhan-markdown-body table tr th:first-child,
+.shirkhan-markdown-body table tr td:first-child {
+  margin-top: 0;
+}
+
+.shirkhan-markdown-body table tr th:last-child,
+.shirkhan-markdown-body table tr td:last-child {
+  margin-bottom: 0;
+}
+
+.shirkhan-markdown-body strong {
+  padding: 0 1px;
+}
+
+.shirkhan-markdown-body em {
+  padding: 0 5px 0 2px;
+}
+
+.shirkhan-markdown-body th {
+  border-color: inherit;
+}
+
+.shirkhan-markdown-body code,
+.shirkhan-markdown-body tt {
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-family: var(--font-monospace);
+  font-size: 0.92rem;
+}
+
+.shirkhan-markdown-body tt {
+  margin: 0 2px;
+}
+
+/* heighlight. */
+.shirkhan-markdown-body mark {
+  background-color: #ebffeb;
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin: 0 2px;
+  color: #222;
+  font-weight: 500;
+}
+
+.shirkhan-markdown-body del {
+  padding: 1px 2px;
+}

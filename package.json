@@ -18,9 +18,10 @@
   "contributes": {
     "markdown.markdownItPlugins": true,
     "markdown.previewStyles": [
+      "css/common.css",
+      "css/katex-block.css",
       "css/light-theme.css",
-      "css/dark-theme.css",
-      "css/katex-block.css"
+      "css/dark-theme.css"
     ],
     "menus": {
       "editor/context": [

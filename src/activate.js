@@ -80,7 +80,7 @@ function updateShirkhanMarkdownTheme() {
   const curretnThemeKind = getCurrentActiveColorTheme();
   markdownInstance.options[
     "shirkhanContainerClassName"
-  ] = `shirkhan-markdown-body-${curretnThemeKind}-theme`;
+  ] = `shirkhan-markdown-body shirkhan-${curretnThemeKind}-theme`;
 }
 function extendMarkdownIt(md) {
   updateShirkhanMarkdownTheme();
