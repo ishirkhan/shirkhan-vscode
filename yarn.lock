@@ -3621,9 +3621,9 @@ shebang-regex@^3.0.0:
   integrity sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=
 
 shirkhan-alphabet-table@^1.x:
-  version "1.3.1"
-  resolved "https://registry.npmmirror.com/shirkhan-alphabet-table/download/shirkhan-alphabet-table-1.3.1.tgz#93b85f5759eb839b31690c169a8157e7dc62f209"
-  integrity sha512-RkqpRGp1QEFhg71/kD1DFGI8v/gbA4BfxrWzf9zMbeBJk2mvrG03FnbhD/sbMNGHpPjBwJZj31NuhyMuAFvuHw==
+  version "1.4.0"
+  resolved "https://registry.npmmirror.com/shirkhan-alphabet-table/download/shirkhan-alphabet-table-1.4.0.tgz#7747b7dcdb4307605da5f8cd1327bee06be09f01"
+  integrity sha512-Ag9gaNNcydLebtvcPDOfNaJeJqxMDPbR7tetyjPktJAaob9sfz/xMoGkWvH9rOjXTsS5ELKR8z6dE0j9tqMj1Q==
 
 shirkhan-alphabet@^1.x:
   version "1.0.0"
@@ -3659,9 +3659,9 @@ shirkhan-retext@^1.0.6:
     unist-util-visit "^4.1.0"
 
 shirkhan-retext@^1.x:
-  version "1.4.0"
-  resolved "https://registry.npmmirror.com/shirkhan-retext/download/shirkhan-retext-1.4.0.tgz#4ca2fb6fd0a9d25c199d0b7d521be5f6bc381aea"
-  integrity sha512-gzEFptV0bjJSI1nqYEf1AttueX9yMpq4j2Ca65z+KU8YRQbuePMbjYDeENofb7anXBU96+w3PbJav1IpxytJdQ==
+  version "1.5.0"
+  resolved "https://registry.npmmirror.com/shirkhan-retext/download/shirkhan-retext-1.5.0.tgz#c022bf6e89e1b1fc487d236f48bf2df5310b0c3d"
+  integrity sha512-vWR9hFdvweDF9KdmOZpOcoQI9nyqbpYLof+B4YSCQfu7hEQMl5582qSvE7SAzIBgVSgm5uNOvnxa0nndzfVDEQ==
   dependencies:
     nlcst-to-string "^3.1.0"
     parse-latin "^5.0.0"
