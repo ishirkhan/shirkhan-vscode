@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.5.0...v1.6.0) (2022-01-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* 响应alphabet v1.2的更新,修复khan中出现的khan-uz预览区没有正确转换问题
+
+### Features
+
+* 响应alphabet v1.2的更新,修复khan中出现的khan-uz预览区没有正确转换问题 ([a864164](https://github.com/ishirkhan/shirkhan-vscode/commit/a8641641e727298022b59460e7db67262f0151cf))
+
 ## [1.5.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.4.3...v1.5.0) (2022-01-05)
 
 
