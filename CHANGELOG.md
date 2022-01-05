@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.4.3...v1.5.0) (2022-01-05)
+
+
+### Features
+
+* 新增对alphabet-table v1.4.0 中新增5个字符的支持 ([6daaf06](https://github.com/ishirkhan/shirkhan-vscode/commit/6daaf06e7c4cbf31979e6f81bd98c98205e5cd1e))
+
 ### [1.4.3](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.4.2...v1.4.3) (2022-01-04)
 
 
