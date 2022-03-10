@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.6.0...v1.7.0) (2022-03-10)
+
+
+### Features
+
+* 插件功能用khan-alphabet 来替换,现在支持大小写,支持khan和khan-uz 混写 ([7401300](https://github.com/ishirkhan/shirkhan-vscode/commit/74013005c333e12226f3da1cd16e55c4d3b4af4f))
+* 各项菜单文案优化,维语预览开启和关闭现在支持同步修改vscode配置 ([3ad42d4](https://github.com/ishirkhan/shirkhan-vscode/commit/3ad42d44be3ed91e317af9921458786de711a8af))
+
 ## [1.6.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.5.0...v1.6.0) (2022-01-05)
 
 
