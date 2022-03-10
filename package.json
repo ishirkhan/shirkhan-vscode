@@ -125,7 +125,7 @@
     "eslint": "^7.32.0",
     "glob": "^7.1.7",
     "mocha": "^9.1.1",
-    "typescript": "4.4.4",
+    "typescript": "^4.6.2",
     "vsce": "1.103.1"
   },
   "config": {
@@ -136,11 +136,9 @@
   "dependencies": {
     "cz-conventional-changelog": "^3.3.0",
     "esbuild": "^0.x",
+    "khan-alphabet": "^1.0.0",
     "markdown-it-emoji": "^2.0.0",
     "replace": "^1.2.1",
-    "shirkhan-alphabet": "^1.x",
-    "shirkhan-remark": "^1.x",
-    "shirkhan-retext": "^1.x",
     "standard-version": "^9.3.2",
     "unified": "^10.0.0"
   },

@@ -1,39 +1,30 @@
 import {
-  shirkhanToShirkhanUzProcessor,
-  shirkhanToUgProcessor,
-  ugToShirkhanProcessor,
-  shirkhanStringify,
-} from "shirkhan-retext";
+  khanTextToKhanUz,
+  khanUzTextToUg,
+  ugTextToKhanUz,
+  khanUzTextToKhan,
+} from "khan-alphabet";
 
-import { remarkKhan } from "shirkhan-remark";
+import { khanRemark } from "./khan-remark";
 
 export function khanTextToUgText(text) {
-  return shirkhanToUgProcessor()
-    .use(shirkhanStringify)
-    .processSync(text)
-    .toString();
+  return khanUzTextToUg(khanTextToKhanUz(text));
 }
 
 export function khanTextToShirkhanUzText(text) {
-  return shirkhanToShirkhanUzProcessor()
-    .use(shirkhanStringify)
-    .processSync(text)
-    .toString();
+  return khanTextToKhanUz(text);
 }
 
 export function ugTextToKhanText(text) {
-  return ugToShirkhanProcessor()
-    .use(shirkhanStringify)
-    .processSync(text)
-    .toString();
+  return khanUzTextToKhan(ugTextToKhanUz(text));
 }
 
 export function khanMarkdownToShirkhanUzMarkdown(markdownText) {
-  return remarkKhan()
-    .data("khanConverter", (node) => {
+  return khanRemark
+    .data("converter", (node) => {
       if (node.value) {
         try {
-          return khanTextToShirkhanUzText(node.value.toLowerCase());
+          return khanTextToShirkhanUzText(node.value);
         } catch (error) {
           console.log("error", error);
         }
@@ -45,11 +36,11 @@ export function khanMarkdownToShirkhanUzMarkdown(markdownText) {
 }
 
 export function khanMarkdownToUgMarkdown(markdownText) {
-  return remarkKhan()
-    .data("khanConverter", (node) => {
+  return khanRemark
+    .data("converter", (node) => {
       if (node.value) {
         try {
-          return khanTextToUgText(node.value.toLowerCase());
+          return khanTextToUgText(node.value);
         } catch (error) {
           console.log("error", error);
         }
@@ -61,11 +52,11 @@ export function khanMarkdownToUgMarkdown(markdownText) {
 }
 
 export function ugMarkdownToKhanMarkdown(markdownText) {
-  return remarkKhan()
-    .data("khanConverter", (node) => {
+  return khanRemark
+    .data("converter", (node) => {
       if (node.value) {
         try {
-          return ugTextToKhanText(node.value.toLowerCase());
+          return ugTextToKhanText(node.value);
         } catch (error) {
           console.log("error", error);
         }
