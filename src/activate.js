@@ -28,8 +28,8 @@ import {
  */
 function initConfigs(context) {
   const convertState = getActiveConvert(context);
-  const message = convertState ? "On" : "Off";
-  convertStatusStatusBarItem.text = "Shirkhan " + message;
+  const message = convertState ? "【已开】" : "【已关】";
+  convertStatusStatusBarItem.text = "维语预览：" + message;
 
   setConvertState(context, convertState);
 }
@@ -54,9 +54,24 @@ function bindCommands(context) {
 function handleConvertStatusChangeCommand(context) {
   const currentStage = getConvertState(context);
   const message = !currentStage ? "开启" : "关闭";
-  const barText = !currentStage ? "On" : "Off";
-  convertStatusStatusBarItem.text = "Shirkhan " + barText;
-  vscode.window.showInformationMessage(`转换功能已${message}`);
+  const barText = !currentStage ? "【已开】" : "【已关】";
+  convertStatusStatusBarItem.text = "维语预览：" + barText;
+  vscode.window.showInformationMessage(`维语预览功能：【${message}】`);
+
+  const config = vscode.workspace.getConfiguration("shirkhanMarkdown");
+  const convertState = !config.get("activeConvert");
+  config.update("activeConvert", convertState, true);
+  // .then(() => {
+  //   if (convertState) {
+  //     vscode.window.showInformationMessage(
+  //       "Markdown Preview To Uyghur is enabled"
+  //     );
+  //   } else {
+  //     vscode.window.showInformationMessage(
+  //       "Markdown Preview To Uyghur is disabled"
+  //     );
+  //   }
+  // });
 
   markdownInstance.options["shirkhanConvertUg"] = !currentStage;
   setConvertState(context, !currentStage);

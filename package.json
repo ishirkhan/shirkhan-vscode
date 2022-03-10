@@ -65,25 +65,25 @@
       },
       {
         "command": "shirkhan-markdown.changeConvertState",
-        "title": "预览区 shirkhan => ug [On/Off]",
+        "title": "维语预览【开/关】",
         "category": "Markdown",
         "when": "editorLangId == markdown"
       },
       {
         "command": "shirkhan-markdown.changeMarkdownToUz",
-        "title": "shirkhan => shirkhan-uz",
+        "title": "khan => uz",
         "when": "editorLangId == markdown",
         "category": "Markdown"
       },
       {
         "command": "shirkhan-markdown.changeMarkdownToUg",
-        "title": "shirkhan => ug",
+        "title": "khan => ug",
         "when": "editorLangId == markdown",
         "category": "Markdown"
       },
       {
         "command": "shirkhan-markdown.changeMarkdownToKhan",
-        "title": "ug => shirkhan",
+        "title": "ug => khan",
         "when": "editorLangId == markdown",
         "category": "Markdown"
       }
