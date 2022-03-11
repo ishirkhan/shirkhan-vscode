@@ -8,7 +8,11 @@ import remarkGfm from "remark-gfm";
 export function convertPlugin(options) {
   return (tree) => {
     const { converter } = options;
-    if (!converter) return;
+    if (!converter) {
+      console.log("options :>> ", options);
+      console.warn("converter is undefiend");
+      return;
+    }
     visit(tree, "text", (node, index, parent) => {
       if (parent.type === "link") return;
       node.value = converter(node, index, parent);

@@ -1,5 +1,5 @@
 import {
-  CHANGE_MARKDOWN_TO_KHAN__COMMAND_ID,
+  CHANGE_MARKDOWN_TO_UZ__COMMAND_ID,
   CHANGE_MARKDOWN_TO_UG_COMMAND_ID,
   CHANGE_MARKDOWN_TO_UZ_COMMAND_ID,
   CHANGE_CONVERT_STATUS_COMMAND_ID,
@@ -16,9 +16,9 @@ export const convertStatusStatusBarItem = createStatusBarItem({
 
 export const ugToKhanStatusBarItem = createStatusBarItem({
   id: "ugtokhan",
-  text: "ug => khan",
-  tooltip: "ug markdown convert to khan markdown",
-  commandId: CHANGE_MARKDOWN_TO_KHAN__COMMAND_ID,
+  text: "ug => uz",
+  tooltip: "ug markdown convert to khan-uz markdown",
+  commandId: CHANGE_MARKDOWN_TO_UZ__COMMAND_ID,
 });
 
 export const khanToUgStatusBarItem = createStatusBarItem({

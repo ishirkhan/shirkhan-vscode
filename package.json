@@ -83,7 +83,7 @@
       },
       {
         "command": "shirkhan-markdown.changeMarkdownToKhan",
-        "title": "ug => khan",
+        "title": "ug => uz",
         "when": "editorLangId == markdown",
         "category": "Markdown"
       }
@@ -107,7 +107,7 @@
     "lint": "eslint .",
     "pretest": "yarn run lint",
     "test": "node ./test/runTest.js",
-    "build": "vsce package --yarn",
+    "build": "yarn esbuild && vsce package --yarn",
     "changelog:first": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && yarn changeissueurl",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && yarn changeissueurl",
     "release": "./scripts/release.sh",
