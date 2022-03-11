@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.1](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.7.0...v1.7.1) (2022-03-11)
+
+
+### Bug Fixes
+
+* ug 转khan 时报freeze 模式不能用data的bug ([1af2cc4](https://github.com/ishirkhan/shirkhan-vscode/commit/1af2cc4388ccde133cd192988ae20c94d9caed23))
+
 ## [1.7.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.6.0...v1.7.0) (2022-03-10)
 
 
