@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.2](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.7.1...v1.7.2) (2022-03-11)
+
+
+### Bug Fixes
+
+* 转换器传错参数问题修复,ug转khan 修改成ug转khan-uz[是因为uz 和khan支持混写,这时直接在uz的基础上继续编写更佳] ([9ad837b](https://github.com/ishirkhan/shirkhan-vscode/commit/9ad837b54558469a22ebf37f3c2e25856510f168))
+
 ### [1.7.1](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.7.0...v1.7.1) (2022-03-11)
 
 
