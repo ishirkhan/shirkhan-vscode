@@ -5,9 +5,9 @@ import remarkStringify from "remark-stringify";
 import { visit } from "unist-util-visit";
 import remarkGfm from "remark-gfm";
 
-function khanPlugin() {
+export function convertPlugin(options) {
   return (tree) => {
-    const converter = this.data("converter") || undefined;
+    const { converter } = options;
     if (!converter) return;
     visit(tree, "text", (node, index, parent) => {
       if (parent.type === "link") return;
@@ -18,7 +18,4 @@ function khanPlugin() {
 
 const processor = unified().use(remarkParse).use(remarkStringify);
 
-export const khanRemark = processor()
-  .use(remarkMath)
-  .use(remarkGfm)
-  .use(khanPlugin);
+export const khanRemark = processor().use(remarkMath).use(remarkGfm).freeze();

@@ -5,7 +5,7 @@ import {
   khanUzTextToKhan,
 } from "khan-alphabet";
 
-import { khanRemark } from "./khan-remark";
+import { khanRemark, convertPlugin } from "./khan-remark";
 
 export function khanTextToUgText(text) {
   return khanUzTextToUg(khanTextToKhanUz(text));
@@ -20,8 +20,8 @@ export function ugTextToKhanText(text) {
 }
 
 export function khanMarkdownToShirkhanUzMarkdown(markdownText) {
-  return khanRemark
-    .data("converter", (node) => {
+  return khanRemark()
+    .use(convertPlugin, (node) => {
       if (node.value) {
         try {
           return khanTextToShirkhanUzText(node.value);
@@ -36,8 +36,8 @@ export function khanMarkdownToShirkhanUzMarkdown(markdownText) {
 }
 
 export function khanMarkdownToUgMarkdown(markdownText) {
-  return khanRemark
-    .data("converter", (node) => {
+  return khanRemark()
+    .use(convertPlugin, (node) => {
       if (node.value) {
         try {
           return khanTextToUgText(node.value);
@@ -52,8 +52,8 @@ export function khanMarkdownToUgMarkdown(markdownText) {
 }
 
 export function ugMarkdownToKhanMarkdown(markdownText) {
-  return khanRemark
-    .data("converter", (node) => {
+  return khanRemark()
+    .use(convertPlugin, (node) => {
       if (node.value) {
         try {
           return ugTextToKhanText(node.value);
