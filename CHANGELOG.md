@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.7.2...v1.8.0) (2022-04-07)
+
+
+### Features
+
+* 更新khan-alphabet依赖版本,新增inputMode配置项支持通过设置,菜单,状态栏等方式修改模式 ([ad05dbf](https://github.com/ishirkhan/shirkhan-vscode/commit/ad05dbfd64dda544c4b29014affbd17fff60f65d))
+* 新增编写uly并母语显示功能,已支持通过切换输入模式输入khan和uly内容并母语实时预览 ([a5cc2e3](https://github.com/ishirkhan/shirkhan-vscode/commit/a5cc2e36011bc8e35f638e92d822f4917d138cdd))
+* 新增uly markdown 转ug 的菜单命令 ([d124eb3](https://github.com/ishirkhan/shirkhan-vscode/commit/d124eb386ed870415f47ac5292f794c117c34644))
+* 新增uly to ug , ug to uly 互换的菜单命令和功能 ([60ad26d](https://github.com/ishirkhan/shirkhan-vscode/commit/60ad26da9d6eeba7e2e01d88d7d5ed97200059be))
+
 ### [1.7.2](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.7.1...v1.7.2) (2022-03-11)
 
 
