@@ -37,6 +37,10 @@
           "group": "navigation@1"
         },
         {
+          "command": "shirkhan-markdown.changeInputMode",
+          "group": "navigation@2"
+        },
+        {
           "command": "shirkhan-markdown.changeMarkdownToUz",
           "group": "navigation@2"
         },
@@ -70,6 +74,12 @@
         "when": "editorLangId == markdown"
       },
       {
+        "command": "shirkhan-markdown.changeInputMode",
+        "title": "切换输入模式【khan/uly】",
+        "category": "Markdown",
+        "when": "editorLangId == markdown"
+      },
+      {
         "command": "shirkhan-markdown.changeMarkdownToUz",
         "title": "khan => uz",
         "when": "editorLangId == markdown",
@@ -95,6 +105,17 @@
           "type": "boolean",
           "default": true,
           "description": "预览 markdown时，默认把当前的 markdown 当做 shirkhan 来转 ug 显示，关闭此配置项可以停止这种行为"
+        },
+        "shirkhanMarkdown.inputMode": {
+          "type": "string",
+          "enum": [
+            "khan",
+            "uly"
+          ],
+          "default": "khan",
+          "description": "输入模式 [khan | uly]。khan支持khan,khanuz以及ug。 uly 只支持uly,ug两种的混写",
+          "markdownDescription": "khan支持khan,khanuz以及ug。 uly 只支持uly,ug两种的混写",
+          "scope": "resource"
         }
       }
     }
@@ -135,7 +156,7 @@
   "dependencies": {
     "cz-conventional-changelog": "^3.3.0",
     "esbuild": "^0.x",
-    "khan-alphabet": "^1.0.0",
+    "khan-alphabet": "^1.0.1",
     "markdown-it-emoji": "^2.0.0",
     "replace": "^1.2.1",
     "standard-version": "^9.3.2",

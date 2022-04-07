@@ -23,6 +23,8 @@ export const CHANGE_MARKDOWN_TO_UG_COMMAND_ID =
 export const CHANGE_MARKDOWN_TO_UZ__COMMAND_ID =
   "shirkhan-markdown.changeMarkdownToUZ";
 
+// 输入模式切换指令
+export const CHANGE_INPUTMODE_COMMAND_ID = "shirkhan-markdown.changeInputMode";
 /**
  * 注册一个 shirkhan-markdown转换母语markdown的命令
  * @returns
@@ -91,4 +93,13 @@ export function registerChangeConvertStatusCommand(context, handlerFunc) {
     CHANGE_CONVERT_STATUS_COMMAND_ID,
     handlerFunc
   );
+}
+
+/**
+ * 修改输入模式的指令
+ * @param {any} handlerFunc   A command handler function.
+ * @returns
+ */
+export function registerChangeInputModeCommand(context, handlerFunc) {
+  return registerCommand(context, CHANGE_INPUTMODE_COMMAND_ID, handlerFunc);
 }

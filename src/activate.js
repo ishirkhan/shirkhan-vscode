@@ -10,17 +10,22 @@ import {
   registerChangeMarkdownToUgCommand,
   registerChangeMarkdownToShirkhanUzCommand,
   registerChangeConvertStatusCommand,
+  registerChangeInputModeCommand,
 } from "./commands";
 
 import {
   convertStatusStatusBarItem,
   showStatusBarItems,
   hideStatusBarItems,
+  inputModeStatusBarItem,
 } from "./statusBar";
 import {
   getActiveMarkdownTextEditor,
   getCurrentActiveColorTheme,
 } from "./util";
+
+// const config = vscode.workspace.getConfiguration("shirkhanMarkdown");
+
 /**
  * 初始化配置信息
  * @param {import("vscode").ExtensionContext} context
@@ -31,6 +36,10 @@ function initConfigs(context) {
   const message = convertState ? "【已开】" : "【已关】";
   convertStatusStatusBarItem.text = "维语预览：" + message;
 
+  const config = vscode.workspace.getConfiguration("shirkhanMarkdown");
+
+  const mode = config.get("inputMode") || "khan";
+  inputModeStatusBarItem.text = "输入模式: " + mode;
   setConvertState(context, convertState);
 }
 /**
@@ -43,6 +52,11 @@ function bindCommands(context) {
     context,
     handleConvertStatusChangeCommand.bind(this, context)
   );
+  registerChangeInputModeCommand(
+    context,
+    handleInputModeChangeCommand.bind(this, context)
+  );
+
   registerChangeMarkdownToKhanCommand(context);
   registerChangeMarkdownToUgCommand(context);
   registerChangeMarkdownToShirkhanUzCommand(context);
@@ -61,20 +75,21 @@ function handleConvertStatusChangeCommand(context) {
   const config = vscode.workspace.getConfiguration("shirkhanMarkdown");
   const convertState = !config.get("activeConvert");
   config.update("activeConvert", convertState, true);
-  // .then(() => {
-  //   if (convertState) {
-  //     vscode.window.showInformationMessage(
-  //       "Markdown Preview To Uyghur is enabled"
-  //     );
-  //   } else {
-  //     vscode.window.showInformationMessage(
-  //       "Markdown Preview To Uyghur is disabled"
-  //     );
-  //   }
-  // });
-
   markdownInstance.options["shirkhanConvertUg"] = !currentStage;
   setConvertState(context, !currentStage);
+}
+
+/**
+ * @param {import("vscode").ExtensionContext} context
+ * @returns
+ */
+function handleInputModeChangeCommand() {
+  vscode.window.showQuickPick(["khan", "uly"]).then((mode) => {
+    const config = vscode.workspace.getConfiguration("shirkhanMarkdown");
+    config.update("inputMode", mode, true);
+    inputModeStatusBarItem.text = "输入模式: " + mode;
+    vscode.window.showInformationMessage(`输入模式更新成：【${mode}】`);
+  });
 }
 
 function handleTextEditorChangeEvent() {
