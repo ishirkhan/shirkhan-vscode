@@ -81,6 +81,24 @@ export function ulyMarkdownToUgMarkdown(markdownText) {
     .toString();
 }
 
+export function ugMarkdownToUlyMarkdown(markdownText) {
+  return khanRemark()
+    .use(convertPlugin, {
+      converter: (node) => {
+        if (node.value) {
+          try {
+            return ugTextToUlyText(node.value);
+          } catch (error) {
+            console.log("error", error);
+          }
+        }
+        return node.value;
+      },
+    })
+    .processSync(markdownText)
+    .toString();
+}
+
 export function ugMarkdownToKhanMarkdown(markdownText) {
   return khanRemark()
     .use(convertPlugin, {

@@ -12,6 +12,7 @@ import {
   registerChangeConvertStatusCommand,
   registerChangeInputModeCommand,
   registerChangeUlyMarkdownToUgCommand,
+  registerChangeUgMarkdownToUlyCommand,
 } from "./commands";
 
 import {
@@ -62,6 +63,7 @@ function bindCommands(context) {
   registerChangeMarkdownToUgCommand(context);
   registerChangeMarkdownToShirkhanUzCommand(context);
   registerChangeUlyMarkdownToUgCommand(context);
+  registerChangeUgMarkdownToUlyCommand(context);
 }
 /**
  * @param {import("vscode").ExtensionContext} context

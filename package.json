@@ -55,6 +55,10 @@
         {
           "command": "shirkhan-markdown.UlyMarkdownToUg",
           "group": "navigation@5"
+        },
+        {
+          "command": "shirkhan-markdown.UgMarkdownToUly",
+          "group": "navigation@6"
         }
       ]
     },
@@ -98,6 +102,12 @@
       {
         "command": "shirkhan-markdown.UlyMarkdownToUg",
         "title": "uly => ug",
+        "when": "editorLangId == markdown",
+        "category": "Markdown"
+      },
+      {
+        "command": "shirkhan-markdown.UgMarkdownToUly",
+        "title": "ug => uly",
         "when": "editorLangId == markdown",
         "category": "Markdown"
       },
