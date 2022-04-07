@@ -113,6 +113,7 @@ function updateShirkhanMarkdownTheme() {
   ] = `shirkhan-markdown-body shirkhan-${curretnThemeKind}-theme`;
 }
 function extendMarkdownIt(md) {
+  console.log("extendMarkdownIt");
   updateShirkhanMarkdownTheme();
   // 支持表情
   md.use(emoji);

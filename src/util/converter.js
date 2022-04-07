@@ -1,13 +1,18 @@
 import {
   khanTextToKhanUz,
   khanUzTextToUg,
+  khanUzTextToUly,
   ugTextToKhanUz,
+  ulyTextToKhanUz,
 } from "khan-alphabet";
 
 import { khanRemark, convertPlugin } from "./khan-remark";
 
 export function khanTextToUgText(text) {
   return khanUzTextToUg(khanTextToKhanUz(text));
+}
+export function ulyTextToUgText(text) {
+  return khanUzTextToUg(ulyTextToKhanUz(text));
 }
 
 export function khanTextToShirkhanUzText(text) {
@@ -16,6 +21,10 @@ export function khanTextToShirkhanUzText(text) {
 
 export function ugTextToUzText(text) {
   return ugTextToKhanUz(text);
+}
+
+export function ugTextToUlyText(text) {
+  return khanUzTextToUly(ugTextToKhanUz(text));
 }
 
 export function khanMarkdownToShirkhanUzMarkdown(markdownText) {

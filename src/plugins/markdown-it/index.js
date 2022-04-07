@@ -1,4 +1,5 @@
-import { khanTextToUgText } from "../../util";
+import { khanTextToUgText, ulyTextToUgText } from "../../util";
+import vscode from "vscode";
 
 export function khan2ugPlugin(md) {
   const defaultRender = md.renderer.rules.text;
@@ -11,9 +12,25 @@ export function khan2ugPlugin(md) {
       return result;
     }
 
+    // inputMode
+    const mode = vscode.workspace
+      .getConfiguration("shirkhanMarkdown")
+      .get("inputMode");
+
     // 处理escape后进行转码
     result = md.utils.unescapeAll(result);
-    result = khanTextToUgText(result);
+    switch (mode) {
+      case "khan":
+        result = khanTextToUgText(result);
+        break;
+      case "uly":
+        result = ulyTextToUgText(result);
+        break;
+      default:
+        result = khanTextToUgText(result);
+        break;
+    }
+
     return md.utils.escapeHtml(result);
   };
 
