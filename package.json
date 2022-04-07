@@ -51,6 +51,10 @@
         {
           "command": "shirkhan-markdown.changeMarkdownToKhan",
           "group": "navigation@4"
+        },
+        {
+          "command": "shirkhan-markdown.UlyMarkdownToUg",
+          "group": "navigation@5"
         }
       ]
     },
@@ -88,6 +92,12 @@
       {
         "command": "shirkhan-markdown.changeMarkdownToUg",
         "title": "khan => ug",
+        "when": "editorLangId == markdown",
+        "category": "Markdown"
+      },
+      {
+        "command": "shirkhan-markdown.UlyMarkdownToUg",
+        "title": "uly => ug",
         "when": "editorLangId == markdown",
         "category": "Markdown"
       },

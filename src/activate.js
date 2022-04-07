@@ -11,6 +11,7 @@ import {
   registerChangeMarkdownToShirkhanUzCommand,
   registerChangeConvertStatusCommand,
   registerChangeInputModeCommand,
+  registerChangeUlyMarkdownToUgCommand,
 } from "./commands";
 
 import {
@@ -60,6 +61,7 @@ function bindCommands(context) {
   registerChangeMarkdownToKhanCommand(context);
   registerChangeMarkdownToUgCommand(context);
   registerChangeMarkdownToShirkhanUzCommand(context);
+  registerChangeUlyMarkdownToUgCommand(context);
 }
 /**
  * @param {import("vscode").ExtensionContext} context
@@ -113,7 +115,6 @@ function updateShirkhanMarkdownTheme() {
   ] = `shirkhan-markdown-body shirkhan-${curretnThemeKind}-theme`;
 }
 function extendMarkdownIt(md) {
-  console.log("extendMarkdownIt");
   updateShirkhanMarkdownTheme();
   // 支持表情
   md.use(emoji);
