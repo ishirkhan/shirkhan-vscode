@@ -13,6 +13,7 @@ import {
   registerChangeInputModeCommand,
   registerChangeUlyMarkdownToUgCommand,
   registerChangeUgMarkdownToUlyCommand,
+  registerUlyFormatCommand,
 } from "./commands";
 
 import {
@@ -25,6 +26,7 @@ import {
   getActiveMarkdownTextEditor,
   getCurrentActiveColorTheme,
 } from "./util";
+import { UlyMarkdownFormatter } from "./providers/ulyFormatProvider";
 
 // const config = vscode.workspace.getConfiguration("shirkhanMarkdown");
 
@@ -64,6 +66,7 @@ function bindCommands(context) {
   registerChangeMarkdownToShirkhanUzCommand(context);
   registerChangeUlyMarkdownToUgCommand(context);
   registerChangeUgMarkdownToUlyCommand(context);
+  registerUlyFormatCommand(context);
 }
 /**
  * @param {import("vscode").ExtensionContext} context
@@ -139,6 +142,18 @@ export function activate(context) {
 
   vscode.window.onDidChangeActiveTextEditor(handleTextEditorChangeEvent);
   vscode.window.onDidChangeActiveColorTheme(handleActiveColorThemeChangeEvent);
+  // vscode.workspace.onDidSaveTextDocument(() => {
+  //   vscode.commands.executeCommand("shirkhan-markdown.UlyMarkdownFormat");
+  // });
+
+  context.subscriptions.push(
+    vscode.languages.registerDocumentFormattingEditProvider(
+      {
+        language: "markdown",
+      },
+      new UlyMarkdownFormatter()
+    )
+  );
 
   return {
     extendMarkdownIt: function (md) {

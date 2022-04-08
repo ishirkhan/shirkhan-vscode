@@ -2195,10 +2195,10 @@ keytar@^7.7.0:
     node-addon-api "^4.3.0"
     prebuild-install "^7.0.1"
 
-khan-alphabet@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/khan-alphabet/-/khan-alphabet-1.1.1.tgz#d6c13b06995f15438314c8b34b41ffa1102517ab"
-  integrity sha512-z0D3z8qYShFT5ah0B6JQy19gMcI6K6sev1eDt+O3NtPeIGVtcLfLOz4CPu0j2pFPT3oX+QoUxGYaOE0ZdsfKng==
+khan-alphabet@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/khan-alphabet/-/khan-alphabet-1.1.2.tgz#f6baee0b84ec0d4679f9efab332af9fc6a9ed1fa"
+  integrity sha512-cyzadSsM939BASWiStiS/5+FMtP69BfeKILbfvqHVajF1CjqoSwkk+mn3ibaqXpHTvYllWMUTiIsHOMYpIU8bg==
   dependencies:
     nlcst-to-string "^3.1.0"
     parse-latin "^5.0.0"

@@ -59,6 +59,10 @@
         {
           "command": "shirkhan-markdown.UgMarkdownToUly",
           "group": "navigation@6"
+        },
+        {
+          "command": "shirkhan-markdown.UlyMarkdownFormat",
+          "group": "navigation@7"
         }
       ]
     },
@@ -102,6 +106,12 @@
       {
         "command": "shirkhan-markdown.UlyMarkdownToUg",
         "title": "uly => ug",
+        "when": "editorLangId == markdown",
+        "category": "Markdown"
+      },
+      {
+        "command": "shirkhan-markdown.UlyMarkdownFormat",
+        "title": "uly => 格式化",
         "when": "editorLangId == markdown",
         "category": "Markdown"
       },
@@ -176,7 +186,7 @@
   "dependencies": {
     "cz-conventional-changelog": "^3.3.0",
     "esbuild": "^0.x",
-    "khan-alphabet": "^1.1.1",
+    "khan-alphabet": "^1.1.2",
     "markdown-it-emoji": "^2.0.0",
     "replace": "^1.2.1",
     "standard-version": "^9.3.2",

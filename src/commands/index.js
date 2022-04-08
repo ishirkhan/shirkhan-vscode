@@ -11,6 +11,7 @@ import {
   openNewTempTab,
   ulyMarkdownToUgMarkdown,
   ugMarkdownToUlyMarkdown,
+  ulyMarkdownToFormattedMarkdown,
 } from "../util";
 
 export const CHANGE_CONVERT_STATUS_COMMAND_ID =
@@ -33,6 +34,8 @@ export const CHANGE_ULY_MARKDOWN_TO_UG_COMMAND_ID =
 export const CHANGE_UG_MARKDOWN_TO_ULY_COMMAND_ID =
   "shirkhan-markdown.UgMarkdownToUly";
 
+export const ULY_MARKDOWN_FORMAT_COMMAND_ID =
+  "shirkhan-markdown.UlyMarkdownFormat";
 /**
  * 注册一个 shirkhan-markdown转换母语markdown的命令
  * @returns
@@ -70,6 +73,43 @@ export function registerChangeUlyMarkdownToUgCommand(context) {
     const newMarkdown = ulyMarkdownToUgMarkdown(markdown);
     // 新打开一个标签显示转换后的母语markdown
     openNewTempTab(newMarkdown, "shirkhan-markdown-uly-ug.md", "markdown");
+  });
+}
+
+/**
+ *  uly format
+ * @returns
+ */
+export function registerUlyFormatCommand(context) {
+  return registerCommand(context, ULY_MARKDOWN_FORMAT_COMMAND_ID, () => {
+    if (!isMarkdownFileOpened()) {
+      vscode.window.showErrorMessage("没有可见的 markdown 文件窗口");
+      return;
+    }
+
+    const inputMode = vscode.workspace
+      .getConfiguration("shirkhanMarkdown")
+      .get("inputMode");
+
+    if (inputMode !== "uly") return;
+
+    const editor = getActiveMarkdownTextEditor();
+    const document = editor.document;
+
+    const markdownText = document.getText();
+    const range = new vscode.Range(
+      document.positionAt(0),
+      document.positionAt(markdownText.length)
+    );
+
+    const newEdit = new vscode.TextEdit(
+      range,
+      ulyMarkdownToFormattedMarkdown(markdownText)
+    );
+
+    editor.edit((editBuilder) => {
+      editBuilder.replace(newEdit.range, newEdit.newText);
+    });
   });
 }
 

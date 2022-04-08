@@ -3,6 +3,7 @@ import {
   khanUzTextToUg,
   khanUzTextToUly,
   ugTextToKhanUz,
+  ulyTextToFormat,
   ulyTextToKhanUz,
 } from "khan-alphabet";
 
@@ -70,6 +71,24 @@ export function ulyMarkdownToUgMarkdown(markdownText) {
         if (node.value) {
           try {
             return ulyTextToUgText(node.value);
+          } catch (error) {
+            console.log("error", error);
+          }
+        }
+        return node.value;
+      },
+    })
+    .processSync(markdownText)
+    .toString();
+}
+
+export function ulyMarkdownToFormattedMarkdown(markdownText) {
+  return khanRemark()
+    .use(convertPlugin, {
+      converter: (node) => {
+        if (node.value) {
+          try {
+            return ulyTextToFormat(node.value);
           } catch (error) {
             console.log("error", error);
           }
