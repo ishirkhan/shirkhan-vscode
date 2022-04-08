@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.1](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.8.0...v1.8.1) (2022-04-08)
+
+
+### Bug Fixes
+
+* uly to khan-uz 修复 h 字符生成组合字符错误导致的h 无法正确处理问题 ([6e20569](https://github.com/ishirkhan/shirkhan-vscode/commit/6e20569be52a551af7703ee1a2a0f20783f17764))
+
 ## [1.8.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.7.2...v1.8.0) (2022-04-07)
 
 
