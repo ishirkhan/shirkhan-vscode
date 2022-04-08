@@ -176,7 +176,7 @@
   "dependencies": {
     "cz-conventional-changelog": "^3.3.0",
     "esbuild": "^0.x",
-    "khan-alphabet": "^1.0.1",
+    "khan-alphabet": "^1.1.1",
     "markdown-it-emoji": "^2.0.0",
     "replace": "^1.2.1",
     "standard-version": "^9.3.2",
