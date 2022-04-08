@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.2](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.8.1...v1.8.2) (2022-04-08)
+
+
+### Features
+
+* 新增uly的document format格式化器,新增uly格式化命令及功能(菜单,Palette) ([c866202](https://github.com/ishirkhan/shirkhan-vscode/commit/c8662029f2b39e8480201b9ea63d6add0e4c2c14))
+
 ### [1.8.1](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.8.0...v1.8.1) (2022-04-08)
 
 
