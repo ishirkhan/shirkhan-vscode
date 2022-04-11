@@ -1,4 +1,4 @@
-import vscode from "vscode";
+import vscode, { StatusBarAlignment } from "vscode";
 /**
  * @typedef {Object} iItemProps
  * @property {string} id
@@ -9,12 +9,21 @@ import vscode from "vscode";
  * @property {number=} [priority=100] priority
  */
 
+export interface iItemProps {
+  id: string;
+  text: string;
+  commandId: string;
+  tooltip?: string;
+  alignment?: StatusBarAlignment;
+  priority?: number;
+}
+
 /**
  *
  * @param {iItemProps} ItemProps
  * @returns
  */
-export function createStatusBarItem(ItemProps) {
+export function createStatusBarItem(ItemProps: iItemProps) {
   const { id, alignment, priority, commandId, text, tooltip } = ItemProps;
 
   let item = vscode.window.createStatusBarItem(

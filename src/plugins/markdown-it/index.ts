@@ -1,9 +1,15 @@
 import { khanTextToUgText, ulyTextToUgText } from "../../util";
 import vscode from "vscode";
 
-export function khan2ugPlugin(md) {
-  const defaultRender = md.renderer.rules.text;
-  md.renderer.rules.text = function (tokens, idx, options, env, slf) {
+export function khan2ugPlugin(md: any) {
+  const defaultRender = md.renderer.rules.text as (...params: any) => string;
+  md.renderer.rules.text = function (
+    tokens: { type: string }[],
+    idx: number,
+    options: { shirkhanConvertUg: boolean },
+    env: any,
+    slf: any
+  ) {
     let result = defaultRender(tokens, idx, options, env, slf);
     if (!options["shirkhanConvertUg"]) return result; // 关闭转换
 
@@ -38,9 +44,13 @@ export function khan2ugPlugin(md) {
 }
 
 // 对整个容器加一个class
-export function addContainerClass(md) {
-  md.renderer.backuprender = md.renderer.render;
-  md.renderer.render = function (tokens, options, env) {
+export function addContainerClass(md: any) {
+  md.renderer.backuprender = md.renderer.render as (...params: any) => string;
+  md.renderer.render = function (
+    tokens: { type: string }[],
+    options: { shirkhanConvertUg: boolean; shirkhanContainerClassName: string },
+    env: string
+  ) {
     const result = md.renderer.backuprender(tokens, options, env);
 
     if (!options["shirkhanConvertUg"]) return result; // 关闭转换

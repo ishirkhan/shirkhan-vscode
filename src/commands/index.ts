@@ -1,4 +1,4 @@
-import vscode from "vscode";
+import vscode, { ExtensionContext } from "vscode";
 
 import {
   registerCommand,
@@ -40,14 +40,14 @@ export const ULY_MARKDOWN_FORMAT_COMMAND_ID =
  * 注册一个 shirkhan-markdown转换母语markdown的命令
  * @returns
  */
-export function registerChangeMarkdownToUgCommand(context) {
+export function registerChangeMarkdownToUgCommand(context: ExtensionContext) {
   return registerCommand(context, CHANGE_MARKDOWN_TO_UG_COMMAND_ID, () => {
     if (!isMarkdownFileOpened()) {
       vscode.window.showErrorMessage("没有可见的 markdown 文件窗口");
       return;
     }
     const markdown = getFileContent(
-      getActiveMarkdownTextEditor().document.fileName
+      getActiveMarkdownTextEditor()!.document.fileName
     );
     // 转换markdown成母语markdown
     const newMarkdown = khanMarkdownToUgMarkdown(markdown);
@@ -60,14 +60,16 @@ export function registerChangeMarkdownToUgCommand(context) {
  * 注册一个 uly-markdown转换母语markdown的命令
  * @returns
  */
-export function registerChangeUlyMarkdownToUgCommand(context) {
+export function registerChangeUlyMarkdownToUgCommand(
+  context: ExtensionContext
+) {
   return registerCommand(context, CHANGE_ULY_MARKDOWN_TO_UG_COMMAND_ID, () => {
     if (!isMarkdownFileOpened()) {
       vscode.window.showErrorMessage("没有可见的 markdown 文件窗口");
       return;
     }
     const markdown = getFileContent(
-      getActiveMarkdownTextEditor().document.fileName
+      getActiveMarkdownTextEditor()!.document.fileName
     );
     // 转换markdown成母语markdown
     const newMarkdown = ulyMarkdownToUgMarkdown(markdown);
@@ -80,7 +82,7 @@ export function registerChangeUlyMarkdownToUgCommand(context) {
  *  uly format
  * @returns
  */
-export function registerUlyFormatCommand(context) {
+export function registerUlyFormatCommand(context: ExtensionContext) {
   return registerCommand(context, ULY_MARKDOWN_FORMAT_COMMAND_ID, () => {
     if (!isMarkdownFileOpened()) {
       vscode.window.showErrorMessage("没有可见的 markdown 文件窗口");
@@ -93,7 +95,7 @@ export function registerUlyFormatCommand(context) {
 
     if (inputMode !== "uly") return;
 
-    const editor = getActiveMarkdownTextEditor();
+    const editor = getActiveMarkdownTextEditor()!;
     const document = editor.document;
 
     const markdownText = document.getText();
@@ -117,14 +119,16 @@ export function registerUlyFormatCommand(context) {
  * 注册一个 ug-markdown转换uly markdown的命令
  * @returns
  */
-export function registerChangeUgMarkdownToUlyCommand(context) {
+export function registerChangeUgMarkdownToUlyCommand(
+  context: ExtensionContext
+) {
   return registerCommand(context, CHANGE_UG_MARKDOWN_TO_ULY_COMMAND_ID, () => {
     if (!isMarkdownFileOpened()) {
       vscode.window.showErrorMessage("没有可见的 markdown 文件窗口");
       return;
     }
     const markdown = getFileContent(
-      getActiveMarkdownTextEditor().document.fileName
+      getActiveMarkdownTextEditor()!.document.fileName
     );
     // 转换markdown成母语markdown
     const newMarkdown = ugMarkdownToUlyMarkdown(markdown);
@@ -138,14 +142,16 @@ export function registerChangeUgMarkdownToUlyCommand(context) {
  * @param {*} context
  * @returns
  */
-export function registerChangeMarkdownToShirkhanUzCommand(context) {
+export function registerChangeMarkdownToShirkhanUzCommand(
+  context: ExtensionContext
+) {
   return registerCommand(context, CHANGE_MARKDOWN_TO_UZ_COMMAND_ID, () => {
     if (!isMarkdownFileOpened()) {
       vscode.window.showErrorMessage("没有可见的 markdown 文件窗口");
       return;
     }
     const markdown = getFileContent(
-      getActiveMarkdownTextEditor().document.fileName
+      getActiveMarkdownTextEditor()!.document.fileName
     );
     // 转换markdown成uz markdown
     const newMarkdown = khanMarkdownToShirkhanUzMarkdown(markdown);
@@ -154,7 +160,7 @@ export function registerChangeMarkdownToShirkhanUzCommand(context) {
   });
 }
 
-export function registerChangeMarkdownToKhanCommand(context) {
+export function registerChangeMarkdownToKhanCommand(context: ExtensionContext) {
   registerCommand(context, CHANGE_MARKDOWN_TO_UZ__COMMAND_ID, () => {
     if (!isMarkdownFileOpened()) {
       vscode.window.showErrorMessage("没有可见的 markdown 文件窗口");
@@ -162,7 +168,7 @@ export function registerChangeMarkdownToKhanCommand(context) {
     }
 
     const markdown = getFileContent(
-      getActiveMarkdownTextEditor().document.fileName
+      getActiveMarkdownTextEditor()!.document.fileName
     );
     // 转换markdown成母语markdown
     const newMarkdown = ugMarkdownToKhanMarkdown(markdown);
@@ -175,7 +181,10 @@ export function registerChangeMarkdownToKhanCommand(context) {
  * @param {any} handlerFunc   A command handler function.
  * @returns
  */
-export function registerChangeConvertStatusCommand(context, handlerFunc) {
+export function registerChangeConvertStatusCommand(
+  context: ExtensionContext,
+  handlerFunc: any
+) {
   return registerCommand(
     context,
     CHANGE_CONVERT_STATUS_COMMAND_ID,
@@ -188,6 +197,9 @@ export function registerChangeConvertStatusCommand(context, handlerFunc) {
  * @param {any} handlerFunc   A command handler function.
  * @returns
  */
-export function registerChangeInputModeCommand(context, handlerFunc) {
+export function registerChangeInputModeCommand(
+  context: ExtensionContext,
+  handlerFunc: any
+) {
   return registerCommand(context, CHANGE_INPUTMODE_COMMAND_ID, handlerFunc);
 }

@@ -152,8 +152,8 @@
   },
   "scripts": {
     "vscode:prepublish": "yarn esbuild-base  --minify",
-    "esbuild-base": "esbuild ./src/main.js --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
-    "esbuild": "yarn esbuild-base  --sourcemap",
+    "esbuild-base": "esbuild ./src/main.js --bundle --outfile=out/extension.js --loader:.ts,.js=ts --external:vscode --format=cjs --platform=node",
+    "esbuild": "yarn esbuild-base --minify",
     "esbuild-watch": "yarn esbuild-base  --sourcemap --watch",
     "lint": "eslint .",
     "pretest": "yarn run lint",
@@ -169,6 +169,7 @@
   },
   "devDependencies": {
     "@types/glob": "^7.1.4",
+    "@types/markdown-it-emoji": "^2.0.2",
     "@types/mocha": "^9.0.0",
     "@types/node": "14.x",
     "@types/vscode": "^1.63.1",

@@ -9,29 +9,29 @@ import {
 
 import { khanRemark, convertPlugin } from "./khan-remark";
 
-export function khanTextToUgText(text) {
+export function khanTextToUgText(text: string) {
   return khanUzTextToUg(khanTextToKhanUz(text));
 }
-export function ulyTextToUgText(text) {
+export function ulyTextToUgText(text: string) {
   return khanUzTextToUg(ulyTextToKhanUz(text));
 }
 
-export function khanTextToShirkhanUzText(text) {
+export function khanTextToShirkhanUzText(text: string) {
   return khanTextToKhanUz(text);
 }
 
-export function ugTextToUzText(text) {
+export function ugTextToUzText(text: string) {
   return ugTextToKhanUz(text);
 }
 
-export function ugTextToUlyText(text) {
+export function ugTextToUlyText(text: string) {
   return khanUzTextToUly(ugTextToKhanUz(text));
 }
 
-export function khanMarkdownToShirkhanUzMarkdown(markdownText) {
+export function khanMarkdownToShirkhanUzMarkdown(markdownText: string) {
   return khanRemark()
     .use(convertPlugin, {
-      converter: (node) => {
+      converter: (node: any) => {
         if (node.value) {
           try {
             return khanTextToShirkhanUzText(node.value);
@@ -46,10 +46,10 @@ export function khanMarkdownToShirkhanUzMarkdown(markdownText) {
     .toString();
 }
 
-export function khanMarkdownToUgMarkdown(markdownText) {
+export function khanMarkdownToUgMarkdown(markdownText: string) {
   return khanRemark()
     .use(convertPlugin, {
-      converter: (node) => {
+      converter: (node: any) => {
         if (node.value) {
           try {
             return khanTextToUgText(node.value);
@@ -64,10 +64,10 @@ export function khanMarkdownToUgMarkdown(markdownText) {
     .toString();
 }
 
-export function ulyMarkdownToUgMarkdown(markdownText) {
+export function ulyMarkdownToUgMarkdown(markdownText: string) {
   return khanRemark()
     .use(convertPlugin, {
-      converter: (node) => {
+      converter: (node: any) => {
         if (node.value) {
           try {
             return ulyTextToUgText(node.value);
@@ -82,10 +82,10 @@ export function ulyMarkdownToUgMarkdown(markdownText) {
     .toString();
 }
 
-export function ulyMarkdownToFormattedMarkdown(markdownText) {
+export function ulyMarkdownToFormattedMarkdown(markdownText: string) {
   return khanRemark()
     .use(convertPlugin, {
-      converter: (node) => {
+      converter: (node: any) => {
         if (node.value) {
           try {
             return ulyTextToFormat(node.value);
@@ -100,10 +100,10 @@ export function ulyMarkdownToFormattedMarkdown(markdownText) {
     .toString();
 }
 
-export function ugMarkdownToUlyMarkdown(markdownText) {
+export function ugMarkdownToUlyMarkdown(markdownText: string) {
   return khanRemark()
     .use(convertPlugin, {
-      converter: (node) => {
+      converter: (node: any) => {
         if (node.value) {
           try {
             return ugTextToUlyText(node.value);
@@ -118,10 +118,10 @@ export function ugMarkdownToUlyMarkdown(markdownText) {
     .toString();
 }
 
-export function ugMarkdownToKhanMarkdown(markdownText) {
+export function ugMarkdownToKhanMarkdown(markdownText: string) {
   return khanRemark()
     .use(convertPlugin, {
-      converter: (node) => {
+      converter: (node: any) => {
         if (node.value) {
           try {
             return ugTextToUzText(node.value);

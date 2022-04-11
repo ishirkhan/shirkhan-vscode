@@ -1,4 +1,4 @@
-import vscode from "vscode";
+import vscode, { ExtensionContext } from "vscode";
 import emoji from "markdown-it-emoji";
 
 import { getActiveConvert } from "./config";
@@ -32,11 +32,9 @@ import { UlyMarkdownFormatter } from "./providers/ulyFormatProvider";
 
 /**
  * 初始化配置信息
- * @param {import("vscode").ExtensionContext} context
- * @returns
  */
-function initConfigs(context) {
-  const convertState = getActiveConvert(context);
+function initConfigs(context: ExtensionContext) {
+  const convertState = getActiveConvert();
   const message = convertState ? "【已开】" : "【已关】";
   convertStatusStatusBarItem.text = "维语预览：" + message;
 
@@ -48,10 +46,9 @@ function initConfigs(context) {
 }
 /**
  *  绑定指令
- * @param {import("vscode").ExtensionContext} context
  * @returns
  */
-function bindCommands(context) {
+function bindCommands(this: any, context: ExtensionContext) {
   registerChangeConvertStatusCommand(
     context,
     handleConvertStatusChangeCommand.bind(this, context)
@@ -69,10 +66,9 @@ function bindCommands(context) {
   registerUlyFormatCommand(context);
 }
 /**
- * @param {import("vscode").ExtensionContext} context
  * @returns
  */
-function handleConvertStatusChangeCommand(context) {
+function handleConvertStatusChangeCommand(context: ExtensionContext) {
   const currentStage = getConvertState(context);
   const message = !currentStage ? "开启" : "关闭";
   const barText = !currentStage ? "【已开】" : "【已关】";
@@ -82,6 +78,7 @@ function handleConvertStatusChangeCommand(context) {
   const config = vscode.workspace.getConfiguration("shirkhanMarkdown");
   const convertState = !config.get("activeConvert");
   config.update("activeConvert", convertState, true);
+  //@ts-ignore
   markdownInstance.options["shirkhanConvertUg"] = !currentStage;
   setConvertState(context, !currentStage);
 }
@@ -115,11 +112,13 @@ function handleActiveColorThemeChangeEvent() {
 // 更新markdown 预览区的container class name
 function updateShirkhanMarkdownTheme() {
   const curretnThemeKind = getCurrentActiveColorTheme();
+  //@ts-ignore
   markdownInstance.options[
     "shirkhanContainerClassName"
   ] = `shirkhan-markdown-body shirkhan-${curretnThemeKind}-theme`;
 }
-function extendMarkdownIt(md) {
+
+function extendMarkdownIt(md: any) {
   updateShirkhanMarkdownTheme();
   // 支持表情
   md.use(emoji);
@@ -129,12 +128,11 @@ function extendMarkdownIt(md) {
 }
 /** ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
-let markdownInstance = undefined;
+let markdownInstance: any = undefined;
 /**
- * @param {import("vscode").ExtensionContext} context
  * @returns
  */
-export function activate(context) {
+export function activate(context: ExtensionContext) {
   console.log("shirkhan-markdown 插件唤醒 【activate】");
   initConfigs(context);
   bindCommands(context);
@@ -156,7 +154,7 @@ export function activate(context) {
   );
 
   return {
-    extendMarkdownIt: function (md) {
+    extendMarkdownIt: function (md: any) {
       markdownInstance = md;
       md.options["shirkhanConvertUg"] = getConvertState(context);
       return extendMarkdownIt(md);

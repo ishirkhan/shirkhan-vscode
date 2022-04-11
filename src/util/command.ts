@@ -1,3 +1,5 @@
+import { ExtensionContext } from "vscode";
+
 const vscode = require("vscode");
 
 /**
@@ -14,9 +16,9 @@ const vscode = require("vscode");
  * @return Disposable which unregisters this command on disposal.
  */
 export function registerCommand(
-  context,
-  commandUniqName,
-  handlerFunc,
+  context: ExtensionContext,
+  commandUniqName: string,
+  handlerFunc: any,
   thisArg = undefined
 ) {
   let disposable = vscode.commands.registerCommand(

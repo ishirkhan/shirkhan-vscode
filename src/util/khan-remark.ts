@@ -5,8 +5,8 @@ import remarkStringify from "remark-stringify";
 import { visit } from "unist-util-visit";
 import remarkGfm from "remark-gfm";
 
-export function convertPlugin(options) {
-  return (tree) => {
+export function convertPlugin(options: any) {
+  return (tree: any) => {
     const { converter } = options;
     if (!converter) {
       console.log("options :>> ", options);

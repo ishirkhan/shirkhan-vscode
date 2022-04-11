@@ -1,4 +1,4 @@
-import vscode from "vscode";
+import vscode, { TextDocument } from "vscode";
 import { ulyMarkdownToFormattedMarkdown } from "../util";
 /**
  * @type vscode.DocumentFormattingEditProvider
@@ -13,15 +13,14 @@ export class UlyMarkdownFormatter {
    * @return {import("vscode").ProviderResult<TextEdit[]} A set of text edits or a thenable that resolves to such. The lack of a result can be
    * signaled by returning `undefined`, `null`, or an empty array.
    */
-  provideDocumentFormattingEdits(document) {
+  provideDocumentFormattingEdits(document: TextDocument) {
     const inputMode = vscode.workspace
       .getConfiguration("shirkhanMarkdown")
       .get("inputMode");
 
     if (inputMode !== "uly") {
       vscode.window.showErrorMessage(
-        "shirkhan markdown formatter:目前只支持 uly 输入模式下的 Markdown 的格式化",
-        ["知道了"]
+        "shirkhan markdown formatter:目前只支持 uly 输入模式下的 Markdown 的格式化"
       );
       return;
     }

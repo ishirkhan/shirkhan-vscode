@@ -5,10 +5,6 @@ export function isMarkdownFileOpened() {
   return !!editor;
 }
 
-/**
- *
- * @returns {import("vscode").TextEditor | undefined}
- */
 export function getActiveMarkdownTextEditor() {
   const currentActiveTextEditor = vscode.window.activeTextEditor;
   if (

@@ -2,11 +2,12 @@ import vscode from "vscode";
 
 /**
  * 新开页签显示给定内容
- * @param {string} content
- * @param {string} fileName
- * @param {string} language
  */
-export function openNewTempTab(content, fileName, language) {
+export function openNewTempTab(
+  content: string,
+  fileName: string,
+  language: string
+) {
   return vscode.workspace
     .openTextDocument({
       content: content,
