@@ -1,12 +1,22 @@
 # shirkhan markdown 预览器
 
+## 更新日志
+
+[Change Log](./CHANGELOG.md)
+
+## 插件功能
+
+- 用 khan 字母表编写，转换生成 markdown
+- 用 uly 字母表编写，转换生成 markdown
+  > uly 规范以及字母表请看这里：[shirkhan-uly-alphabet](https://gitee.com/shirkhan/shirkhan-uly-alphabet)
+
 ## 插件用途
 
-本插件是 [shirkhan-alphabet](https://gitee.com/silvaq/shirkhan-alphabet) 规范的一个实现，用来使用 [shirkhan-alphabet](https://gitee.com/silvaq/shirkhan-alphabet) 编写 markdown
+本插件是 [shirkhan-alphabet](https://gitee.com/shirkhan/shirkhan-alphabet) 规范的一个实现，用来使用 [shirkhan-alphabet](https://gitee.com/shirkhan/shirkhan-alphabet) 编写 markdown
 
 本插件目前提供了以下功能：
 
-1. [shirkhan-alphabet](https://gitee.com/silvaq/shirkhan-alphabet) 规范下编写的 markdown 支持实时预览母语转换后的效果
+1. [shirkhan-alphabet](https://gitee.com/shirkhan/shirkhan-alphabet) 规范下编写的 markdown 支持实时预览母语转换后的效果
 2. ug - khan 写的 markdown 互换
 
 ## 使用方式
@@ -30,7 +40,7 @@
 - 内容转换过程中出现拉丁字母，但是不是 shirkhan 内容时可以使用 “/” 符号包裹内容标识不是 shirkhan 内容。 比如: shirkhan /very awesome/ deydu 中的“very awesome” 被识别为非 shirkhan 内容并将不进行转换
 - shirkhan 字母表中 h 字符不能单独出现，只能用来组字符。x 不在需要使用，目前用来转换母语的内容中补充 Hemze 的位置
 
-更多信息请看[shirkhan-alphabet](https://gitee.com/silvaq/shirkhan-alphabet)！
+更多信息请看[shirkhan-alphabet](https://gitee.com/shirkhan/shirkhan-alphabet)！
 
 ## FAQ
 
@@ -46,7 +56,3 @@
 
 3. khan 内容中出现其他拉丁字母的内容如何告知转换器不用转换这段内容？
    - 可以使用 "/" 包裹内容来达到这种目的，比如 shirkhan /hello world/ deydu, 这个例子中的 hello world 不会被插件转换
-
-## 更新日志
-
-[Change Log](./CHANGELOG.md)
