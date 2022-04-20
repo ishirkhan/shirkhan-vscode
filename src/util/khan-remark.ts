@@ -17,6 +17,13 @@ export function convertPlugin(options: any) {
       if (parent.type === "link") return;
       node.value = converter(node, index, parent);
     });
+    // `ug 开头的inline code 特殊处理
+    visit(tree, "inlineCode", (node, index, parent) => {
+      if (!node.value.startsWith("ug ") && !/[\u0626-\u06d5]/.test(node.value))
+        return;
+      // node.value = node.value.replace("ug ", "");
+      node.value = converter(node, index, parent);
+    });
   };
 }
 

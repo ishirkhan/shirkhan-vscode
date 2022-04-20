@@ -23,8 +23,8 @@ export const CHANGE_MARKDOWN_TO_UZ_COMMAND_ID =
 export const CHANGE_MARKDOWN_TO_UG_COMMAND_ID =
   "shirkhan-markdown.changeMarkdownToUg";
 
-export const CHANGE_MARKDOWN_TO_UZ__COMMAND_ID =
-  "shirkhan-markdown.changeMarkdownToUZ";
+export const CHANGE_UG_MARKDOWN_TO_UZ_COMMAND_ID =
+  "shirkhan-markdown.changeUgMarkdownToUZ";
 
 // 输入模式切换指令
 export const CHANGE_INPUTMODE_COMMAND_ID = "shirkhan-markdown.changeInputMode";
@@ -161,7 +161,7 @@ export function registerChangeMarkdownToShirkhanUzCommand(
 }
 
 export function registerChangeMarkdownToKhanCommand(context: ExtensionContext) {
-  registerCommand(context, CHANGE_MARKDOWN_TO_UZ__COMMAND_ID, () => {
+  registerCommand(context, CHANGE_UG_MARKDOWN_TO_UZ_COMMAND_ID, () => {
     if (!isMarkdownFileOpened()) {
       vscode.window.showErrorMessage("没有可见的 markdown 文件窗口");
       return;

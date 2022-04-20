@@ -50,6 +50,9 @@ export function khanMarkdownToUgMarkdown(markdownText: string) {
   return khanRemark()
     .use(convertPlugin, {
       converter: (node: any) => {
+        if (node.type === "inlineCode") {
+          node.value = node.value.replace("ug ", "");
+        }
         if (node.value) {
           try {
             return khanTextToUgText(node.value);
@@ -68,6 +71,9 @@ export function ulyMarkdownToUgMarkdown(markdownText: string) {
   return khanRemark()
     .use(convertPlugin, {
       converter: (node: any) => {
+        if (node.type === "inlineCode") {
+          node.value = node.value.replace("ug ", "");
+        }
         if (node.value) {
           try {
             return ulyTextToUgText(node.value);
@@ -104,6 +110,9 @@ export function ugMarkdownToUlyMarkdown(markdownText: string) {
   return khanRemark()
     .use(convertPlugin, {
       converter: (node: any) => {
+        if (node.type === "inlineCode" && /[\u0626-\u06d5]/.test(node.value)) {
+          return "ug " + ugTextToUlyText(node.value);
+        }
         if (node.value) {
           try {
             return ugTextToUlyText(node.value);
@@ -122,6 +131,9 @@ export function ugMarkdownToKhanMarkdown(markdownText: string) {
   return khanRemark()
     .use(convertPlugin, {
       converter: (node: any) => {
+        if (node.type === "inlineCode" && /[\u0626-\u06d5]/.test(node.value)) {
+          return "ug " + ugTextToUzText(node.value);
+        }
         if (node.value) {
           try {
             return ugTextToUzText(node.value);
