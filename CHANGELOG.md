@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.8.3...v1.9.0) (2022-04-20)
+
+
+### Features
+
+* 新增 markdown整体转换其他字符markdown时的ug开头的inlinecode 进行对应转换功能,非ug开头的不进行转换 ([28b2a60](https://github.com/ishirkhan/shirkhan-vscode/commit/28b2a60c8fbd704e77e37e06a9638abfc3dd33ce))
+
 ### [1.8.3](https://github.com/ishirkhan/shirkhan-vscode/compare/v1.8.2...v1.8.3) (2022-04-12)
 
 
